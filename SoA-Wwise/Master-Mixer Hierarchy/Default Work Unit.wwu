@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}" SchemaVersion="97">
+	<Busses>
+		<WorkUnit Name="Default Work Unit" ID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}" PersistMode="Standalone">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="1"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<Bus Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}">
+					<ReferenceList>
+						<Reference Name="AudioDevice">
+							<ObjectRef Name="System" ID="{4F3D1088-EDE1-46D8-8F1D-E7179CF2E03F}" WorkUnitID="{D68321AF-5784-40B3-B4C6-A70A0A73E6A4}"/>
+						</Reference>
+						<Reference Name="Effect0">
+							<Custom>
+								<Effect Name="Wwise_Parametric_EQ_(Custom)" ID="{64024D5E-D127-48F3-8C92-AC0B5525C9CE}" ShortID="332284441" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+									<PropertyList>
+										<Property Name="FilterTypeBand1" Type="int32" Value="0"/>
+										<Property Name="FilterTypeBand3" Type="int32" Value="1"/>
+										<Property Name="FrequencyBand1" Type="Real32" Value="51"/>
+										<Property Name="FrequencyBand2" Type="Real32" Value="548"/>
+										<Property Name="FrequencyBand3" Type="Real32" Value="175"/>
+										<Property Name="GainBand1" Type="Real32" Value="-3"/>
+										<Property Name="GainBand2" Type="Real32" Value="-1.5"/>
+										<Property Name="GainBand3" Type="Real32" Value="-2.5"/>
+									</PropertyList>
+								</Effect>
+							</Custom>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Bus Name="Environnement_Master" ID="{315C115F-0EDE-4532-BB77-1F0F824A8AC9}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="4"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<Bus Name="Envi_Commerce" ID="{7BDD60B2-BB5E-48BE-B7F0-F70158B733D4}"/>
+								<Bus Name="Envi_Parc" ID="{953DF851-45C9-4D1B-B858-2DC92027426C}"/>
+								<Bus Name="Envi_Ville" ID="{CDCCBE95-2E90-425F-98D2-099B6FFF9C27}"/>
+							</ChildrenList>
+						</Bus>
+						<Bus Name="Obstacles_Master" ID="{F4944B32-31AD-4309-87CE-66C08AADA7C4}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="9"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<Bus Name="Obstacles_Commerce" ID="{40C37BCA-526E-4995-B59E-1F10C406ED4D}"/>
+								<Bus Name="Obstacles_Ville" ID="{E7B92E6B-A951-4A8D-A9B1-FF3735971447}"/>
+								<Bus Name="Obstacles_Parc" ID="{8B635E17-B35D-4FA2-BC8B-9F39E845CD0F}"/>
+							</ChildrenList>
+						</Bus>
+						<Bus Name="Personnages_Master" ID="{4D1FF801-B81D-4578-B308-F5FD37827AEA}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="10"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<Bus Name="Perso_NPC" ID="{CBEAE37B-673C-419D-9CEB-17A00BCC4FAE}"/>
+								<Bus Name="Perso_Esthesia" ID="{CA6457CE-9DEB-47C1-AB51-CC082789EA28}"/>
+							</ChildrenList>
+						</Bus>
+						<Bus Name="Music_Master" ID="{F0370675-159A-4FB6-B835-D4789C2E46B6}"/>
+						<Bus Name="Cinematique_Master" ID="{AFB968BF-4BC2-45F3-9C92-CF5682C62590}"/>
+						<Bus Name="Menu_Master" ID="{028B06FE-0828-4B3B-B5E6-C42B8E064663}"/>
+					</ChildrenList>
+					<StateInfo>
+						<StatePropertyList>
+							<Property Name="BypassEffect"/>
+							<Property Name="Volume"/>
+						</StatePropertyList>
+						<StateGroupList>
+							<StateGroupInfo>
+								<StateGroupRef Name="Menu_Oui_Non" ID="{1A573B95-4C40-4AC7-BDA8-3F919156EAFD}"/>
+							</StateGroupInfo>
+						</StateGroupList>
+						<CustomStateList>
+							<CustomState>
+								<StateRef Name="Menu_oui" ID="{B23889C1-B0A9-49EB-9591-9BED9F1A2842}"/>
+								<CustomState Name="" ID="{3C36AFE0-45A9-4641-95B6-919A6030ABAE}" ShortID="405637748">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64" Value="-20"/>
+									</PropertyList>
+								</CustomState>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Menu_Non" ID="{075A3419-44F3-4BDC-B0E0-6A45AC6676BA}"/>
+								<CustomState Name="" ID="{684DBBDC-60B4-4E5A-A2AB-22B49E367CE4}" ShortID="222969573">
+									<PropertyList>
+										<Property Name="BypassEffect" Type="bool" Value="True"/>
+									</PropertyList>
+								</CustomState>
+							</CustomState>
+						</CustomStateList>
+					</StateInfo>
+				</Bus>
+				<Bus Name="NiveauEcoutePerso" ID="{A4D9FDFA-2BDE-4429-BF04-2EA53793E583}">
+					<ReferenceList>
+						<Reference Name="AudioDevice" PluginName="System" CompanyID="0" PluginID="174" PluginType="7">
+							<ObjectRef Name="System" ID="{4F3D1088-EDE1-46D8-8F1D-E7179CF2E03F}" WorkUnitID="{D68321AF-5784-40B3-B4C6-A70A0A73E6A4}"/>
+						</Reference>
+						<Reference Name="Effect0">
+							<Custom>
+								<Effect Name="Wwise_Meter_(Custom)" ID="{96DC8837-A7ED-42C3-8050-C32A39CB529B}" ShortID="486877881" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+									<PropertyList>
+										<Property Name="AttackTime" Type="Real32" Value="0.1"/>
+										<Property Name="MeterMode" Type="int32" Value="1"/>
+										<Property Name="ReleaseTime" Type="Real32" Value="1"/>
+									</PropertyList>
+									<PluginData>
+	<GameParameter Name="VolumeEcoutePerso" ID="{A457383D-5090-4E4B-92FD-35E3CDE1D1A7}"/>
+</PluginData>
+								</Effect>
+							</Custom>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AuxBus Name="MixEcoutePerso" ID="{97430BC9-EEDC-4BAA-90C1-49425009782D}"/>
+					</ChildrenList>
+				</Bus>
+				<Bus Name="Mix REVERB" ID="{404D764E-40BF-41E7-AEDC-123650CF2EBF}">
+					<ReferenceList>
+						<Reference Name="AudioDevice">
+							<ObjectRef Name="System" ID="{4F3D1088-EDE1-46D8-8F1D-E7179CF2E03F}" WorkUnitID="{D68321AF-5784-40B3-B4C6-A70A0A73E6A4}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AuxBus Name="Reverb_Lieu_Repos" ID="{750C87B6-70DB-41F7-89DF-6704CEDFEACC}">
+							<ReferenceList>
+								<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+									<ObjectRef Name="Have_U_Ever_Been_Outside" ID="{FE29AE8D-FD86-4652-A95D-68D32F5760EC}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+							</ReferenceList>
+						</AuxBus>
+						<AuxBus Name="Reverb_Tunnel" ID="{57CD835A-A554-449D-97EB-70476E2A5092}">
+							<ReferenceList>
+								<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+									<ObjectRef Name="My_Closet" ID="{384A82A1-3C92-4AC5-AFC2-474F2080642C}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+							</ReferenceList>
+						</AuxBus>
+					</ChildrenList>
+				</Bus>
+				<Bus Name="MixPROTECTION" ID="{34536272-9AA9-46D1-8DC5-A23EB5AF7505}">
+					<ReferenceList>
+						<Reference Name="AudioDevice">
+							<ObjectRef Name="System" ID="{4F3D1088-EDE1-46D8-8F1D-E7179CF2E03F}" WorkUnitID="{D68321AF-5784-40B3-B4C6-A70A0A73E6A4}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AuxBus Name="EQ_Protection" ID="{5A2173EA-4A77-452E-8281-C22E896215E4}">
+							<PropertyList>
+								<Property Name="OutputBusLowpass" Type="int16">
+									<ValueList>
+										<Value>48</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+						</AuxBus>
+					</ChildrenList>
+				</Bus>
+			</ChildrenList>
+		</WorkUnit>
+	</Busses>
+</WwiseDocument>

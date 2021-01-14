@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{ADF44AD5-D067-4957-ACBF-C84AAA6A6255}" SchemaVersion="97">
+	<GameParameters>
+		<WorkUnit Name="Obstacles" ID="{ADF44AD5-D067-4957-ACBF-C84AAA6A6255}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="VitesseVoitureElec" ID="{5FE77D80-3313-4DB5-B9E4-47E4371E86FA}"/>
+				<GameParameter Name="VitesseVehicule" ID="{A6EA2B3C-7D8A-4E28-9D3E-D50ECD5F059C}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="70"/>
+						<Property Name="RTPCRamping" Type="int16" Value="1"/>
+						<Property Name="SlewRateDown" Type="Real64" Value="20"/>
+						<Property Name="SlewRateUp" Type="Real64" Value="10"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="Quel_Moteur" ID="{4334FE7B-10DD-42E4-98D0-492C5EE9992A}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="9"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="Ralenti_Accelere" ID="{31E46C5C-8DDC-4581-B657-7283D6F89339}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="3"/>
+						<Property Name="Max" Type="Real64" Value="3"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>

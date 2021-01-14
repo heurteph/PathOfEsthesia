@@ -1,0 +1,43 @@
+﻿// Each #kernel tells which function to compile; you can have many kernels
+#pragma kernel CSMain
+
+struct Pixels {
+	float4 color;
+};
+
+Texture2D<float4> Result;
+RWBuffer<uint> res;
+
+float width;
+float height;
+
+groupshared int total = 0;
+groupshared int cmpt = 0;
+
+[numthreads(32,32,1)]
+void CSMain (uint3 id : SV_DispatchThreadID)	//choix sémantique pour repérer Thread => plusieurs dispo
+{
+	int x, y;
+	
+	x = id.x;
+	y = id.y;
+
+
+	int2 v = int2(x, y);
+	uint3 vec = uint3(x, y, 0);
+	
+	float max = width * height;
+	
+	int nb = x + y * width;
+
+		if (nb < max) {
+		float tmp = (Result[v].r + Result[v].g + Result[v].b) / 3.0f;
+		
+		//dépend de la précision quand veut 100 pour le centieme par exemple
+		float value = tmp * 100.0f;
+		InterlockedAdd(res[0], value);
+		InterlockedAdd(res[1], 1);
+	}
+	//traitement par zone plus somme a la fin avec dernier thread de zone
+	//pour add pour diminuer nombre de locked
+}

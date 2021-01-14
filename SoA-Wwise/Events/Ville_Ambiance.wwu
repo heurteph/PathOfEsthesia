@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{3826A10E-D685-413C-9E39-9C83424A5080}" SchemaVersion="97">
+	<Events>
+		<WorkUnit Name="Ville_Ambiance" ID="{3826A10E-D685-413C-9E39-9C83424A5080}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_Pigeon" ID="{3970AFCB-7070-40E1-9A66-E7BDFCC0F0A7}">
+					<ChildrenList>
+						<Action Name="" ID="{57370610-18CB-45DB-ADFD-C4AC9099A691}" ShortID="923912020">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="3"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Pigeon" ID="{7F1C7036-725A-4DF7-A5E5-3244E290AFCB}" WorkUnitID="{42260FA2-A153-4E82-AFED-FE420DEE6A3F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{658B1DA1-7E7B-4A7E-8BCF-79A39F8AEC96}" ShortID="749771461">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="3"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Tourterelle" ID="{28F51438-5D6E-4DAD-9382-22E7883D4642}" WorkUnitID="{42260FA2-A153-4E82-AFED-FE420DEE6A3F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{CC9A7A31-3183-4C50-BC89-8A3A596D16D9}" ShortID="141352156">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="12"/>
+								<Property Name="Volume" Type="Real64" Value="-8"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Parc_Oiseaux1" ID="{F5E77440-D485-43CD-8CA1-5F9EE4872930}" WorkUnitID="{22C479D9-C11C-40A9-93A1-EBB328A91A1A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{1CB8F9AB-1B43-4F51-82B7-09B16F19CEB4}" ShortID="1004956612">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="12"/>
+								<Property Name="Volume" Type="Real64" Value="-8"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Parc_Oiseaux2" ID="{9885EDB3-662D-4C23-8544-8407A936FAC0}" WorkUnitID="{22C479D9-C11C-40A9-93A1-EBB328A91A1A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{980AE6A7-118E-475F-99A4-E634C9BB5BD9}" ShortID="5467440">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="12"/>
+								<Property Name="Volume" Type="Real64" Value="-8"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Parc_Oiseaux3" ID="{E6EBF856-29C2-4753-92EF-92D1EB6F4680}" WorkUnitID="{22C479D9-C11C-40A9-93A1-EBB328A91A1A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Pigeon" ID="{287FA844-3381-42CF-B313-4D0AE223CF55}">
+					<ChildrenList>
+						<Action Name="" ID="{00E44FD3-A425-47D8-A802-76A26EF62870}" ShortID="311771007">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="3"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Pigeon" ID="{7F1C7036-725A-4DF7-A5E5-3244E290AFCB}" WorkUnitID="{42260FA2-A153-4E82-AFED-FE420DEE6A3F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{FB85F143-0407-469A-BA05-3BAAAADC37D3}" ShortID="932381560">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="3"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Tourterelle" ID="{28F51438-5D6E-4DAD-9382-22E7883D4642}" WorkUnitID="{42260FA2-A153-4E82-AFED-FE420DEE6A3F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{00D5EC4D-729B-4076-88A1-829C0079FCFA}" ShortID="1001886392">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="12"/>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Parc_Oiseaux2" ID="{9885EDB3-662D-4C23-8544-8407A936FAC0}" WorkUnitID="{22C479D9-C11C-40A9-93A1-EBB328A91A1A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{24A2DBF1-808A-4960-BFED-72E812A8EBC5}" ShortID="603639721">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="12"/>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Parc_Oiseaux1" ID="{F5E77440-D485-43CD-8CA1-5F9EE4872930}" WorkUnitID="{22C479D9-C11C-40A9-93A1-EBB328A91A1A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{93F46DE6-5117-465C-AC41-4E3C35685FEE}" ShortID="624524724">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="12"/>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Parc_Oiseaux3" ID="{E6EBF856-29C2-4753-92EF-92D1EB6F4680}" WorkUnitID="{22C479D9-C11C-40A9-93A1-EBB328A91A1A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Pigeon_Fixe" ID="{7B6DA35E-2DAD-483A-8655-5188CEF607DD}">
+					<ChildrenList>
+						<Action Name="" ID="{6D57913C-E4FC-4982-9F49-66AD12F73B9F}" ShortID="959552705">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Pigeon_Fixe" ID="{A0198711-06FB-476F-8473-3C9DA774000C}" WorkUnitID="{42260FA2-A153-4E82-AFED-FE420DEE6A3F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Pigeon_Fixe" ID="{02B3C32B-F791-4940-8CFA-7829AD7FD394}">
+					<ChildrenList>
+						<Action Name="" ID="{1E370B86-7FF6-49CC-8F5E-033AD785FBAC}" ShortID="871627718">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Pigeon_Fixe" ID="{A0198711-06FB-476F-8473-3C9DA774000C}" WorkUnitID="{42260FA2-A153-4E82-AFED-FE420DEE6A3F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

@@ -1,0 +1,1 @@
+launch PlotAnimation.py in the command prompt, the first argument must be a number X to load the runX.csv file

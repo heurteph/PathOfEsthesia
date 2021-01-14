@@ -1,0 +1,78 @@
+Switch Group	ID	Name			Wwise Object Path	Notes
+	2782977595	Quel_Moteur			\Voiture\Quel_Moteur	
+	3645350675	EtatVoiture			\Voiture\EtatVoiture	
+
+Switch	ID	Name	Switch Group			Notes
+	1022333622	M6_Camion	Quel_Moteur			
+	1685527106	M4	Quel_Moteur			
+	1685527107	M5	Quel_Moteur			
+	1685527109	M3	Quel_Moteur			
+	1685527111	M1	Quel_Moteur			
+	1685527118	M8	Quel_Moteur			
+	2804710365	M7_Camion	Quel_Moteur			
+	3057612808	M9_Bus	Quel_Moteur			
+	3872364728	M2_Moto	Quel_Moteur			
+	129212061	A_Stop	EtatVoiture			
+	1094992157	C_Idle	EtatVoiture			
+	2409485060	B_Demarre	EtatVoiture			
+	4192991124	D_Accelere	EtatVoiture			
+
+State Group	ID	Name			Wwise Object Path	Notes
+	2551007772	Menu_Oui_Non			\Default Work Unit\Menu_Oui_Non	
+	2773598748	Protection_Oui_Non			\Protection\Protection_Oui_Non	
+	3460032738	Dans_Tunnel			\Lieux\Dans_Tunnel	
+	3986250553	Dans_Lieu_Repos			\Lieux\Dans_Lieu_Repos	
+
+State	ID	Name	State Group			Notes
+	2651242748	Menu_Non	Menu_Oui_Non			
+	2818768592	Menu_oui	Menu_Oui_Non			
+	58138747	Active	Protection_Oui_Non			
+	748895195	None	Protection_Oui_Non			
+	2270773720	Pas_Active	Protection_Oui_Non			
+	544973834	Non	Dans_Tunnel			
+	645492566	Oui	Dans_Tunnel			
+	748895195	None	Dans_Tunnel			
+	544973834	Non	Dans_Lieu_Repos			
+	645492566	Oui	Dans_Lieu_Repos			
+	748895195	None	Dans_Lieu_Repos			
+
+Custom State	ID	Name	State Group	Owner		Notes
+	222969573	Menu_Non	Menu_Oui_Non	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus		
+	405637748	Menu_oui	Menu_Oui_Non	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus		
+
+Audio Bus	ID	Name			Wwise Object Path	Notes
+	731600268	Obstacles_Ville			\Default Work Unit\Master Audio Bus\Obstacles_Master\Obstacles_Ville	
+	766198208	Environnement_Master			\Default Work Unit\Master Audio Bus\Environnement_Master	
+	772085263	Envi_Commerce			\Default Work Unit\Master Audio Bus\Environnement_Master\Envi_Commerce	
+	1006333898	Obstacles_Master			\Default Work Unit\Master Audio Bus\Obstacles_Master	
+	1407902352	Perso_NPC			\Default Work Unit\Master Audio Bus\Personnages_Master\Perso_NPC	
+	1643398137	Perso_Esthesia			\Default Work Unit\Master Audio Bus\Personnages_Master\Perso_Esthesia	
+	1655596517	Personnages_Master			\Default Work Unit\Master Audio Bus\Personnages_Master	
+	2082484861	Cinematique_Master			\Default Work Unit\Master Audio Bus\Cinematique_Master	
+	2632566393	Menu_Master			\Default Work Unit\Master Audio Bus\Menu_Master	
+	2734641465	NiveauEcoutePerso			\Default Work Unit\NiveauEcoutePerso	
+	2740603104	MixPROTECTION			\Default Work Unit\MixPROTECTION	
+	3296604463	Mix REVERB			\Default Work Unit\Mix REVERB	
+	3370572728	Obstacles_Parc			\Default Work Unit\Master Audio Bus\Obstacles_Master\Obstacles_Parc	
+	3541955170	Envi_Ville			\Default Work Unit\Master Audio Bus\Environnement_Master\Envi_Ville	
+	3564875249	Obstacles_Commerce			\Default Work Unit\Master Audio Bus\Obstacles_Master\Obstacles_Commerce	
+	3595451983	Music_Master			\Default Work Unit\Master Audio Bus\Music_Master	
+	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+	4151145406	Envi_Parc			\Default Work Unit\Master Audio Bus\Environnement_Master\Envi_Parc	
+
+Auxiliary Bus	ID	Name			Wwise Object Path	Notes
+	2093609463	MixEcoutePerso			\Default Work Unit\NiveauEcoutePerso\MixEcoutePerso	
+	2261546958	Reverb_Tunnel			\Default Work Unit\Mix REVERB\Reverb_Tunnel	
+	3204322453	Reverb_Lieu_Repos			\Default Work Unit\Mix REVERB\Reverb_Lieu_Repos	
+	3971758071	EQ_Protection			\Default Work Unit\MixPROTECTION\EQ_Protection	
+
+Effect plug-ins	ID	Name	Type				Notes
+	48620415	Have_U_Ever_Been_Outside	Wwise RoomVerb			
+	332284441	Wwise_Parametric_EQ_(Custom)	Wwise Parametric EQ			
+	486877881	Wwise_Meter_(Custom)	Wwise Meter			
+	2945072214	My_Closet	Wwise RoomVerb			
+
+Audio Devices	ID	Name	Type				Notes
+	2317455096	No_Output	No Output			
+	3859886410	System	System			
+

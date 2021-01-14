@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{4EC11D20-BF02-4031-8312-358025308CEA}" SchemaVersion="97">
+	<Events>
+		<WorkUnit Name="NPC" ID="{4EC11D20-BF02-4031-8312-358025308CEA}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_Qui_es_tu" ID="{C7CCA1DC-B9A0-4531-8EA6-B5AF60791BFF}">
+					<ChildrenList>
+						<Action Name="" ID="{2F0E305B-9E1D-44DB-8E47-E0229A492040}" ShortID="466104199">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Qui_es_tu" ID="{1D607F83-5905-4830-B18F-E9D67818C6F6}" WorkUnitID="{6D58CE9F-34AD-4F6D-9DE7-C808898B860A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Qui_es_tu" ID="{7A5233C1-58CF-43CC-B2E0-5BD9BB15791B}">
+					<ChildrenList>
+						<Action Name="" ID="{4BABA0C6-91A7-449C-B725-57B3C9F0EFAD}" ShortID="443418966">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Qui_es_tu" ID="{1D607F83-5905-4830-B18F-E9D67818C6F6}" WorkUnitID="{6D58CE9F-34AD-4F6D-9DE7-C808898B860A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_NPC_Texture_Pas" ID="{AF0E51ED-C69C-469E-8920-DDD1058F1051}">
+					<ChildrenList>
+						<Action Name="" ID="{1D05CF4D-DEB0-4534-9AA2-B9C1984D536D}" ShortID="376115283">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="NPC_Texture Pas" ID="{0C95E712-D476-4B37-84F9-F36DEC75D625}" WorkUnitID="{6D58CE9F-34AD-4F6D-9DE7-C808898B860A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_NPC_Texture_Pas" ID="{7B4A3B15-B9DD-40A9-BE1C-552E7B8F94F6}">
+					<ChildrenList>
+						<Action Name="" ID="{F3D8A8DD-B056-4B40-A456-6330A5DC8AAA}" ShortID="569269977">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="NPC_Texture Pas" ID="{0C95E712-D476-4B37-84F9-F36DEC75D625}" WorkUnitID="{6D58CE9F-34AD-4F6D-9DE7-C808898B860A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

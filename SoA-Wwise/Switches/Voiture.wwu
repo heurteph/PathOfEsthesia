@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{FE2FFB21-E96C-4796-BF5D-DFD9A0776034}" SchemaVersion="97">
+	<Switches>
+		<WorkUnit Name="Voiture" ID="{FE2FFB21-E96C-4796-BF5D-DFD9A0776034}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="EtatVoiture" ID="{85B0257B-EB48-4E32-86C9-571726763156}">
+					<PropertyList>
+						<Property Name="UseGameParameter" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Switch Name="D_Accelere" ID="{4E5B3B6B-5235-4A50-A89F-DBE9F377803C}"/>
+						<Switch Name="B_Demarre" ID="{EBDA39D6-6A19-45D7-900F-698420931972}"/>
+						<Switch Name="C_Idle" ID="{575AC416-23B8-43F6-8005-669346C1342C}"/>
+						<Switch Name="A_Stop" ID="{3DE31401-7944-4243-AB4C-A04EC18D2004}"/>
+					</ChildrenList>
+					<SwitchOnRTPC>
+						<GameParameterRef Name="VitesseVehicule" ID="{A6EA2B3C-7D8A-4E28-9D3E-D50ECD5F059C}"/>
+						<Curve Name="" ID="{48F335A5-8ECA-434F-B6F5-1090CBA4CBD5}">
+							<PropertyList>
+								<Property Name="Flags" Type="int32" Value="65537"/>
+							</PropertyList>
+							<PointList>
+								<Point>
+									<XPos>0</XPos>
+									<YPos>4</YPos>
+									<Flags>5</Flags>
+								</Point>
+								<Point>
+									<XPos>1.22185</XPos>
+									<YPos>2</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>2.08897</XPos>
+									<YPos>3</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>10.16892</XPos>
+									<YPos>1</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>70</XPos>
+									<YPos>1</YPos>
+									<Flags>37</Flags>
+								</Point>
+							</PointList>
+						</Curve>
+					</SwitchOnRTPC>
+				</SwitchGroup>
+				<SwitchGroup Name="Quel_Moteur" ID="{305C613F-AD4C-4A87-91CE-F9A9C2A0E778}">
+					<PropertyList>
+						<Property Name="UseGameParameter" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Switch Name="M1" ID="{FCFCE899-E509-4001-A272-B16E990DB770}"/>
+						<Switch Name="M2_Moto" ID="{D9DFBE8B-AC74-4DF0-B1F1-F96C7CF1EF8D}"/>
+						<Switch Name="M3" ID="{D13F1666-0A64-4026-9C02-E0B8E505EFA4}"/>
+						<Switch Name="M4" ID="{6F29EDEB-2EAE-498A-BEF7-A0318A987B0D}"/>
+						<Switch Name="M5" ID="{9E1CEE2D-D169-4824-8F10-62506E9760A2}"/>
+						<Switch Name="M6_Camion" ID="{7F0D8038-1B7E-4153-91CA-C0534557D6B7}"/>
+						<Switch Name="M7_Camion" ID="{0167492A-AABC-4E2D-A2BF-A91488D1D4F8}"/>
+						<Switch Name="M8" ID="{4E476E70-45DD-4B66-B879-A10E60F4DC07}"/>
+						<Switch Name="M9_Bus" ID="{270BE1CE-08E1-408F-9C4F-5F390CAFFD6B}"/>
+					</ChildrenList>
+					<SwitchOnRTPC>
+						<GameParameterRef Name="Quel_Moteur" ID="{4334FE7B-10DD-42E4-98D0-492C5EE9992A}"/>
+						<Curve Name="" ID="{EB1716F0-BF17-4983-8039-8045840215BE}">
+							<PropertyList>
+								<Property Name="Flags" Type="int32" Value="65537"/>
+							</PropertyList>
+							<PointList>
+								<Point>
+									<XPos>0</XPos>
+									<YPos>1</YPos>
+									<Flags>5</Flags>
+								</Point>
+								<Point>
+									<XPos>1</XPos>
+									<YPos>2</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>2</XPos>
+									<YPos>3</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>3</XPos>
+									<YPos>4</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>4</XPos>
+									<YPos>5</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>5</XPos>
+									<YPos>6</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>6</XPos>
+									<YPos>7</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>7</XPos>
+									<YPos>8</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>8</XPos>
+									<YPos>9</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>9</XPos>
+									<YPos>9</YPos>
+									<Flags>37</Flags>
+								</Point>
+							</PointList>
+						</Curve>
+					</SwitchOnRTPC>
+				</SwitchGroup>
+				<SwitchGroup Name="Klaxons" ID="{BAEDEFCA-72E8-454C-910E-BA49EB1B92F2}">
+					<ChildrenList>
+						<Switch Name="A" ID="{8BB8AF89-EF19-45B4-9ADC-94E814EA87B8}"/>
+						<Switch Name="B" ID="{2BDD3531-1918-44DD-8213-464243CC1BB8}"/>
+						<Switch Name="C" ID="{7E32C675-752B-4BE7-8755-A5D70CD92762}"/>
+						<Switch Name="D" ID="{D5FD7B18-DE3A-4989-A8D2-D45F1AE91DB8}"/>
+						<Switch Name="E" ID="{B79D7107-7C1E-4E54-BAC2-703ED42CDFEA}"/>
+					</ChildrenList>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</Switches>
+</WwiseDocument>

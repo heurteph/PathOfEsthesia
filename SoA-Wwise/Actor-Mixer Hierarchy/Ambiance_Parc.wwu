@@ -1,0 +1,1929 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{22C479D9-C11C-40A9-93A1-EBB328A91A1A}" SchemaVersion="97" RootDocumentID="{3A9D6820-BB86-49BB-B15D-6AB6123F8ABC}">
+	<AudioObjects>
+		<WorkUnit Name="Ambiance_Parc" ID="{22C479D9-C11C-40A9-93A1-EBB328A91A1A}" OwnerID="{3A9D6820-BB86-49BB-B15D-6AB6123F8ABC}" PersistMode="Nested">
+			<ChildrenList>
+				<ActorMixer Name="Nature_Parc" ID="{172D7EC3-9C25-4978-88C4-BDD127534240}" ShortID="486767461">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-6</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Envi_Parc" ID="{953DF851-45C9-4D1B-B858-2DC92027426C}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+						</Reference>
+						<Reference Name="UserAuxSend0">
+							<ObjectRef Name="EQ_Protection" ID="{5A2173EA-4A77-452E-8281-C22E896215E4}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<RandomSequenceContainer Name="Parc_Oiseaux1" ID="{F5E77440-D485-43CD-8CA1-5F9EE4872930}" ShortID="656758646">
+							<PropertyList>
+								<Property Name="3DPosition" Type="int16" Value="2"/>
+								<Property Name="InitialDelay" Type="Real64">
+									<ValueList>
+										<Value>0.5</Value>
+									</ValueList>
+								</Property>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{687B09F2-AC76-4F29-802A-03F4DE97D309}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="8"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-5</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<Custom>
+										<Attenuation Name="Attenuation (Custom)" ID="{5791EEB4-9C7B-4469-BC07-ED61B4C57513}" ShortID="1032624307">
+											<PropertyList>
+												<Property Name="RadiusMax" Type="Real64" Value="80"/>
+											</PropertyList>
+											<CurveUsageInfoList>
+												<VolumeDryUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+														<Curve Name="VolumeDry" ID="{C48A9F66-2D7D-4F17-88BB-C47A067F7922}">
+															<PropertyList>
+																<Property Name="Flags" Type="int32" Value="3"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>0</XPos>
+																	<YPos>0</YPos>
+																	<Flags>5</Flags>
+																</Point>
+																<Point>
+																	<XPos>80</XPos>
+																	<YPos>-200</YPos>
+																	<Flags>37</Flags>
+																</Point>
+															</PointList>
+														</Curve>
+													</CurveUsageInfo>
+												</VolumeDryUsage>
+												<VolumeWetGameUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+												</VolumeWetGameUsage>
+												<VolumeWetUserUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+												</VolumeWetUserUsage>
+												<LowPassFilterUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</LowPassFilterUsage>
+												<HighPassFilterUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</HighPassFilterUsage>
+												<SpreadUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</SpreadUsage>
+												<FocusUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</FocusUsage>
+											</CurveUsageInfoList>
+										</Attenuation>
+									</Custom>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Parc_Ambiance_Nature_Oiseaux_XC34035 - Merle noir - Turdus merula02" ID="{159FFE92-EFEC-479E-A73D-9D49325756CA}" ShortID="674725712">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Parc_Ambiance_Nature_Oiseaux_XC34035 - Merle noir - Turdus merula02" ID="{B698666C-B77A-4104-B2EC-AE8F60917080}">
+											<Language>SFX</Language>
+											<AudioFile>Parc_Ambiance_Nature_Oiseaux_XC34035 - Merle noir - Turdus merula02.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="604102644"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Parc_Ambiance_Nature_Oiseaux_XC34035 - Merle noir - Turdus merula02" ID="{B698666C-B77A-4104-B2EC-AE8F60917080}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Parc_Ambiance_Nature_Oiseaux_XC34035 - Merle noir - Turdus merula03" ID="{677A26AB-DEA0-47E7-9A8E-382C9D40F791}" ShortID="1020149094">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Parc_Ambiance_Nature_Oiseaux_XC34035 - Merle noir - Turdus merula03" ID="{878EA0F2-6588-4804-B417-1D1E306F5D2D}">
+											<Language>SFX</Language>
+											<AudioFile>Parc_Ambiance_Nature_Oiseaux_XC34035 - Merle noir - Turdus merula03.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="723033460"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Parc_Ambiance_Nature_Oiseaux_XC34035 - Merle noir - Turdus merula03" ID="{878EA0F2-6588-4804-B417-1D1E306F5D2D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Parc_Ambiance_Nature_Oiseaux_XC34035 - Merle noir - Turdus merula05" ID="{7D051721-1EBD-4625-A3DE-D5EEFEF037CC}" ShortID="892856316">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Parc_Ambiance_Nature_Oiseaux_XC34035 - Merle noir - Turdus merula05" ID="{084169F0-4261-4A69-B7BD-ABFF4F883342}">
+											<Language>SFX</Language>
+											<AudioFile>Parc_Ambiance_Nature_Oiseaux_XC34035 - Merle noir - Turdus merula05.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="356875336"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Parc_Ambiance_Nature_Oiseaux_XC34035 - Merle noir - Turdus merula05" ID="{084169F0-4261-4A69-B7BD-ABFF4F883342}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Parc_Ambiance_Nature_Oiseaux_XC34035 - Merle noir - Turdus merula06" ID="{6E4B2931-716F-45D4-AF35-6D7A4AB69F4C}" ShortID="853757109">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Parc_Ambiance_Nature_Oiseaux_XC34035 - Merle noir - Turdus merula06" ID="{F3A68C22-431A-45FD-8765-00A57BF2AAAD}">
+											<Language>SFX</Language>
+											<AudioFile>Parc_Ambiance_Nature_Oiseaux_XC34035 - Merle noir - Turdus merula06.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="506618177"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Parc_Ambiance_Nature_Oiseaux_XC34035 - Merle noir - Turdus merula06" ID="{F3A68C22-431A-45FD-8765-00A57BF2AAAD}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Parc_Ambiance_Nature_Oiseaux_XC34035 - Merle noir - Turdus merula07" ID="{3CE82D96-C60D-4DBC-BB94-F104F729DFDD}" ShortID="953755661">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Parc_Ambiance_Nature_Oiseaux_XC34035 - Merle noir - Turdus merula07" ID="{4925D8ED-F751-45EC-A304-5C398BD58F60}">
+											<Language>SFX</Language>
+											<AudioFile>Parc_Ambiance_Nature_Oiseaux_XC34035 - Merle noir - Turdus merula07.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="798063889"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Parc_Ambiance_Nature_Oiseaux_XC34035 - Merle noir - Turdus merula07" ID="{4925D8ED-F751-45EC-A304-5C398BD58F60}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Parc_Ambiance_Nature_Oiseaux_XC34035 - Merle noir - Turdus merula08" ID="{86837FD8-0DD4-4700-AC3E-80C95C0B0DA6}" ShortID="142614472">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Parc_Ambiance_Nature_Oiseaux_XC34035 - Merle noir - Turdus merula08" ID="{68EE5638-513D-41AC-8631-89784FAE5BCC}">
+											<Language>SFX</Language>
+											<AudioFile>Parc_Ambiance_Nature_Oiseaux_XC34035 - Merle noir - Turdus merula08.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="104098878"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Parc_Ambiance_Nature_Oiseaux_XC34035 - Merle noir - Turdus merula08" ID="{68EE5638-513D-41AC-8631-89784FAE5BCC}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Parc_Ambiance_Nature_Oiseaux_XC34035 - Merle noir - Turdus merula09" ID="{5183DF57-8F97-4255-B7A9-972BBF3C13AA}" ShortID="354920231">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Parc_Ambiance_Nature_Oiseaux_XC34035 - Merle noir - Turdus merula09" ID="{FD1F0930-3287-4622-9E66-195E260C899A}">
+											<Language>SFX</Language>
+											<AudioFile>Parc_Ambiance_Nature_Oiseaux_XC34035 - Merle noir - Turdus merula09.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="840595589"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Parc_Ambiance_Nature_Oiseaux_XC34035 - Merle noir - Turdus merula09" ID="{FD1F0930-3287-4622-9E66-195E260C899A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Parc_Ambiance_Nature_Oiseaux_XC34035 - Merle noir - Turdus merula10" ID="{BCEB95CC-284F-4D97-8F30-25C259CCD2F1}" ShortID="215656604">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Parc_Ambiance_Nature_Oiseaux_XC34035 - Merle noir - Turdus merula10" ID="{6040EA34-69B2-4DBF-A3DE-0A10E6C273C2}">
+											<Language>SFX</Language>
+											<AudioFile>Parc_Ambiance_Nature_Oiseaux_XC34035 - Merle noir - Turdus merula10.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="404032392"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Parc_Ambiance_Nature_Oiseaux_XC34035 - Merle noir - Turdus merula10" ID="{6040EA34-69B2-4DBF-A3DE-0A10E6C273C2}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Parc_Ambiance_Nature_Oiseaux_XC34035 - Merle noir - Turdus merula11" ID="{44BFAAEF-3DD2-4F9E-A2D1-5391744C774B}" ShortID="516081178">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Parc_Ambiance_Nature_Oiseaux_XC34035 - Merle noir - Turdus merula11" ID="{CF76DEF2-1DF5-4068-AC62-BA616DAC9974}">
+											<Language>SFX</Language>
+											<AudioFile>Parc_Ambiance_Nature_Oiseaux_XC34035 - Merle noir - Turdus merula11.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="542641399"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Parc_Ambiance_Nature_Oiseaux_XC34035 - Merle noir - Turdus merula11" ID="{CF76DEF2-1DF5-4068-AC62-BA616DAC9974}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Parc_Ambiance_Nature_Oiseaux_XC34035 - Merle noir - Turdus merula12" ID="{B34FE4B9-83C7-4774-8D81-4ECEEAAF5E75}" ShortID="479956386">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Parc_Ambiance_Nature_Oiseaux_XC34035 - Merle noir - Turdus merula12" ID="{1A6B8AE7-12FE-48A1-B97C-1B59E6656FCD}">
+											<Language>SFX</Language>
+											<AudioFile>Parc_Ambiance_Nature_Oiseaux_XC34035 - Merle noir - Turdus merula12.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="89772251"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Parc_Ambiance_Nature_Oiseaux_XC34035 - Merle noir - Turdus merula12" ID="{1A6B8AE7-12FE-48A1-B97C-1B59E6656FCD}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Parc_Ambiance_Nature_Oiseaux_XC34035 - Merle noir - Turdus merula13" ID="{C1044601-0310-47E2-B4BF-873B21617F0A}" ShortID="168013805">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Parc_Ambiance_Nature_Oiseaux_XC34035 - Merle noir - Turdus merula13" ID="{A0CC3D6B-42E1-4681-862E-7EC06317D98B}">
+											<Language>SFX</Language>
+											<AudioFile>Parc_Ambiance_Nature_Oiseaux_XC34035 - Merle noir - Turdus merula13.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="354188255"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Parc_Ambiance_Nature_Oiseaux_XC34035 - Merle noir - Turdus merula13" ID="{A0CC3D6B-42E1-4681-862E-7EC06317D98B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Parc_Ambiance_Nature_Oiseaux_XC34035 - Merle noir - Turdus merula14" ID="{B6F581CE-2E01-401D-B64B-6C465709D1C1}" ShortID="655126530">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Parc_Ambiance_Nature_Oiseaux_XC34035 - Merle noir - Turdus merula14" ID="{4D399E80-EF84-4099-86AF-36BE6CD529B5}">
+											<Language>SFX</Language>
+											<AudioFile>Parc_Ambiance_Nature_Oiseaux_XC34035 - Merle noir - Turdus merula14.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="497953852"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Parc_Ambiance_Nature_Oiseaux_XC34035 - Merle noir - Turdus merula14" ID="{4D399E80-EF84-4099-86AF-36BE6CD529B5}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Parc_Ambiance_Nature_Oiseaux_XC34035 - Merle noir - Turdus merula15" ID="{E87A15BB-19F6-4A51-89FF-ECA5BA2FAB9F}" ShortID="460851992">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Parc_Ambiance_Nature_Oiseaux_XC34035 - Merle noir - Turdus merula15" ID="{91592E9F-0AD1-4768-8986-BF04DEBABBD2}">
+											<Language>SFX</Language>
+											<AudioFile>Parc_Ambiance_Nature_Oiseaux_XC34035 - Merle noir - Turdus merula15.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="695150990"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Parc_Ambiance_Nature_Oiseaux_XC34035 - Merle noir - Turdus merula15" ID="{91592E9F-0AD1-4768-8986-BF04DEBABBD2}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Parc_Ambiance_Nature_Oiseaux_XC34035 - Merle noir - Turdus merula-glué04" ID="{7D258B14-C367-45A7-86B3-9C687A61DE99}" ShortID="995584314">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Parc_Ambiance_Nature_Oiseaux_XC34035 - Merle noir - Turdus merula-glué04" ID="{8910B7B8-3EBD-447F-88E8-F27E6B79F9A2}">
+											<Language>SFX</Language>
+											<AudioFile>Parc_Ambiance_Nature_Oiseaux_XC34035 - Merle noir - Turdus merula-glué04.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="531645549"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Parc_Ambiance_Nature_Oiseaux_XC34035 - Merle noir - Turdus merula-glué04" ID="{8910B7B8-3EBD-447F-88E8-F27E6B79F9A2}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<PositioningInfo>
+								<Panner Name="" ID="{3F406B8E-63B8-4A4F-BC89-8D4A29AF36A7}"/>
+								<Position Name="" ID="{C294A916-84F3-4472-960E-D906470C0A00}">
+									<PropertyList>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+									</PropertyList>
+									<ChildrenList>
+										<Path2D Name="Parc_Oiseaux1_Path" ID="{D092C58A-C0EE-4787-843E-2F91151E6D10}">
+											<PropertyList>
+												<Property Name="RandomX" Type="Real64" Value="50"/>
+												<Property Name="RandomY" Type="Real64" Value="50"/>
+											</PropertyList>
+											<PointList>
+												<Point>
+													<XPos>0</XPos>
+													<YPos>0</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+									</ChildrenList>
+								</Position>
+							</PositioningInfo>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Parc_Vent" ID="{AF53DAD7-15E5-4DA3-A016-9FE6C2618527}" ShortID="657998028">
+							<PropertyList>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Parc_Ambiance_Nature_OiseauxetVent01" ID="{A673C646-FF6D-44F5-A5AB-6BAB1C108215}" ShortID="621949811">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Parc_Ambiance_Nature_OiseauxetVent01" ID="{DBD671D4-31A8-45DC-8A15-6043F55546E6}">
+											<Language>SFX</Language>
+											<AudioFile>Parc_Ambiance_Nature_OiseauxetVent01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="611649318"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Parc_Ambiance_Nature_OiseauxetVent01" ID="{DBD671D4-31A8-45DC-8A15-6043F55546E6}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Parc_Jardinier" ID="{98E7C882-CEF8-4E9D-BE3F-CF5CF0599BCF}" ShortID="257909148">
+							<PropertyList>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{4F0158B1-5221-4D41-9788-F902B5509260}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="0.7"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-7</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Parc_Ambiance_Jardinier_01" ID="{C9882F8A-FED7-449A-BF17-D3970123DDB7}" ShortID="234475585">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Parc_Ambiance_Jardinier_01" ID="{6E2D183E-0EFA-45C8-928C-D6F7E8CE1BCA}">
+											<Language>SFX</Language>
+											<AudioFile>Parc_Ambiance_Jardinier_01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="478707704"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Parc_Ambiance_Jardinier_01" ID="{6E2D183E-0EFA-45C8-928C-D6F7E8CE1BCA}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Parc_Ambiance_Jardinier_02" ID="{BAD143FE-168C-443F-804B-004E588601BD}" ShortID="793137533">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Parc_Ambiance_Jardinier_02" ID="{CF1B8161-5614-4CE5-A375-D858D5A79AB5}">
+											<Language>SFX</Language>
+											<AudioFile>Parc_Ambiance_Jardinier_02.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="709836332"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Parc_Ambiance_Jardinier_02" ID="{CF1B8161-5614-4CE5-A375-D858D5A79AB5}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Parc_Ambiance_Jardinier_03" ID="{09279E10-CC87-431C-926D-9F23F6BD43A6}" ShortID="680697753">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Parc_Ambiance_Jardinier_03" ID="{CE9B5899-5A6E-4DEA-88EA-08AAF7DDB34A}">
+											<Language>SFX</Language>
+											<AudioFile>Parc_Ambiance_Jardinier_03.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="384013979"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Parc_Ambiance_Jardinier_03" ID="{CE9B5899-5A6E-4DEA-88EA-08AAF7DDB34A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Parc_Ambiance_Jardinier_04" ID="{07A51A4B-39C7-4F36-9BB7-0B81491646EE}" ShortID="62002227">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Parc_Ambiance_Jardinier_04" ID="{DBCD68C6-24E9-4FAF-B990-94F5C21A896C}">
+											<Language>SFX</Language>
+											<AudioFile>Parc_Ambiance_Jardinier_04.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="341075357"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Parc_Ambiance_Jardinier_04" ID="{DBCD68C6-24E9-4FAF-B990-94F5C21A896C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Parc_Ambiance_Jardinier_05" ID="{6D64BC2F-2200-4122-8C04-329C890C1C69}" ShortID="1829482">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Parc_Ambiance_Jardinier_05" ID="{F2A46FBD-0EC6-46CE-A301-E9DF57DF9689}">
+											<Language>SFX</Language>
+											<AudioFile>Parc_Ambiance_Jardinier_05.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="721306381"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Parc_Ambiance_Jardinier_05" ID="{F2A46FBD-0EC6-46CE-A301-E9DF57DF9689}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Parc_Ambiance_Jardinier_06" ID="{D50ED83B-2FCE-426A-BDCD-1EEBE93AD47F}" ShortID="220518557">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Parc_Ambiance_Jardinier_06" ID="{875964E4-C953-4971-BFD8-A49D60B7E01B}">
+											<Language>SFX</Language>
+											<AudioFile>Parc_Ambiance_Jardinier_06.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="355803660"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Parc_Ambiance_Jardinier_06" ID="{875964E4-C953-4971-BFD8-A49D60B7E01B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Parc_Ambiance_Jardinier_07" ID="{D59CAF19-2111-4CEF-91FB-51E8449D5C56}" ShortID="384122627">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Parc_Ambiance_Jardinier_07" ID="{1C18F12E-FBFB-42A1-ADE1-9CBC28C87556}">
+											<Language>SFX</Language>
+											<AudioFile>Parc_Ambiance_Jardinier_07.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="12202272"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Parc_Ambiance_Jardinier_07" ID="{1C18F12E-FBFB-42A1-ADE1-9CBC28C87556}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Parc_Ambiance_Jardinier_08" ID="{737F18AF-E4A2-4077-BA9D-70EF485F51F4}" ShortID="407490303">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Parc_Ambiance_Jardinier_08" ID="{4AD6BB36-CA62-43FC-BAAC-A448F7255765}">
+											<Language>SFX</Language>
+											<AudioFile>Parc_Ambiance_Jardinier_08.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="42592523"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Parc_Ambiance_Jardinier_08" ID="{4AD6BB36-CA62-43FC-BAAC-A448F7255765}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Parc_Ambiance_Jardinier_09" ID="{6EE5E5F8-B2AC-4D93-B088-476E232BC872}" ShortID="592365904">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Parc_Ambiance_Jardinier_09" ID="{BDEE00A5-59C7-4D54-875A-533628FC9165}">
+											<Language>SFX</Language>
+											<AudioFile>Parc_Ambiance_Jardinier_09.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="93999626"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Parc_Ambiance_Jardinier_09" ID="{BDEE00A5-59C7-4D54-875A-533628FC9165}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Parc_Ambiance_Jardinier_10" ID="{37BD21D9-5324-44DB-B418-20F12A3D7952}" ShortID="336823301">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Parc_Ambiance_Jardinier_10" ID="{5F07FAF3-893E-478C-9F81-43619AB84A18}">
+											<Language>SFX</Language>
+											<AudioFile>Parc_Ambiance_Jardinier_10.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="766700660"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Parc_Ambiance_Jardinier_10" ID="{5F07FAF3-893E-478C-9F81-43619AB84A18}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Parc_Ambiance_Jardinier_11" ID="{A8EB5D18-B0B4-4EF1-92BC-3440ED6C3E48}" ShortID="973697698">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Parc_Ambiance_Jardinier_11" ID="{A9E4C1BB-552F-43CE-86D3-CC6BE022928D}">
+											<Language>SFX</Language>
+											<AudioFile>Parc_Ambiance_Jardinier_11.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="947543685"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Parc_Ambiance_Jardinier_11" ID="{A9E4C1BB-552F-43CE-86D3-CC6BE022928D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Parc_Ambiance_Jardinier_12" ID="{053CA0DB-D9C1-4228-B63A-708A52220D33}" ShortID="491244385">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Parc_Ambiance_Jardinier_12" ID="{63752F14-F7ED-44B2-B7B8-A84BD8B1A744}">
+											<Language>SFX</Language>
+											<AudioFile>Parc_Ambiance_Jardinier_12.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="698803938"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Parc_Ambiance_Jardinier_12" ID="{63752F14-F7ED-44B2-B7B8-A84BD8B1A744}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Parc_Ambiance_Jardinier_13" ID="{1B5AFF0C-8CBE-4E48-A611-1E551B28C3C7}" ShortID="27829704">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Parc_Ambiance_Jardinier_13" ID="{60D051F4-833F-4C2D-9095-23B4CD941C5F}">
+											<Language>SFX</Language>
+											<AudioFile>Parc_Ambiance_Jardinier_13.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="477281463"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Parc_Ambiance_Jardinier_13" ID="{60D051F4-833F-4C2D-9095-23B4CD941C5F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Parc_Ambiance_Jardinier_14" ID="{82433CDF-CD0E-4B68-BBDC-62F21C1744A9}" ShortID="342994479">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Parc_Ambiance_Jardinier_14" ID="{D3324BA3-6C9B-4F94-B6AC-3163BBA814E5}">
+											<Language>SFX</Language>
+											<AudioFile>Parc_Ambiance_Jardinier_14.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="853074864"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Parc_Ambiance_Jardinier_14" ID="{D3324BA3-6C9B-4F94-B6AC-3163BBA814E5}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Parc_Ambiance_Jardinier_15" ID="{A9D47DE3-AC02-4F25-B776-F790FA51CAF8}" ShortID="264249167">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Parc_Ambiance_Jardinier_15" ID="{69113C33-647B-48C7-8734-52A8E6B7769E}">
+											<Language>SFX</Language>
+											<AudioFile>Parc_Ambiance_Jardinier_15.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="292884272"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Parc_Ambiance_Jardinier_15" ID="{69113C33-647B-48C7-8734-52A8E6B7769E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Parc_Ambiance_Jardinier_16" ID="{0AF22E1F-C5A8-460E-B14B-5387C7F486CB}" ShortID="697187574">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Parc_Ambiance_Jardinier_16" ID="{119A8A8F-B0A1-40B1-908D-97AD957055A2}">
+											<Language>SFX</Language>
+											<AudioFile>Parc_Ambiance_Jardinier_16.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="540899539"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Parc_Ambiance_Jardinier_16" ID="{119A8A8F-B0A1-40B1-908D-97AD957055A2}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Parc_Eau_Lac" ID="{233E3AF5-A09D-4877-B3A1-148FDD443D47}" ShortID="352872547">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+								</Reference>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="EQ_Protection" ID="{5A2173EA-4A77-452E-8281-C22E896215E4}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Parc_Ambiance_Nature_EauLac01" ID="{835E6C4A-9E53-4E81-9681-3263E94D8871}" ShortID="145030422">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Parc_Ambiance_Nature_EauLac01" ID="{8F2B649F-E2ED-4864-950A-2ED8C98A37C7}">
+											<PropertyList>
+												<Property Name="CrossfadeDuration" Type="Real64" Value="631.829"/>
+												<Property Name="LoopBegin" Type="Real64" Value="0.514376593056471"/>
+												<Property Name="LoopEnd" Type="Real64" Value="29.5766541007471"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Parc_Ambiance_Nature_EauLac01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="705099394"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Parc_Ambiance_Nature_EauLac01" ID="{8F2B649F-E2ED-4864-950A-2ED8C98A37C7}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<StateInfo>
+								<StatePropertyList>
+									<Property Name="OutputBusVolume"/>
+									<Property Name="UserAuxSendVolume0"/>
+								</StatePropertyList>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="Protection_Oui_Non" ID="{46C8E2FC-DB1E-4729-A3D2-B09D21025B1D}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="Pas_Active" ID="{5E83877F-A92A-4710-AD08-FE400A73AAFC}"/>
+										<CustomState Name="" ID="{A563D8DB-F372-4A5A-A32A-F644B520D0F7}" ShortID="300412107">
+											<PropertyList>
+												<Property Name="UserAuxSendVolume0" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Active" ID="{C1B20394-89CE-4EC1-951E-92C36AF5F893}"/>
+										<CustomState Name="" ID="{D9511C1D-473A-4853-9BD2-6E24C69F2E0C}" ShortID="493976544">
+											<PropertyList>
+												<Property Name="OutputBusVolume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Parc_Oiseaux2" ID="{9885EDB3-662D-4C23-8544-8407A936FAC0}" ShortID="343757259">
+							<PropertyList>
+								<Property Name="3DPosition" Type="int16" Value="2"/>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{8A9FFACA-5963-46A4-8FCE-327CE507787A}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="8"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-5</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<Custom>
+										<Attenuation Name="Attenuation (Custom)" ID="{9223EB4D-0938-48EA-9BC9-976DA40F5C15}" ShortID="233726831">
+											<CurveUsageInfoList>
+												<VolumeDryUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+														<Curve Name="VolumeDry" ID="{09A247DA-B54D-43D9-8D08-5F7890F7181B}">
+															<PropertyList>
+																<Property Name="Flags" Type="int32" Value="3"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>0</XPos>
+																	<YPos>0</YPos>
+																	<Flags>5</Flags>
+																</Point>
+																<Point>
+																	<XPos>100</XPos>
+																	<YPos>-200</YPos>
+																	<Flags>37</Flags>
+																</Point>
+															</PointList>
+														</Curve>
+													</CurveUsageInfo>
+												</VolumeDryUsage>
+												<VolumeWetGameUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+												</VolumeWetGameUsage>
+												<VolumeWetUserUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+												</VolumeWetUserUsage>
+												<LowPassFilterUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</LowPassFilterUsage>
+												<HighPassFilterUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</HighPassFilterUsage>
+												<SpreadUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</SpreadUsage>
+												<FocusUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</FocusUsage>
+											</CurveUsageInfoList>
+										</Attenuation>
+									</Custom>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Parc_Ambiance_Nature_Oiseaux_XC113132 - Apalis de Roberts - Oreophilais robertsi16" ID="{0859348C-B8EB-4EE9-8B7D-AEEE5A25CE0D}" ShortID="240190508">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Parc_Ambiance_Nature_Oiseaux_XC113132 - Apalis de Roberts - Oreophilais robertsi16" ID="{3FD3A359-C51D-4AD5-93B2-86D282871E1C}">
+											<Language>SFX</Language>
+											<AudioFile>Parc_Ambiance_Nature_Oiseaux_XC113132 - Apalis de Roberts - Oreophilais robertsi16.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="880334313"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Parc_Ambiance_Nature_Oiseaux_XC113132 - Apalis de Roberts - Oreophilais robertsi16" ID="{3FD3A359-C51D-4AD5-93B2-86D282871E1C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Parc_Ambiance_Nature_Oiseaux_XC113132 - Apalis de Roberts - Oreophilais robertsi17" ID="{A21FF386-5443-46F2-BE6A-E87B2114411D}" ShortID="577607671">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Parc_Ambiance_Nature_Oiseaux_XC113132 - Apalis de Roberts - Oreophilais robertsi17" ID="{30FE648C-8D9B-49C1-945D-4B4FA588CE42}">
+											<Language>SFX</Language>
+											<AudioFile>Parc_Ambiance_Nature_Oiseaux_XC113132 - Apalis de Roberts - Oreophilais robertsi17.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1006444249"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Parc_Ambiance_Nature_Oiseaux_XC113132 - Apalis de Roberts - Oreophilais robertsi17" ID="{30FE648C-8D9B-49C1-945D-4B4FA588CE42}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Parc_Ambiance_Nature_Oiseaux_XC520115 - Merle noir - Turdus merula61" ID="{81B67022-901A-4284-85DF-4A423BF1BC23}" ShortID="264147851">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Parc_Ambiance_Nature_Oiseaux_XC520115 - Merle noir - Turdus merula61" ID="{84771349-06B0-44F0-86BD-6778BAE0D58E}">
+											<Language>SFX</Language>
+											<AudioFile>Parc_Ambiance_Nature_Oiseaux_XC520115 - Merle noir - Turdus merula61.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="704343457"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Parc_Ambiance_Nature_Oiseaux_XC520115 - Merle noir - Turdus merula61" ID="{84771349-06B0-44F0-86BD-6778BAE0D58E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Parc_Ambiance_Nature_Oiseaux_XC520115 - Merle noir - Turdus merula62" ID="{3654B9B3-BFA2-429F-9D0D-0332E2D3278A}" ShortID="726940763">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Parc_Ambiance_Nature_Oiseaux_XC520115 - Merle noir - Turdus merula62" ID="{F50D8C7B-98AC-4963-952B-DBBB477615AC}">
+											<Language>SFX</Language>
+											<AudioFile>Parc_Ambiance_Nature_Oiseaux_XC520115 - Merle noir - Turdus merula62.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="121249294"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Parc_Ambiance_Nature_Oiseaux_XC520115 - Merle noir - Turdus merula62" ID="{F50D8C7B-98AC-4963-952B-DBBB477615AC}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Parc_Ambiance_Nature_Oiseaux_XC520115 - Merle noir - Turdus merula63" ID="{A185E7C7-D73C-4B29-B214-D191DAFFBD98}" ShortID="185281123">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Parc_Ambiance_Nature_Oiseaux_XC520115 - Merle noir - Turdus merula63" ID="{77EA969A-3267-49ED-A1E3-B61F9056849F}">
+											<Language>SFX</Language>
+											<AudioFile>Parc_Ambiance_Nature_Oiseaux_XC520115 - Merle noir - Turdus merula63.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="230104036"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Parc_Ambiance_Nature_Oiseaux_XC520115 - Merle noir - Turdus merula63" ID="{77EA969A-3267-49ED-A1E3-B61F9056849F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Parc_Ambiance_Nature_Oiseaux_XC520115 - Merle noir - Turdus merula64" ID="{8773BD3A-5C48-45F3-A911-2B07CAC4E0A3}" ShortID="758944546">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Parc_Ambiance_Nature_Oiseaux_XC520115 - Merle noir - Turdus merula64" ID="{FC411A17-FA9D-4120-8CB1-43F4D4A9166C}">
+											<Language>SFX</Language>
+											<AudioFile>Parc_Ambiance_Nature_Oiseaux_XC520115 - Merle noir - Turdus merula64.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="511603571"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Parc_Ambiance_Nature_Oiseaux_XC520115 - Merle noir - Turdus merula64" ID="{FC411A17-FA9D-4120-8CB1-43F4D4A9166C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Parc_Ambiance_Nature_Oiseaux_XC520115 - Merle noir - Turdus merula65" ID="{41E98CD5-0D66-4E53-8E5A-107965BC5BDB}" ShortID="403121465">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Parc_Ambiance_Nature_Oiseaux_XC520115 - Merle noir - Turdus merula65" ID="{7887117B-507C-497F-8E89-F63C3B1ACE81}">
+											<Language>SFX</Language>
+											<AudioFile>Parc_Ambiance_Nature_Oiseaux_XC520115 - Merle noir - Turdus merula65.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="706557377"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Parc_Ambiance_Nature_Oiseaux_XC520115 - Merle noir - Turdus merula65" ID="{7887117B-507C-497F-8E89-F63C3B1ACE81}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Parc_Ambiance_Nature_Oiseaux_XC520115 - Merle noir - Turdus merula66" ID="{B5973423-0ECD-4768-AE75-2DBD2780FDBB}" ShortID="258651518">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Parc_Ambiance_Nature_Oiseaux_XC520115 - Merle noir - Turdus merula66" ID="{5471A403-E2FB-4AED-A2B8-34E903996AAF}">
+											<Language>SFX</Language>
+											<AudioFile>Parc_Ambiance_Nature_Oiseaux_XC520115 - Merle noir - Turdus merula66.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="765861156"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Parc_Ambiance_Nature_Oiseaux_XC520115 - Merle noir - Turdus merula66" ID="{5471A403-E2FB-4AED-A2B8-34E903996AAF}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Parc_Ambiance_Nature_Oiseaux_XC520115 - Merle noir - Turdus merula67" ID="{1D3A68DD-A2D5-43CA-8CAC-D1D423D42968}" ShortID="917160032">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Parc_Ambiance_Nature_Oiseaux_XC520115 - Merle noir - Turdus merula67" ID="{A4D3AD50-ABEF-4A03-86EC-FC51FF3EDE58}">
+											<Language>SFX</Language>
+											<AudioFile>Parc_Ambiance_Nature_Oiseaux_XC520115 - Merle noir - Turdus merula67.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="574030282"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Parc_Ambiance_Nature_Oiseaux_XC520115 - Merle noir - Turdus merula67" ID="{A4D3AD50-ABEF-4A03-86EC-FC51FF3EDE58}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Parc_Ambiance_Nature_Oiseaux_XC520115 - Merle noir - Turdus merula68" ID="{FE98C99D-F138-4852-9AD3-3DB0A2239A37}" ShortID="604647373">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Parc_Ambiance_Nature_Oiseaux_XC520115 - Merle noir - Turdus merula68" ID="{8BBC44F8-97E2-4334-9126-DC4F261F51F1}">
+											<Language>SFX</Language>
+											<AudioFile>Parc_Ambiance_Nature_Oiseaux_XC520115 - Merle noir - Turdus merula68.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="982914376"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Parc_Ambiance_Nature_Oiseaux_XC520115 - Merle noir - Turdus merula68" ID="{8BBC44F8-97E2-4334-9126-DC4F261F51F1}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Parc_Ambiance_Nature_Oiseaux_XC520115 - Merle noir - Turdus merula69" ID="{2B857FC5-D62A-45B4-AB31-EAB10DAE69FD}" ShortID="553957411">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Parc_Ambiance_Nature_Oiseaux_XC520115 - Merle noir - Turdus merula69" ID="{8819BC43-E2AF-4C53-8C44-F33122CF8111}">
+											<Language>SFX</Language>
+											<AudioFile>Parc_Ambiance_Nature_Oiseaux_XC520115 - Merle noir - Turdus merula69.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="73671752"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Parc_Ambiance_Nature_Oiseaux_XC520115 - Merle noir - Turdus merula69" ID="{8819BC43-E2AF-4C53-8C44-F33122CF8111}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Parc_Ambiance_Nature_Oiseaux_XC520115 - Merle noir - Turdus merula70" ID="{0EF1974B-73DA-4B96-8148-E40B3ECD0FD5}" ShortID="11450675">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Parc_Ambiance_Nature_Oiseaux_XC520115 - Merle noir - Turdus merula70" ID="{02A8D504-5A8A-4E29-844D-94B1881893AD}">
+											<Language>SFX</Language>
+											<AudioFile>Parc_Ambiance_Nature_Oiseaux_XC520115 - Merle noir - Turdus merula70.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="601975509"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Parc_Ambiance_Nature_Oiseaux_XC520115 - Merle noir - Turdus merula70" ID="{02A8D504-5A8A-4E29-844D-94B1881893AD}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Parc_Ambiance_Nature_Oiseaux_XC520115 - Merle noir - Turdus merula71" ID="{9F25809A-21B7-45A5-ACBF-C775E98518EA}" ShortID="134489090">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Parc_Ambiance_Nature_Oiseaux_XC520115 - Merle noir - Turdus merula71" ID="{E2938C8A-0587-4B18-A3B5-060C4D007A3A}">
+											<Language>SFX</Language>
+											<AudioFile>Parc_Ambiance_Nature_Oiseaux_XC520115 - Merle noir - Turdus merula71.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="319023704"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Parc_Ambiance_Nature_Oiseaux_XC520115 - Merle noir - Turdus merula71" ID="{E2938C8A-0587-4B18-A3B5-060C4D007A3A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Parc_Ambiance_Nature_Oiseaux_XC520115 - Merle noir - Turdus merula72" ID="{DF5BB448-F040-4E57-8074-6E99020337C7}" ShortID="855283218">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Parc_Ambiance_Nature_Oiseaux_XC520115 - Merle noir - Turdus merula72" ID="{CDB1D9B3-EE23-4D9E-B9B3-88832061B09B}">
+											<Language>SFX</Language>
+											<AudioFile>Parc_Ambiance_Nature_Oiseaux_XC520115 - Merle noir - Turdus merula72.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="320324587"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Parc_Ambiance_Nature_Oiseaux_XC520115 - Merle noir - Turdus merula72" ID="{CDB1D9B3-EE23-4D9E-B9B3-88832061B09B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Parc_Ambiance_Nature_Oiseaux_XC520115 - Merle noir - Turdus merula73" ID="{FF4E2CEC-E23D-4FE8-97E5-EC995C6FE4EC}" ShortID="471062556">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Parc_Ambiance_Nature_Oiseaux_XC520115 - Merle noir - Turdus merula73" ID="{53380A02-0622-4488-9EBF-93D09E2C11E5}">
+											<Language>SFX</Language>
+											<AudioFile>Parc_Ambiance_Nature_Oiseaux_XC520115 - Merle noir - Turdus merula73.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="6807920"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Parc_Ambiance_Nature_Oiseaux_XC520115 - Merle noir - Turdus merula73" ID="{53380A02-0622-4488-9EBF-93D09E2C11E5}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Parc_Ambiance_Nature_Oiseaux_XC520115 - Merle noir - Turdus merula74" ID="{5D8F625B-F84C-4E1A-A1F4-BC958250C085}" ShortID="34297359">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Parc_Ambiance_Nature_Oiseaux_XC520115 - Merle noir - Turdus merula74" ID="{735FC3B3-A096-4D02-92F8-32E7BE85AC9D}">
+											<Language>SFX</Language>
+											<AudioFile>Parc_Ambiance_Nature_Oiseaux_XC520115 - Merle noir - Turdus merula74.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="314937739"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Parc_Ambiance_Nature_Oiseaux_XC520115 - Merle noir - Turdus merula74" ID="{735FC3B3-A096-4D02-92F8-32E7BE85AC9D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Parc_Ambiance_Nature_Oiseaux_XC520115 - Merle noir - Turdus merula75" ID="{3D96AFE1-8CF9-4A5C-98B6-DBE152356684}" ShortID="538576629">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Parc_Ambiance_Nature_Oiseaux_XC520115 - Merle noir - Turdus merula75" ID="{2EF7864B-7852-4DA7-AD5B-3CDF5F2CCF5A}">
+											<Language>SFX</Language>
+											<AudioFile>Parc_Ambiance_Nature_Oiseaux_XC520115 - Merle noir - Turdus merula75.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="19860633"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Parc_Ambiance_Nature_Oiseaux_XC520115 - Merle noir - Turdus merula75" ID="{2EF7864B-7852-4DA7-AD5B-3CDF5F2CCF5A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Parc_Ambiance_Nature_Oiseaux_XC520115 - Merle noir - Turdus merula76" ID="{0EAA1C18-3643-4D22-BC7C-7EE86351D42A}" ShortID="697377486">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Parc_Ambiance_Nature_Oiseaux_XC520115 - Merle noir - Turdus merula76" ID="{96A7C1C8-2B2F-4A09-B18F-F21C81095734}">
+											<Language>SFX</Language>
+											<AudioFile>Parc_Ambiance_Nature_Oiseaux_XC520115 - Merle noir - Turdus merula76.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="886426689"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Parc_Ambiance_Nature_Oiseaux_XC520115 - Merle noir - Turdus merula76" ID="{96A7C1C8-2B2F-4A09-B18F-F21C81095734}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Parc_Ambiance_Nature_Oiseaux_XC520115 - Merle noir - Turdus merula77" ID="{F9D6194A-CAAD-4A32-9D9A-2EDE7D5515E7}" ShortID="281464809">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Parc_Ambiance_Nature_Oiseaux_XC520115 - Merle noir - Turdus merula77" ID="{B7D70F2E-F9E6-45FD-8E3B-C5EA29D7451F}">
+											<Language>SFX</Language>
+											<AudioFile>Parc_Ambiance_Nature_Oiseaux_XC520115 - Merle noir - Turdus merula77.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="309108208"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Parc_Ambiance_Nature_Oiseaux_XC520115 - Merle noir - Turdus merula77" ID="{B7D70F2E-F9E6-45FD-8E3B-C5EA29D7451F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Parc_Ambiance_Nature_Oiseaux_XC520115 - Merle noir - Turdus merula78" ID="{00504778-6F26-4ACD-98AE-EEC2F16C6616}" ShortID="138289642">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Parc_Ambiance_Nature_Oiseaux_XC520115 - Merle noir - Turdus merula78" ID="{B6F0CA78-895A-4463-B988-715C96232804}">
+											<Language>SFX</Language>
+											<AudioFile>Parc_Ambiance_Nature_Oiseaux_XC520115 - Merle noir - Turdus merula78.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="575434382"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Parc_Ambiance_Nature_Oiseaux_XC520115 - Merle noir - Turdus merula78" ID="{B6F0CA78-895A-4463-B988-715C96232804}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<PositioningInfo>
+								<Position Name="" ID="{B3E176A1-72FF-47F3-9D94-62D60577D566}">
+									<ChildrenList>
+										<Path2D Name="Parc_Oiseaux1_Path" ID="{56829652-EEDF-46B0-9BD7-5FB9048820C7}">
+											<PropertyList>
+												<Property Name="RandomX" Type="Real64" Value="50"/>
+												<Property Name="RandomY" Type="Real64" Value="50"/>
+											</PropertyList>
+											<PointList>
+												<Point>
+													<XPos>0</XPos>
+													<YPos>50</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+									</ChildrenList>
+								</Position>
+							</PositioningInfo>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Parc_Oiseaux3" ID="{E6EBF856-29C2-4753-92EF-92D1EB6F4680}" ShortID="1036086954">
+							<PropertyList>
+								<Property Name="3DPosition" Type="int16" Value="2"/>
+								<Property Name="InitialDelay" Type="Real64">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{DD0130CB-83A4-46E2-8DB2-5BAFB1AF4B9A}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="7"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-5</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<Custom>
+										<Attenuation Name="Attenuation (Custom)" ID="{6754B70A-647C-44E4-839B-54CA199F3987}" ShortID="312005802">
+											<CurveUsageInfoList>
+												<VolumeDryUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+														<Curve Name="VolumeDry" ID="{DD5F6B4F-0BDC-4DBE-951E-AD70A284734F}">
+															<PropertyList>
+																<Property Name="Flags" Type="int32" Value="3"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>0</XPos>
+																	<YPos>0</YPos>
+																	<Flags>5</Flags>
+																</Point>
+																<Point>
+																	<XPos>100</XPos>
+																	<YPos>-200</YPos>
+																	<Flags>37</Flags>
+																</Point>
+															</PointList>
+														</Curve>
+													</CurveUsageInfo>
+												</VolumeDryUsage>
+												<VolumeWetGameUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+												</VolumeWetGameUsage>
+												<VolumeWetUserUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+												</VolumeWetUserUsage>
+												<LowPassFilterUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</LowPassFilterUsage>
+												<HighPassFilterUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</HighPassFilterUsage>
+												<SpreadUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</SpreadUsage>
+												<FocusUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</FocusUsage>
+											</CurveUsageInfoList>
+										</Attenuation>
+									</Custom>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Parc_Ambiance_Oiseaux_XC562593 - Verdier d’Europe - Chloris chloris-001" ID="{7C64DDEF-A276-44B7-8F78-95605ED9FBB5}" ShortID="177664360">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Parc_Ambiance_Oiseaux_XC562593 - Verdier d’Europe - Chloris chloris-001" ID="{1B17B499-2B59-475F-9EF8-13B3814956F9}">
+											<Language>SFX</Language>
+											<AudioFile>Parc_Ambiance_Oiseaux_XC562593 - Verdier d’Europe - Chloris chloris-001.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="576136785"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Parc_Ambiance_Oiseaux_XC562593 - Verdier d’Europe - Chloris chloris-001" ID="{1B17B499-2B59-475F-9EF8-13B3814956F9}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Parc_Ambiance_Oiseaux_XC562593 - Verdier d’Europe - Chloris chloris-002" ID="{F8CA35AE-4935-455A-AE12-A25A0307BC9B}" ShortID="235348754">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Parc_Ambiance_Oiseaux_XC562593 - Verdier d’Europe - Chloris chloris-002" ID="{CCE50806-95A0-4C70-B650-CD13DF6B452B}">
+											<Language>SFX</Language>
+											<AudioFile>Parc_Ambiance_Oiseaux_XC562593 - Verdier d’Europe - Chloris chloris-002.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="124469513"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Parc_Ambiance_Oiseaux_XC562593 - Verdier d’Europe - Chloris chloris-002" ID="{CCE50806-95A0-4C70-B650-CD13DF6B452B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Parc_Ambiance_Oiseaux_XC562593 - Verdier d’Europe - Chloris chloris-003" ID="{C1449012-B9B1-4207-955D-C6A6DB089256}" ShortID="177677066">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Parc_Ambiance_Oiseaux_XC562593 - Verdier d’Europe - Chloris chloris-003" ID="{9EA2000C-C9DA-4972-85B9-39EF3439A094}">
+											<Language>SFX</Language>
+											<AudioFile>Parc_Ambiance_Oiseaux_XC562593 - Verdier d’Europe - Chloris chloris-003.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="942519783"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Parc_Ambiance_Oiseaux_XC562593 - Verdier d’Europe - Chloris chloris-003" ID="{9EA2000C-C9DA-4972-85B9-39EF3439A094}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Parc_Ambiance_Oiseaux_XC562593 - Verdier d’Europe - Chloris chloris-004" ID="{D5BF719B-69B6-4D3D-9021-ADF2A629D20D}" ShortID="255196872">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Parc_Ambiance_Oiseaux_XC562593 - Verdier d’Europe - Chloris chloris-004" ID="{F19779F4-DE61-4471-A6F3-804A88211ECD}">
+											<Language>SFX</Language>
+											<AudioFile>Parc_Ambiance_Oiseaux_XC562593 - Verdier d’Europe - Chloris chloris-004.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="345150551"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Parc_Ambiance_Oiseaux_XC562593 - Verdier d’Europe - Chloris chloris-004" ID="{F19779F4-DE61-4471-A6F3-804A88211ECD}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Parc_Ambiance_Oiseaux_XC562593 - Verdier d’Europe - Chloris chloris-005" ID="{F7AFF84A-07D2-40C3-ACE8-1654F1775665}" ShortID="932281469">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Parc_Ambiance_Oiseaux_XC562593 - Verdier d’Europe - Chloris chloris-005" ID="{EADEEDCD-9697-4BB1-9084-03EDBECE2632}">
+											<Language>SFX</Language>
+											<AudioFile>Parc_Ambiance_Oiseaux_XC562593 - Verdier d’Europe - Chloris chloris-005.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="919558197"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Parc_Ambiance_Oiseaux_XC562593 - Verdier d’Europe - Chloris chloris-005" ID="{EADEEDCD-9697-4BB1-9084-03EDBECE2632}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Parc_Ambiance_Oiseaux_XC562593 - Verdier d’Europe - Chloris chloris-006" ID="{5DBFC0F5-E080-420A-AEBC-3226CC29E4F9}" ShortID="1026189706">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Parc_Ambiance_Oiseaux_XC562593 - Verdier d’Europe - Chloris chloris-006" ID="{A4C8CFFE-B471-4737-9FA0-DBE34C5298F5}">
+											<Language>SFX</Language>
+											<AudioFile>Parc_Ambiance_Oiseaux_XC562593 - Verdier d’Europe - Chloris chloris-006.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="332970262"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Parc_Ambiance_Oiseaux_XC562593 - Verdier d’Europe - Chloris chloris-006" ID="{A4C8CFFE-B471-4737-9FA0-DBE34C5298F5}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Parc_Ambiance_Oiseaux_XC565441 - Pinson des arbres - Fringilla coelebs-001" ID="{7D2683C7-5FC1-4F7C-9F5E-609766B17716}" ShortID="731084418">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Parc_Ambiance_Oiseaux_XC565441 - Pinson des arbres - Fringilla coelebs-001" ID="{AF250C0A-101C-4C8B-849C-A9B592223794}">
+											<Language>SFX</Language>
+											<AudioFile>Parc_Ambiance_Oiseaux_XC565441 - Pinson des arbres - Fringilla coelebs-001.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="440969987"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Parc_Ambiance_Oiseaux_XC565441 - Pinson des arbres - Fringilla coelebs-001" ID="{AF250C0A-101C-4C8B-849C-A9B592223794}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Parc_Ambiance_Oiseaux_XC565441 - Pinson des arbres - Fringilla coelebs-002" ID="{297D76B9-96CF-4F9D-A9F2-031058956D45}" ShortID="312543944">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Parc_Ambiance_Oiseaux_XC565441 - Pinson des arbres - Fringilla coelebs-002" ID="{05512741-481B-4182-A2A2-7AE95AC6FF0D}">
+											<Language>SFX</Language>
+											<AudioFile>Parc_Ambiance_Oiseaux_XC565441 - Pinson des arbres - Fringilla coelebs-002.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="225892139"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Parc_Ambiance_Oiseaux_XC565441 - Pinson des arbres - Fringilla coelebs-002" ID="{05512741-481B-4182-A2A2-7AE95AC6FF0D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Parc_Ambiance_Oiseaux_XC565441 - Pinson des arbres - Fringilla coelebs-003" ID="{B540E0CC-D977-45E1-B1FD-D6A0167E9E87}" ShortID="1027296701">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Parc_Ambiance_Oiseaux_XC565441 - Pinson des arbres - Fringilla coelebs-003" ID="{07BF589A-F351-49BC-88C0-F463BF6A7D0F}">
+											<Language>SFX</Language>
+											<AudioFile>Parc_Ambiance_Oiseaux_XC565441 - Pinson des arbres - Fringilla coelebs-003.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="298788375"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Parc_Ambiance_Oiseaux_XC565441 - Pinson des arbres - Fringilla coelebs-003" ID="{07BF589A-F351-49BC-88C0-F463BF6A7D0F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Parc_Ambiance_Oiseaux_XC565441 - Pinson des arbres - Fringilla coelebs-004" ID="{368DE4F6-1428-46B0-B1EE-1795821B1B21}" ShortID="781225938">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Parc_Ambiance_Oiseaux_XC565441 - Pinson des arbres - Fringilla coelebs-004" ID="{22B55694-265B-48B3-BE7A-416A33E0812F}">
+											<Language>SFX</Language>
+											<AudioFile>Parc_Ambiance_Oiseaux_XC565441 - Pinson des arbres - Fringilla coelebs-004.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="242509436"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Parc_Ambiance_Oiseaux_XC565441 - Pinson des arbres - Fringilla coelebs-004" ID="{22B55694-265B-48B3-BE7A-416A33E0812F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Parc_Ambiance_Oiseaux_XC565441 - Pinson des arbres - Fringilla coelebs-005" ID="{8D0E31AC-5D31-43EB-8E0F-B6F63F3DB43F}" ShortID="1054004299">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Parc_Ambiance_Oiseaux_XC565441 - Pinson des arbres - Fringilla coelebs-005" ID="{E0DB7B1D-5459-4FB1-9785-B26BDB39E097}">
+											<Language>SFX</Language>
+											<AudioFile>Parc_Ambiance_Oiseaux_XC565441 - Pinson des arbres - Fringilla coelebs-005.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="567618586"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Parc_Ambiance_Oiseaux_XC565441 - Pinson des arbres - Fringilla coelebs-005" ID="{E0DB7B1D-5459-4FB1-9785-B26BDB39E097}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Parc_Ambiance_Oiseaux_XC565441 - Pinson des arbres - Fringilla coelebs-006" ID="{E2F7E3A8-493B-4C14-8D15-B7566267CA30}" ShortID="998372367">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Parc_Ambiance_Oiseaux_XC565441 - Pinson des arbres - Fringilla coelebs-006" ID="{460D48FB-766C-4E48-9DBB-633C958254A5}">
+											<Language>SFX</Language>
+											<AudioFile>Parc_Ambiance_Oiseaux_XC565441 - Pinson des arbres - Fringilla coelebs-006.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="164081265"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Parc_Ambiance_Oiseaux_XC565441 - Pinson des arbres - Fringilla coelebs-006" ID="{460D48FB-766C-4E48-9DBB-633C958254A5}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Parc_Ambiance_Oiseaux_XC565441 - Pinson des arbres - Fringilla coelebs-007" ID="{D5AD7CB1-F027-4C03-AC92-543AE5A7A50F}" ShortID="701327522">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Parc_Ambiance_Oiseaux_XC565441 - Pinson des arbres - Fringilla coelebs-007" ID="{5752B903-4210-4493-9774-6BFC6E9FBD56}">
+											<Language>SFX</Language>
+											<AudioFile>Parc_Ambiance_Oiseaux_XC565441 - Pinson des arbres - Fringilla coelebs-007.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1055659434"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Parc_Ambiance_Oiseaux_XC565441 - Pinson des arbres - Fringilla coelebs-007" ID="{5752B903-4210-4493-9774-6BFC6E9FBD56}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<PositioningInfo>
+								<Position Name="" ID="{65152688-09DC-4328-9A5B-497DF827D9A7}">
+									<ChildrenList>
+										<Path2D Name="Parc_Oiseaux1_Path" ID="{AE29A231-34E0-4D9C-9A69-3D34F7316574}">
+											<PropertyList>
+												<Property Name="RandomX" Type="Real64" Value="50"/>
+												<Property Name="RandomY" Type="Real64" Value="50"/>
+											</PropertyList>
+											<PointList>
+												<Point>
+													<XPos>0</XPos>
+													<YPos>0</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+									</ChildrenList>
+								</Position>
+							</PositioningInfo>
+						</RandomSequenceContainer>
+					</ChildrenList>
+					<StateInfo>
+						<StatePropertyList>
+							<Property Name="OutputBusVolume"/>
+							<Property Name="UserAuxSendVolume0"/>
+						</StatePropertyList>
+						<StateGroupList>
+							<StateGroupInfo>
+								<StateGroupRef Name="Protection_Oui_Non" ID="{46C8E2FC-DB1E-4729-A3D2-B09D21025B1D}"/>
+							</StateGroupInfo>
+						</StateGroupList>
+						<CustomStateList>
+							<CustomState>
+								<StateRef Name="Pas_Active" ID="{5E83877F-A92A-4710-AD08-FE400A73AAFC}"/>
+								<CustomState Name="" ID="{B425E812-2253-4C68-B652-EA2EBFC7299E}" ShortID="662404909">
+									<PropertyList>
+										<Property Name="UserAuxSendVolume0" Type="Real64" Value="-108"/>
+									</PropertyList>
+								</CustomState>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Active" ID="{C1B20394-89CE-4EC1-951E-92C36AF5F893}"/>
+								<CustomState Name="" ID="{EAB580C1-36D2-4369-98B2-483E077B26CB}" ShortID="932523941">
+									<PropertyList>
+										<Property Name="OutputBusVolume" Type="Real64" Value="-20"/>
+									</PropertyList>
+								</CustomState>
+							</CustomState>
+						</CustomStateList>
+					</StateInfo>
+				</ActorMixer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{5CA3354F-DAF8-4AA3-87C4-683190286603}" SchemaVersion="97">
+	<Events>
+		<WorkUnit Name="Music" ID="{5CA3354F-DAF8-4AA3-87C4-683190286603}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_Music_Main_Title" ID="{D7B912B2-7228-427F-8486-8F9F537B030E}">
+					<ChildrenList>
+						<Action Name="" ID="{5E651BEE-AC7B-43B6-86B4-085BD27CC988}" ShortID="358924666">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="1.5"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music_Menu" ID="{936B9095-0283-4BCE-AF79-807F62B13C7E}" WorkUnitID="{5DEF3F0A-8D66-4DAA-9620-6917B0822159}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{03753868-C055-4362-97A7-E64468D1A981}" ShortID="266999723">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music_Main_Title" ID="{105B29AE-971A-420D-9973-4772AD7D3D83}" WorkUnitID="{5DEF3F0A-8D66-4DAA-9620-6917B0822159}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{F805B799-7BD2-4855-B913-BA15078BDDFE}" ShortID="559043243">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="1.5"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music_Cinematique" ID="{D7DE5FA1-AC53-4A8E-BDB6-90760D287C90}" WorkUnitID="{5DEF3F0A-8D66-4DAA-9620-6917B0822159}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Music_Menu" ID="{1209BCC7-16E4-403A-A1A8-21D24501CDD2}">
+					<ChildrenList>
+						<Action Name="" ID="{9A635FC9-C219-424E-9C42-3A56AE128FDB}" ShortID="186228975">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="1.5"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music_Main_Title" ID="{105B29AE-971A-420D-9973-4772AD7D3D83}" WorkUnitID="{5DEF3F0A-8D66-4DAA-9620-6917B0822159}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{3A99B8E8-4B8D-4D30-9CC1-C215CB6D1217}" ShortID="598288577">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="1.5"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music_Menu" ID="{936B9095-0283-4BCE-AF79-807F62B13C7E}" WorkUnitID="{5DEF3F0A-8D66-4DAA-9620-6917B0822159}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Music_Main_Title" ID="{DDE9ABB1-FF70-4A2D-A842-C933ADFC0CDD}">
+					<ChildrenList>
+						<Action Name="" ID="{53B5A1DE-4E89-410D-8B92-09B3A513EAC2}" ShortID="427569044">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="5"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music_Main_Title" ID="{105B29AE-971A-420D-9973-4772AD7D3D83}" WorkUnitID="{5DEF3F0A-8D66-4DAA-9620-6917B0822159}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Music_Menu" ID="{EBE80329-DD0B-4975-93E4-353E3F2E1AF3}">
+					<ChildrenList>
+						<Action Name="" ID="{E116AE2E-9E58-463E-81D3-68DEF0264954}" ShortID="866711039">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music_Menu" ID="{936B9095-0283-4BCE-AF79-807F62B13C7E}" WorkUnitID="{5DEF3F0A-8D66-4DAA-9620-6917B0822159}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Music_Safe_Zone_Home" ID="{8FFEBC28-6EC1-4844-9D74-9D67483D12A0}">
+					<ChildrenList>
+						<Action Name="" ID="{33680F5F-E30A-4930-A268-459DF7BB4A83}" ShortID="67854360">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music_Safe_Zone_Home" ID="{CC95DF91-F346-4CD7-8A56-5979D8BB965A}" WorkUnitID="{5DEF3F0A-8D66-4DAA-9620-6917B0822159}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Music_Credit" ID="{948AB985-2717-4FDC-9F1B-CC66C0EB95FD}">
+					<ChildrenList>
+						<Action Name="" ID="{E4C1234D-682B-4011-A546-F5F9E848771E}" ShortID="974116717">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music_Credit" ID="{BF9D4702-5F01-4F7C-A8B8-0B16DC7C1908}" WorkUnitID="{5DEF3F0A-8D66-4DAA-9620-6917B0822159}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Music_Safe_Zone_Ville" ID="{C37B8005-1395-4CAE-B827-865BAE9EC4F2}">
+					<ChildrenList>
+						<Action Name="" ID="{67CD0C80-E477-432C-B650-760EC76CFF6E}" ShortID="1004364767">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music_Safe_Zone_Ville" ID="{68596C30-FC61-41E0-B3A9-2253C2559DB9}" WorkUnitID="{5DEF3F0A-8D66-4DAA-9620-6917B0822159}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Music_Safe_Zone_Parc" ID="{127223D2-21B1-469B-886C-F82C914636B8}">
+					<ChildrenList>
+						<Action Name="" ID="{2DD1E77A-DCF9-4283-B0AB-25856C9330CA}" ShortID="23781901">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music_Safe_Zone_Parc" ID="{9C7A6987-0AD4-4F92-8CED-CB3EA9334D85}" WorkUnitID="{5DEF3F0A-8D66-4DAA-9620-6917B0822159}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Music_Credit" ID="{6A4E890F-0E76-4320-9D71-8AC05E121439}">
+					<ChildrenList>
+						<Action Name="" ID="{84253544-2268-4AC0-82E4-6A30E1ABD902}" ShortID="149579328">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music_Credit" ID="{BF9D4702-5F01-4F7C-A8B8-0B16DC7C1908}" WorkUnitID="{5DEF3F0A-8D66-4DAA-9620-6917B0822159}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Music_Safe_Zone_Home" ID="{7A5C3F69-818B-4400-8855-7D9208387196}">
+					<ChildrenList>
+						<Action Name="" ID="{9BB2478E-4D04-4854-A812-3C6FE1086226}" ShortID="960830171">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music_Safe_Zone_Home" ID="{CC95DF91-F346-4CD7-8A56-5979D8BB965A}" WorkUnitID="{5DEF3F0A-8D66-4DAA-9620-6917B0822159}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Music_Safe_Zone_Parc" ID="{ED1B7943-3AC5-4247-B5F5-4FF42430BFC3}">
+					<ChildrenList>
+						<Action Name="" ID="{CEEA924F-7E75-4D62-B036-6C25A68B4DBA}" ShortID="938436771">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="1.5"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music_Safe_Zone_Parc" ID="{9C7A6987-0AD4-4F92-8CED-CB3EA9334D85}" WorkUnitID="{5DEF3F0A-8D66-4DAA-9620-6917B0822159}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Music_Safe_Zone_Ville" ID="{3021AD87-B656-40AD-B87C-E84C14C9A0CB}">
+					<ChildrenList>
+						<Action Name="" ID="{4CD09844-1415-49E5-99AB-A88C139098D1}" ShortID="763573518">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="1.5"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music_Safe_Zone_Ville" ID="{68596C30-FC61-41E0-B3A9-2253C2559DB9}" WorkUnitID="{5DEF3F0A-8D66-4DAA-9620-6917B0822159}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Music_Cinematique" ID="{4D31D979-6690-4915-AD5B-84445738BFB2}">
+					<ChildrenList>
+						<Action Name="" ID="{445219AE-1663-4608-9CC4-402F8291AB77}" ShortID="995046909">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music_Cinematique" ID="{D7DE5FA1-AC53-4A8E-BDB6-90760D287C90}" WorkUnitID="{5DEF3F0A-8D66-4DAA-9620-6917B0822159}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Music_Cinematique" ID="{DD91C7C2-CB42-46A3-8E4A-D9BAC970CECB}">
+					<ChildrenList>
+						<Action Name="" ID="{D122A353-8379-486B-9B84-CFA850F0DD5E}" ShortID="596841049">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music_Cinematique" ID="{D7DE5FA1-AC53-4A8E-BDB6-90760D287C90}" WorkUnitID="{5DEF3F0A-8D66-4DAA-9620-6917B0822159}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

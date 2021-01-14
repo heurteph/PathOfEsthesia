@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{7F10554C-0464-4066-B435-F392D93B7294}" SchemaVersion="97">
+	<Events>
+		<WorkUnit Name="Menu" ID="{7F10554C-0464-4066-B435-F392D93B7294}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_Survol" ID="{1AC2FB10-33A0-4D9F-A96A-B159A7AFAF40}">
+					<ChildrenList>
+						<Action Name="" ID="{F79F3676-78DC-4C15-925B-90630BCE9313}" ShortID="47801781">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Survol" ID="{E54E1584-5D86-4790-83F8-F8CE93D37599}" WorkUnitID="{6BF7D0B7-08E9-40ED-8BCD-DF5CAE27D6D6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Clic_Selection" ID="{231E6910-2D92-4F18-9005-83C0F89E57E7}">
+					<ChildrenList>
+						<Action Name="" ID="{BA95CBEC-1733-4998-B155-6D32721B034B}" ShortID="386538328">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Clic_Selection" ID="{446B25CB-ABDD-449B-90B7-17CF491806C5}" WorkUnitID="{6BF7D0B7-08E9-40ED-8BCD-DF5CAE27D6D6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Survol" ID="{88112E3D-11FB-4219-809B-A3804587FC77}">
+					<ChildrenList>
+						<Action Name="" ID="{ABCFA95A-BC44-4F19-8424-BEA8B7391C23}" ShortID="982382583">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Survol" ID="{E54E1584-5D86-4790-83F8-F8CE93D37599}" WorkUnitID="{6BF7D0B7-08E9-40ED-8BCD-DF5CAE27D6D6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Clic_Selection" ID="{663CA54B-14BD-4944-89C0-96FD30DA4E03}">
+					<ChildrenList>
+						<Action Name="" ID="{093B5178-678F-4800-B2EA-CDBC4F6854EE}" ShortID="76347187">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Clic_Selection" ID="{446B25CB-ABDD-449B-90B7-17CF491806C5}" WorkUnitID="{6BF7D0B7-08E9-40ED-8BCD-DF5CAE27D6D6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{7B2974C2-FF36-4DBB-8FF4-02D85011CEE8}" ShortID="241200484">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Texte_Anim_Particule" ID="{1F6EBC0D-49E8-40D8-9C47-B6564B6FAF73}" WorkUnitID="{6BF7D0B7-08E9-40ED-8BCD-DF5CAE27D6D6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Texte_Anim_Particule" ID="{62F65EC4-3A59-4515-87D9-F20CA4EDCBFD}">
+					<ChildrenList>
+						<Action Name="" ID="{F2492713-55DF-4335-8317-22112E59D0E1}" ShortID="683879277">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Texte_Anim_Particule" ID="{1F6EBC0D-49E8-40D8-9C47-B6564B6FAF73}" WorkUnitID="{6BF7D0B7-08E9-40ED-8BCD-DF5CAE27D6D6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Texte_Anim_Particule" ID="{E0B3990C-2ACA-4D9C-AE69-6BF2D9E83FF7}">
+					<ChildrenList>
+						<Action Name="" ID="{0A001064-7C69-4106-A315-2EFF259BC5EF}" ShortID="97094955">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Texte_Anim_Particule" ID="{1F6EBC0D-49E8-40D8-9C47-B6564B6FAF73}" WorkUnitID="{6BF7D0B7-08E9-40ED-8BCD-DF5CAE27D6D6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Clavier_Assignation" ID="{6170A23C-F405-4F58-A4AB-8A33A0708FD4}">
+					<ChildrenList>
+						<Action Name="" ID="{BF07C2D6-94B9-4936-8C63-514398AF70D0}" ShortID="630952735">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Clavier_Assignation" ID="{8548B17F-6E19-4912-A07A-57914453BF82}" WorkUnitID="{6BF7D0B7-08E9-40ED-8BCD-DF5CAE27D6D6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Clavier_Suppression" ID="{C4056799-25D7-4E46-8D3D-C984C9E97FE4}">
+					<ChildrenList>
+						<Action Name="" ID="{4506ABCA-7B1B-427F-AD54-EBBCFA2FEAD1}" ShortID="604865915">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Clavier_Suppression" ID="{9119734B-DB8A-4FEE-945C-E6E236F3FA70}" WorkUnitID="{6BF7D0B7-08E9-40ED-8BCD-DF5CAE27D6D6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Clavier_Assignation" ID="{00C9CAD5-856B-4EFF-9BA9-78BF3D89D85F}">
+					<ChildrenList>
+						<Action Name="" ID="{6C8FA6D1-3B8F-480F-B5AE-E5B5787F1472}" ShortID="400057317">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Clavier_Assignation" ID="{8548B17F-6E19-4912-A07A-57914453BF82}" WorkUnitID="{6BF7D0B7-08E9-40ED-8BCD-DF5CAE27D6D6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Clavier_Suppression" ID="{29065C60-8D80-45CC-B61E-7ACF1BD7F429}">
+					<ChildrenList>
+						<Action Name="" ID="{BBD4AD9E-6920-4576-A434-01D2615D156A}" ShortID="1026257448">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Clavier_Suppression" ID="{9119734B-DB8A-4FEE-945C-E6E236F3FA70}" WorkUnitID="{6BF7D0B7-08E9-40ED-8BCD-DF5CAE27D6D6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

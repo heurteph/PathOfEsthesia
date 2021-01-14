@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{8EAB1BF3-ECF9-4471-AA03-3BB091F70979}" SchemaVersion="97">
+	<AudioObjects>
+		<WorkUnit Name="Cinematique" ID="{8EAB1BF3-ECF9-4471-AA03-3BB091F70979}" PersistMode="Standalone">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="2"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<ActorMixer Name="CinematiqueGlobal" ID="{0E2A448E-19E5-4D10-8E2B-FEDDEF3FF24B}" ShortID="1002450145">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Cinematique_Master" ID="{AFB968BF-4BC2-45F3-9C92-CF5682C62590}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<RandomSequenceContainer Name="Ecriture_Animation_Esthesia" ID="{F1913293-FA36-4716-A6FA-6B090B7CC8E7}" ShortID="835167003">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{FE982A06-27CB-43BD-B036-45659346ED46}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="300"/>
+													<Property Name="Min" Type="Real64" Value="-300"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Cinematic_Ecriture_Anim_-001" ID="{3B89386F-06AC-406A-9D71-FD433EFCA759}" ShortID="76679504">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Cinematic_Ecriture_Anim_-001" ID="{5BA9183D-79D8-409D-8079-F102911930C2}">
+											<Language>SFX</Language>
+											<AudioFile>Cinematic_Ecriture_Anim_-001.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="929848145"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Cinematic_Ecriture_Anim_-001" ID="{5BA9183D-79D8-409D-8079-F102911930C2}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Cinematic_Ecriture_Anim_-002" ID="{B2D42E1E-041A-4256-AFCA-88FFB224A6BB}" ShortID="633742499">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Cinematic_Ecriture_Anim_-002" ID="{00E1DCE2-DA65-40A1-A588-AAFD8F30CD3E}">
+											<Language>SFX</Language>
+											<AudioFile>Cinematic_Ecriture_Anim_-002.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1031672062"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Cinematic_Ecriture_Anim_-002" ID="{00E1DCE2-DA65-40A1-A588-AAFD8F30CD3E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Cinematic_Ecriture_Anim_-003" ID="{D0D22E1F-778E-472E-8CAA-4FB6FD220126}" ShortID="612295171">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Cinematic_Ecriture_Anim_-003" ID="{C973CE2D-B074-4D26-A25C-6379E41CDE9B}">
+											<Language>SFX</Language>
+											<AudioFile>Cinematic_Ecriture_Anim_-003.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="845014992"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Cinematic_Ecriture_Anim_-003" ID="{C973CE2D-B074-4D26-A25C-6379E41CDE9B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Cinematic_Ecriture_Anim_-004" ID="{C6CFEDA1-B089-4E76-A98E-B2CC37D7311E}" ShortID="417086469">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Cinematic_Ecriture_Anim_-004" ID="{F470D3D7-1659-4072-8399-8B593803A490}">
+											<Language>SFX</Language>
+											<AudioFile>Cinematic_Ecriture_Anim_-004.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="278579835"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Cinematic_Ecriture_Anim_-004" ID="{F470D3D7-1659-4072-8399-8B593803A490}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<BlendContainer Name="Touche_Next" ID="{6EC433E7-AF99-4E6C-B4E7-F351E896A9A8}" ShortID="1013424073">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Cinematique_Touche_Next2" ID="{BA27C332-61A0-4E0A-939B-B5AD3A3C12F5}" ShortID="557697285">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Cinematique_Touche_Next2" ID="{452DBA41-1CBC-4EB4-AECB-05FF58E99EB1}">
+											<Language>SFX</Language>
+											<AudioFile>Cinematique_Touche_Next2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="281658015"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Cinematique_Touche_Next2" ID="{452DBA41-1CBC-4EB4-AECB-05FF58E99EB1}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</BlendContainer>
+						<RandomSequenceContainer Name="Ecriture_Animation_Ange" ID="{6BDE5BF0-1237-4AF5-8F7B-A41737FA1CC7}" ShortID="936154769">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>-550</Value>
+									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{A3522DC6-9009-4B22-ABE5-C8B8B14ACF15}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="300"/>
+													<Property Name="Min" Type="Real64" Value="-300"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Cinematique_Master" ID="{AFB968BF-4BC2-45F3-9C92-CF5682C62590}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Cinematic_Ecriture_Anim_-001" ID="{84D6E633-A968-446E-A59F-7B135357B0E9}" ShortID="167543380">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Cinematic_Ecriture_Anim_-001" ID="{BBC5858D-C2C8-484E-A326-45936E493C85}">
+											<Language>SFX</Language>
+											<AudioFile>Cinematic_Ecriture_Anim_-001.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="929848145"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Cinematic_Ecriture_Anim_-001" ID="{BBC5858D-C2C8-484E-A326-45936E493C85}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Cinematic_Ecriture_Anim_-002" ID="{18FE5E6D-7AC3-490D-BF96-E8A51EF0D75C}" ShortID="1051146725">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Cinematic_Ecriture_Anim_-002" ID="{C9AB80FF-1322-4C45-A9E3-E8F57A29F670}">
+											<Language>SFX</Language>
+											<AudioFile>Cinematic_Ecriture_Anim_-002.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1031672062"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Cinematic_Ecriture_Anim_-002" ID="{C9AB80FF-1322-4C45-A9E3-E8F57A29F670}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Cinematic_Ecriture_Anim_-003" ID="{75DAF0E7-5E06-483A-B451-478BC91EA5EF}" ShortID="185440592">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Cinematic_Ecriture_Anim_-003" ID="{2CD274F6-1871-4F29-8DBF-BABB43157F27}">
+											<Language>SFX</Language>
+											<AudioFile>Cinematic_Ecriture_Anim_-003.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="845014992"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Cinematic_Ecriture_Anim_-003" ID="{2CD274F6-1871-4F29-8DBF-BABB43157F27}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Cinematic_Ecriture_Anim_-004" ID="{428961D6-3961-4957-A7AF-D92362EC0A99}" ShortID="600524607">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Cinematic_Ecriture_Anim_-004" ID="{BE606664-803D-4B16-9BE4-710CD9039CB1}">
+											<Language>SFX</Language>
+											<AudioFile>Cinematic_Ecriture_Anim_-004.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="278579835"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Cinematic_Ecriture_Anim_-004" ID="{BE606664-803D-4B16-9BE4-710CD9039CB1}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+					</ChildrenList>
+				</ActorMixer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

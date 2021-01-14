@@ -1,0 +1,1895 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c77c895130b2afa4fa5f5b53485f3303, type: 3}
+  m_Name: AkWwiseProjectData
+  m_EditorClassIdentifier: 
+  AcousticTextureWwu:
+  - PhysicalPath: Virtual Acoustics\Default Work Unit.wwu
+    ParentPath: Default Work Unit
+    guid: bfae619cb436474a8467d7be176f4bba
+    GuidInternal: 
+    m_lastTime: -8586094530551494313
+    List: []
+  AuxBusWwu:
+  - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
+    ParentPath: Default Work Unit
+    guid: 55c08963ebf4ed4eaf540e8933e2460a
+    GuidInternal: 
+    m_lastTime: -8586094440187116589
+    List:
+    - name: EQ_Protection
+      guid: ea73215a774a2e458281c22e896215e4
+      id: 3971758071
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: NiveauEcoutePerso
+        ObjectType: 2
+      - ElementName: MixPROTECTION
+        ObjectType: 2
+      - ElementName: EQ_Protection
+        ObjectType: 1
+      Path: Default Work Unit\NiveauEcoutePerso\MixPROTECTION\EQ_Protection
+    - name: Master Audio Bus
+      guid: d8a41415a61d2a41a17e75ca0c2149f3
+      id: 3803692087
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      Path: Default Work Unit\Master Audio Bus
+    - name: Mix REVERB
+      guid: 4e764d40bf40e741aedc123650cf2ebf
+      id: 3296604463
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: NiveauEcoutePerso
+        ObjectType: 2
+      - ElementName: Mix REVERB
+        ObjectType: 2
+      Path: Default Work Unit\NiveauEcoutePerso\Mix REVERB
+    - name: MixEcoutePerso
+      guid: c90b4397dceeaa4b90c149425009782d
+      id: 2093609463
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: NiveauEcoutePerso
+        ObjectType: 2
+      - ElementName: MixEcoutePerso
+        ObjectType: 1
+      Path: Default Work Unit\NiveauEcoutePerso\MixEcoutePerso
+    - name: MixMusic
+      guid: f7037e6eb057cd478a3be2f9e7a42e98
+      id: 2111362598
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: NiveauEcoutePerso
+        ObjectType: 2
+      - ElementName: MixMusic
+        ObjectType: 2
+      Path: Default Work Unit\NiveauEcoutePerso\MixMusic
+    - name: MixPROTECTION
+      guid: 72625334a99ad1468dc5a23eb5af7505
+      id: 2740603104
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: NiveauEcoutePerso
+        ObjectType: 2
+      - ElementName: MixPROTECTION
+        ObjectType: 2
+      Path: Default Work Unit\NiveauEcoutePerso\MixPROTECTION
+    - name: NiveauEcoutePerso
+      guid: fafdd9a4de2b2944bf042ea53793e583
+      id: 2734641465
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: NiveauEcoutePerso
+        ObjectType: 2
+      Path: Default Work Unit\NiveauEcoutePerso
+    - name: Reverb_Lieu_Repos
+      guid: b6870c75db70f74189df6704cedfeacc
+      id: 3204322453
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: NiveauEcoutePerso
+        ObjectType: 2
+      - ElementName: Mix REVERB
+        ObjectType: 2
+      - ElementName: Reverb_Lieu_Repos
+        ObjectType: 1
+      Path: Default Work Unit\NiveauEcoutePerso\Mix REVERB\Reverb_Lieu_Repos
+  - PhysicalPath: Master-Mixer Hierarchy\Environnement.wwu
+    ParentPath: Environnement
+    guid: 4261e1d471dcf2489773c38ff7f21e94
+    GuidInternal: 
+    m_lastTime: -8586094526577185442
+    List:
+    - name: Commerce_Envi_Master
+      guid: 1fcc46a2a779f548b361c6b15abd9ce8
+      id: 3729418630
+      PathAndIcons:
+      - ElementName: Environnement
+        ObjectType: 12
+      - ElementName: Commerce_Envi_Master
+        ObjectType: 2
+      Path: Environnement\Commerce_Envi_Master
+    - name: Parc_Envi_Master
+      guid: 6dd36f3b38f6e94b9286b8f46dd470c0
+      id: 351745915
+      PathAndIcons:
+      - ElementName: Environnement
+        ObjectType: 12
+      - ElementName: Parc_Envi_Master
+        ObjectType: 2
+      Path: Environnement\Parc_Envi_Master
+    - name: Ville_Envi_Master
+      guid: 380e86f12909834b9b6ecec81bbb8a53
+      id: 3757400157
+      PathAndIcons:
+      - ElementName: Environnement
+        ObjectType: 12
+      - ElementName: Ville_Envi_Master
+        ObjectType: 2
+      Path: Environnement\Ville_Envi_Master
+  - PhysicalPath: Master-Mixer Hierarchy\Obstacles.wwu
+    ParentPath: Obstacles
+    guid: 64fed4707e568b49b7eaf267b96bb740
+    GuidInternal: 
+    m_lastTime: -8586094526577175471
+    List:
+    - name: Commerce_Obstacles_Master
+      guid: c8d44c21acafbc429d0b8258c53725a3
+      id: 3416674296
+      PathAndIcons:
+      - ElementName: Obstacles
+        ObjectType: 12
+      - ElementName: Commerce_Obstacles_Master
+        ObjectType: 2
+      Path: Obstacles\Commerce_Obstacles_Master
+    - name: Parc_Obstacles_Master
+      guid: 317d1b4fc0385d45b5f11706648f7b26
+      id: 1797562303
+      PathAndIcons:
+      - ElementName: Obstacles
+        ObjectType: 12
+      - ElementName: Parc_Obstacles_Master
+        ObjectType: 2
+      Path: Obstacles\Parc_Obstacles_Master
+    - name: Ville_Obstacles_Master
+      guid: 9f3c005e8f9f704d93c33aa1ff01cda8
+      id: 2278553081
+      PathAndIcons:
+      - ElementName: Obstacles
+        ObjectType: 12
+      - ElementName: Ville_Obstacles_Master
+        ObjectType: 2
+      Path: Obstacles\Ville_Obstacles_Master
+  - PhysicalPath: Master-Mixer Hierarchy\Personnage.wwu
+    ParentPath: Personnage
+    guid: c5038b2eabb73047ac19bd49d2d89a85
+    GuidInternal: 
+    m_lastTime: -8586094526577175471
+    List:
+    - name: NPCMaster
+      guid: be87efc5b90832419465421d07734bca
+      id: 2033911932
+      PathAndIcons:
+      - ElementName: Personnage
+        ObjectType: 12
+      - ElementName: NPCMaster
+        ObjectType: 2
+      Path: Personnage\NPCMaster
+    - name: PersoMaster
+      guid: 7121887088f10f49bb20d05554da0579
+      id: 386419066
+      PathAndIcons:
+      - ElementName: Personnage
+        ObjectType: 12
+      - ElementName: PersoMaster
+        ObjectType: 2
+      Path: Personnage\PersoMaster
+  BankWwu:
+  - PhysicalPath: SoundBanks\Default Work Unit.wwu
+    ParentPath: Default Work Unit
+    guid: 51b2e5ab54f2fb449027af1aef485829
+    GuidInternal: 
+    m_lastTime: -8586094526553323038
+    List:
+    - name: SoundBankPC
+      guid: ffc44cfdc8e9984f967c7de95a1b83c7
+      id: 3163481603
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SoundBankPC
+        ObjectType: 7
+      Path: Default Work Unit\SoundBankPC
+  EventWwu:
+  - PhysicalPath: Events\Commercial_Ambiance.wwu
+    ParentPath: Commercial_Ambiance
+    guid: 2dd47259b4c2b342974ccc34517058c6
+    GuidInternal: 
+    m_lastTime: -8586094526577285180
+    List: []
+  - PhysicalPath: Events\Commercial_Obstacles.wwu
+    ParentPath: Commercial_Obstacles
+    guid: 1ba1b556a2e01f4ab9825b1d1a9aec2c
+    GuidInternal: 
+    m_lastTime: -8586094526577265226
+    List:
+    - name: Play_Messages_Radio
+      guid: 4475785f91dfdd449a8e14a151b25bf0
+      id: 3366277958
+      PathAndIcons:
+      - ElementName: Commercial_Obstacles
+        ObjectType: 12
+      - ElementName: Play_Messages_Radio
+        ObjectType: 3
+      Path: Commercial_Obstacles\Play_Messages_Radio
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Portes_Close
+      guid: 8dfc7ac167716b4c8e73fca26733a8c6
+      id: 11904902
+      PathAndIcons:
+      - ElementName: Commercial_Obstacles
+        ObjectType: 12
+      - ElementName: Play_Portes_Close
+        ObjectType: 3
+      Path: Commercial_Obstacles\Play_Portes_Close
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Portes_Grande
+      guid: c0fb7d6fa9a03a4b87283a16bc76ae00
+      id: 540531537
+      PathAndIcons:
+      - ElementName: Commercial_Obstacles
+        ObjectType: 12
+      - ElementName: Play_Portes_Grande
+        ObjectType: 3
+      Path: Commercial_Obstacles\Play_Portes_Grande
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Portes_Open
+      guid: 36bf8d6fc9cdb549926f27daf62d41cf
+      id: 2755465042
+      PathAndIcons:
+      - ElementName: Commercial_Obstacles
+        ObjectType: 12
+      - ElementName: Play_Portes_Open
+        ObjectType: 3
+      Path: Commercial_Obstacles\Play_Portes_Open
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Stop_Messages_Radio
+      guid: 1e0c0724c030154e9d79512a91e2ef6f
+      id: 4004627752
+      PathAndIcons:
+      - ElementName: Commercial_Obstacles
+        ObjectType: 12
+      - ElementName: Stop_Messages_Radio
+        ObjectType: 3
+      Path: Commercial_Obstacles\Stop_Messages_Radio
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Stop_Portes_Close
+      guid: 7a09e67ebcfe1f48949b3e6d3edcce8f
+      id: 394956184
+      PathAndIcons:
+      - ElementName: Commercial_Obstacles
+        ObjectType: 12
+      - ElementName: Stop_Portes_Close
+        ObjectType: 3
+      Path: Commercial_Obstacles\Stop_Portes_Close
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Stop_Portes_Grande
+      guid: bf15d18f4af61b4e87961ac287ada3b6
+      id: 3373826511
+      PathAndIcons:
+      - ElementName: Commercial_Obstacles
+        ObjectType: 12
+      - ElementName: Stop_Portes_Grande
+        ObjectType: 3
+      Path: Commercial_Obstacles\Stop_Portes_Grande
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Stop_Portes_Open
+      guid: 37dac9109ecd6b4381fb2a8aef9288fa
+      id: 2216609116
+      PathAndIcons:
+      - ElementName: Commercial_Obstacles
+        ObjectType: 12
+      - ElementName: Stop_Portes_Open
+        ObjectType: 3
+      Path: Commercial_Obstacles\Stop_Portes_Open
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+  - PhysicalPath: Events\Default Work Unit.wwu
+    ParentPath: Default Work Unit
+    guid: 1ba5e65ede0c2b4296ab0e8ce8879b3e
+    GuidInternal: 
+    m_lastTime: -8586094526577255251
+    List:
+    - name: Stop_All
+      guid: bd897af0a859a04c9023368fe46d8f5f
+      id: 452547817
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Stop_All
+        ObjectType: 3
+      Path: Default Work Unit\Stop_All
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+  - PhysicalPath: Events\Music.wwu
+    ParentPath: Music
+    guid: 4f35a35cf8daa34a87c4683190286603
+    GuidInternal: 
+    m_lastTime: -8586094526577255251
+    List:
+    - name: Play_Music_Credit
+      guid: 85b98a941727dc4f9f1bcc66c0eb95fd
+      id: 2851404393
+      PathAndIcons:
+      - ElementName: Music
+        ObjectType: 12
+      - ElementName: Play_Music_Credit
+        ObjectType: 3
+      Path: Music\Play_Music_Credit
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Music_Main_Title
+      guid: b212b9d728727f4284868f9f537b030e
+      id: 3783189458
+      PathAndIcons:
+      - ElementName: Music
+        ObjectType: 12
+      - ElementName: Play_Music_Main_Title
+        ObjectType: 3
+      Path: Music\Play_Music_Main_Title
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Music_Menu
+      guid: c7bc0912e4163a40a1a821d24501cdd2
+      id: 1699343283
+      PathAndIcons:
+      - ElementName: Music
+        ObjectType: 12
+      - ElementName: Play_Music_Menu
+        ObjectType: 3
+      Path: Music\Play_Music_Menu
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Music_Safe_Zone_Home
+      guid: 28bcfe8fc16e44489d749d67483d12a0
+      id: 283912148
+      PathAndIcons:
+      - ElementName: Music
+        ObjectType: 12
+      - ElementName: Play_Music_Safe_Zone_Home
+        ObjectType: 3
+      Path: Music\Play_Music_Safe_Zone_Home
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Music_Safe_Zone_Parc
+      guid: d2237212b1219b46886cf82c914636b8
+      id: 4079445273
+      PathAndIcons:
+      - ElementName: Music
+        ObjectType: 12
+      - ElementName: Play_Music_Safe_Zone_Parc
+        ObjectType: 3
+      Path: Music\Play_Music_Safe_Zone_Parc
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Music_Safe_Zone_Ville
+      guid: 05807bc39513ae4cb827865bae9ec4f2
+      id: 3326642619
+      PathAndIcons:
+      - ElementName: Music
+        ObjectType: 12
+      - ElementName: Play_Music_Safe_Zone_Ville
+        ObjectType: 3
+      Path: Music\Play_Music_Safe_Zone_Ville
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Stop_Music_Credit
+      guid: 0f894e6a760e20439d718ac05e121439
+      id: 3425086499
+      PathAndIcons:
+      - ElementName: Music
+        ObjectType: 12
+      - ElementName: Stop_Music_Credit
+        ObjectType: 3
+      Path: Music\Stop_Music_Credit
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Stop_Music_Main_Title
+      guid: b1abe9dd70ff2d4aa842c933adfc0cdd
+      id: 3194051996
+      PathAndIcons:
+      - ElementName: Music
+        ObjectType: 12
+      - ElementName: Stop_Music_Main_Title
+        ObjectType: 3
+      Path: Music\Stop_Music_Main_Title
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Stop_Music_Menu
+      guid: 2903e8eb0bdd754993e4353e3f2e1af3
+      id: 106912753
+      PathAndIcons:
+      - ElementName: Music
+        ObjectType: 12
+      - ElementName: Stop_Music_Menu
+        ObjectType: 3
+      Path: Music\Stop_Music_Menu
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Stop_Music_Safe_Zone_Home
+      guid: 693f5c7a8b81004488557d9208387196
+      id: 2216282302
+      PathAndIcons:
+      - ElementName: Music
+        ObjectType: 12
+      - ElementName: Stop_Music_Safe_Zone_Home
+        ObjectType: 3
+      Path: Music\Stop_Music_Safe_Zone_Home
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Stop_Music_Safe_Zone_Parc
+      guid: 43791bedc53a4742b5f54ff42430bfc3
+      id: 3084927191
+      PathAndIcons:
+      - ElementName: Music
+        ObjectType: 12
+      - ElementName: Stop_Music_Safe_Zone_Parc
+        ObjectType: 3
+      Path: Music\Stop_Music_Safe_Zone_Parc
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Stop_Music_Safe_Zone_Ville
+      guid: 87ad213056b6ad40b87ce84c14c9a0cb
+      id: 566110305
+      PathAndIcons:
+      - ElementName: Music
+        ObjectType: 12
+      - ElementName: Stop_Music_Safe_Zone_Ville
+        ObjectType: 3
+      Path: Music\Stop_Music_Safe_Zone_Ville
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+  - PhysicalPath: Events\NPC.wwu
+    ParentPath: NPC
+    guid: 201dc14e02bf31408312358025308cea
+    GuidInternal: 
+    m_lastTime: -8586094526577255251
+    List:
+    - name: Play_NPC_Texture_Pas
+      guid: 153b4a7bddb9a940be1c552e7b8f94f6
+      id: 2180014058
+      PathAndIcons:
+      - ElementName: NPC
+        ObjectType: 12
+      - ElementName: Play_NPC_Texture_Pas
+        ObjectType: 3
+      Path: NPC\Play_NPC_Texture_Pas
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Qui_es_tu
+      guid: dca1ccc7a0b931458ea6b5af60791bff
+      id: 1995250790
+      PathAndIcons:
+      - ElementName: NPC
+        ObjectType: 12
+      - ElementName: Play_Qui_es_tu
+        ObjectType: 3
+      Path: NPC\Play_Qui_es_tu
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Stop_NPC_Texture_Pas
+      guid: ed510eaf9cc69e468920ddd1058f1051
+      id: 1509195260
+      PathAndIcons:
+      - ElementName: NPC
+        ObjectType: 12
+      - ElementName: Stop_NPC_Texture_Pas
+        ObjectType: 3
+      Path: NPC\Stop_NPC_Texture_Pas
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Stop_Qui_es_tu
+      guid: c133527acf58cc43b2e05bd9bb15791b
+      id: 90390924
+      PathAndIcons:
+      - ElementName: NPC
+        ObjectType: 12
+      - ElementName: Stop_Qui_es_tu
+        ObjectType: 3
+      Path: NPC\Stop_Qui_es_tu
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+  - PhysicalPath: Events\Parc_Ambiance.wwu
+    ParentPath: Parc_Ambiance
+    guid: e1864a5a164dae40b85975b7f157855b
+    GuidInternal: 
+    m_lastTime: -8586094526577245279
+    List:
+    - name: Play_Parc_Eau_Lac
+      guid: c98102f966481242bccd0bdb9db6dc35
+      id: 865874921
+      PathAndIcons:
+      - ElementName: Parc_Ambiance
+        ObjectType: 12
+      - ElementName: Play_Parc_Eau_Lac
+        ObjectType: 3
+      Path: Parc_Ambiance\Play_Parc_Eau_Lac
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Parc_Insectes
+      guid: 5987b9af0a293049b5a8274e5184fce6
+      id: 2727595513
+      PathAndIcons:
+      - ElementName: Parc_Ambiance
+        ObjectType: 12
+      - ElementName: Play_Parc_Insectes
+        ObjectType: 3
+      Path: Parc_Ambiance\Play_Parc_Insectes
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Parc_Oiseaux1
+      guid: 51c50d8ec35a654e97e06fbfa6636f5d
+      id: 3725651506
+      PathAndIcons:
+      - ElementName: Parc_Ambiance
+        ObjectType: 12
+      - ElementName: Play_Parc_Oiseaux1
+        ObjectType: 3
+      Path: Parc_Ambiance\Play_Parc_Oiseaux1
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Parc_Oiseaux2
+      guid: 5237e367a7fec4419d7bdfac17d87f2d
+      id: 3725651505
+      PathAndIcons:
+      - ElementName: Parc_Ambiance
+        ObjectType: 12
+      - ElementName: Play_Parc_Oiseaux2
+        ObjectType: 3
+      Path: Parc_Ambiance\Play_Parc_Oiseaux2
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Parc_Oiseaux3
+      guid: 3f7de32ff6370143b0a8235e75135ca8
+      id: 3725651504
+      PathAndIcons:
+      - ElementName: Parc_Ambiance
+        ObjectType: 12
+      - ElementName: Play_Parc_Oiseaux3
+        ObjectType: 3
+      Path: Parc_Ambiance\Play_Parc_Oiseaux3
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Parc_Vent
+      guid: 73f67888211f4c4abb932860edb44a08
+      id: 4135899644
+      PathAndIcons:
+      - ElementName: Parc_Ambiance
+        ObjectType: 12
+      - ElementName: Play_Parc_Vent
+        ObjectType: 3
+      Path: Parc_Ambiance\Play_Parc_Vent
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Stop_Parc_Eau_Lac
+      guid: dbcdde28f68c9e46a30a4b5d52d851bc
+      id: 3189001139
+      PathAndIcons:
+      - ElementName: Parc_Ambiance
+        ObjectType: 12
+      - ElementName: Stop_Parc_Eau_Lac
+        ObjectType: 3
+      Path: Parc_Ambiance\Stop_Parc_Eau_Lac
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Stop_Parc_Oiseaux1
+      guid: b70bc32ed3a1144c8697896e57f3a5ce
+      id: 152275144
+      PathAndIcons:
+      - ElementName: Parc_Ambiance
+        ObjectType: 12
+      - ElementName: Stop_Parc_Oiseaux1
+        ObjectType: 3
+      Path: Parc_Ambiance\Stop_Parc_Oiseaux1
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Stop_Parc_Oiseaux2
+      guid: ee232cdddf23ce4095a3f93d0ace5dab
+      id: 152275147
+      PathAndIcons:
+      - ElementName: Parc_Ambiance
+        ObjectType: 12
+      - ElementName: Stop_Parc_Oiseaux2
+        ObjectType: 3
+      Path: Parc_Ambiance\Stop_Parc_Oiseaux2
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Stop_Parc_Oiseaux3
+      guid: db0d1e64a302b242982f1ec8cfbd6de9
+      id: 152275146
+      PathAndIcons:
+      - ElementName: Parc_Ambiance
+        ObjectType: 12
+      - ElementName: Stop_Parc_Oiseaux3
+        ObjectType: 3
+      Path: Parc_Ambiance\Stop_Parc_Oiseaux3
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Stop_Parc_Vent
+      guid: 18616b961095ee49b4fdf08c15c3ee98
+      id: 2647100474
+      PathAndIcons:
+      - ElementName: Parc_Ambiance
+        ObjectType: 12
+      - ElementName: Stop_Parc_Vent
+        ObjectType: 3
+      Path: Parc_Ambiance\Stop_Parc_Vent
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+  - PhysicalPath: Events\Parc_Obstacles.wwu
+    ParentPath: Parc_Obstacles
+    guid: b5cbd342aeb6434c861a1ce16a08e9c5
+    GuidInternal: 
+    m_lastTime: -8586094526577235308
+    List:
+    - name: Play_ArrosageAuto
+      guid: bc5f9617c95c2c4eabd0e438f5c208bb
+      id: 3389613819
+      PathAndIcons:
+      - ElementName: Parc_Obstacles
+        ObjectType: 12
+      - ElementName: Play_ArrosageAuto
+        ObjectType: 3
+      Path: Parc_Obstacles\Play_ArrosageAuto
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Branches_Tombent
+      guid: 12098908a035b1408c061e7dc4607c78
+      id: 2412280354
+      PathAndIcons:
+      - ElementName: Parc_Obstacles
+        ObjectType: 12
+      - ElementName: Play_Branches_Tombent
+        ObjectType: 3
+      Path: Parc_Obstacles\Play_Branches_Tombent
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Canard
+      guid: 8a47cade87576247a94394366a18ca83
+      id: 932140571
+      PathAndIcons:
+      - ElementName: Parc_Obstacles
+        ObjectType: 12
+      - ElementName: Play_Canard
+        ObjectType: 3
+      Path: Parc_Obstacles\Play_Canard
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Humain_Mange1
+      guid: c9c2b8a94c8cd24aa254031360fd87b5
+      id: 3446893022
+      PathAndIcons:
+      - ElementName: Parc_Obstacles
+        ObjectType: 12
+      - ElementName: Play_Humain_Mange1
+        ObjectType: 3
+      Path: Parc_Obstacles\Play_Humain_Mange1
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Humain_Mange2
+      guid: 45cf7ebecac952448429e1a50849a3be
+      id: 3446893021
+      PathAndIcons:
+      - ElementName: Parc_Obstacles
+        ObjectType: 12
+      - ElementName: Play_Humain_Mange2
+        ObjectType: 3
+      Path: Parc_Obstacles\Play_Humain_Mange2
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Moteur_Elagueur
+      guid: 229ae8ce5fd45f47891653a8f5e2d20f
+      id: 2314452061
+      PathAndIcons:
+      - ElementName: Parc_Obstacles
+        ObjectType: 12
+      - ElementName: Play_Moteur_Elagueur
+        ObjectType: 3
+      Path: Parc_Obstacles\Play_Moteur_Elagueur
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Moteur_VoitureElec
+      guid: 43d7c601caa21049adb222a47a4d40e8
+      id: 1403256204
+      PathAndIcons:
+      - ElementName: Parc_Obstacles
+        ObjectType: 12
+      - ElementName: Play_Moteur_VoitureElec
+        ObjectType: 3
+      Path: Parc_Obstacles\Play_Moteur_VoitureElec
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Parc_Chien
+      guid: e1dbe53d918bad45b253759aa66ff52f
+      id: 4134052420
+      PathAndIcons:
+      - ElementName: Parc_Obstacles
+        ObjectType: 12
+      - ElementName: Play_Parc_Chien
+        ObjectType: 3
+      Path: Parc_Obstacles\Play_Parc_Chien
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Pleure_B_b_
+      guid: bd98f5980999564f9d301b024a5de5e7
+      id: 4114146970
+      PathAndIcons:
+      - ElementName: Parc_Obstacles
+        ObjectType: 12
+      - ElementName: Play_Pleure_B_b_
+        ObjectType: 3
+      Path: Parc_Obstacles\Play_Pleure_B_b_
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Respiration_JoggueurF
+      guid: 1d2852fc58ea8344a8bb99db0304a86d
+      id: 1582928683
+      PathAndIcons:
+      - ElementName: Parc_Obstacles
+        ObjectType: 12
+      - ElementName: Play_Respiration_JoggueurF
+        ObjectType: 3
+      Path: Parc_Obstacles\Play_Respiration_JoggueurF
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Respiration_JoggueurH
+      guid: fb267b08f902284cb3ca70d29ccc3e97
+      id: 1582928677
+      PathAndIcons:
+      - ElementName: Parc_Obstacles
+        ObjectType: 12
+      - ElementName: Play_Respiration_JoggueurH
+        ObjectType: 3
+      Path: Parc_Obstacles\Play_Respiration_JoggueurH
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Texture_Pas_Jogger
+      guid: 94a611dda25a5640a0fe8d3243a39214
+      id: 482787459
+      PathAndIcons:
+      - ElementName: Parc_Obstacles
+        ObjectType: 12
+      - ElementName: Play_Texture_Pas_Jogger
+        ObjectType: 3
+      Path: Parc_Obstacles\Play_Texture_Pas_Jogger
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Stop_ArrosageAuto
+      guid: adb687bce6fdc04eb333dc0cdfc4554e
+      id: 1056565793
+      PathAndIcons:
+      - ElementName: Parc_Obstacles
+        ObjectType: 12
+      - ElementName: Stop_ArrosageAuto
+        ObjectType: 3
+      Path: Parc_Obstacles\Stop_ArrosageAuto
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Stop_Branches_Tombent
+      guid: 526fdd99eba4794da187f81eab5c95d5
+      id: 3668248268
+      PathAndIcons:
+      - ElementName: Parc_Obstacles
+        ObjectType: 12
+      - ElementName: Stop_Branches_Tombent
+        ObjectType: 3
+      Path: Parc_Obstacles\Stop_Branches_Tombent
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Stop_Canard
+      guid: 15974fe2127e594c95140548dcd9a3bd
+      id: 777875661
+      PathAndIcons:
+      - ElementName: Parc_Obstacles
+        ObjectType: 12
+      - ElementName: Stop_Canard
+        ObjectType: 3
+      Path: Parc_Obstacles\Stop_Canard
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Stop_Moteur_Elagueur
+      guid: 160ce5d6ee7579419d9e0e9a465929d0
+      id: 1194390427
+      PathAndIcons:
+      - ElementName: Parc_Obstacles
+        ObjectType: 12
+      - ElementName: Stop_Moteur_Elagueur
+        ObjectType: 3
+      Path: Parc_Obstacles\Stop_Moteur_Elagueur
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Stop_Parc_Chien
+      guid: df59891d97d4194f94e0adfa6a906a3c
+      id: 2301453854
+      PathAndIcons:
+      - ElementName: Parc_Obstacles
+        ObjectType: 12
+      - ElementName: Stop_Parc_Chien
+        ObjectType: 3
+      Path: Parc_Obstacles\Stop_Parc_Chien
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Stop_Pleure_B_b_
+      guid: eb3a144c08ca7e4887749b711194a589
+      id: 1235857404
+      PathAndIcons:
+      - ElementName: Parc_Obstacles
+        ObjectType: 12
+      - ElementName: Stop_Pleure_B_b_
+        ObjectType: 3
+      Path: Parc_Obstacles\Stop_Pleure_B_b_
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+  - PhysicalPath: Events\Personnage.wwu
+    ParentPath: Personnage
+    guid: bfd80ad29b469443952316d0018cc167
+    GuidInternal: 
+    m_lastTime: -8586094526577245279
+    List:
+    - name: Play_Battement_Coeur
+      guid: 970586b8b1618641aa1240e010738e2f
+      id: 235882589
+      PathAndIcons:
+      - ElementName: Personnage
+        ObjectType: 12
+      - ElementName: Play_Battement_Coeur
+        ObjectType: 3
+      Path: Personnage\Play_Battement_Coeur
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Cris_Tous
+      guid: 95933a7bbb56654db7f84abdca08c855
+      id: 2464503011
+      PathAndIcons:
+      - ElementName: Personnage
+        ObjectType: 12
+      - ElementName: Play_Cris_Tous
+        ObjectType: 3
+      Path: Personnage\Play_Cris_Tous
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Mort
+      guid: 504dd76f2b114941b95beb6a47f3f447
+      id: 1615608444
+      PathAndIcons:
+      - ElementName: Personnage
+        ObjectType: 12
+      - ElementName: Play_Mort
+        ObjectType: 3
+      Path: Personnage\Play_Mort
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Respiration_Mouvement
+      guid: 83f5d593034ef34294e0091378fdf157
+      id: 2860278991
+      PathAndIcons:
+      - ElementName: Personnage
+        ObjectType: 12
+      - ElementName: Play_Respiration_Mouvement
+        ObjectType: 3
+      Path: Personnage\Play_Respiration_Mouvement
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Texture_Pas
+      guid: 1813f5e76c851940bcdba6820df54260
+      id: 1047604054
+      PathAndIcons:
+      - ElementName: Personnage
+        ObjectType: 12
+      - ElementName: Play_Texture_Pas
+        ObjectType: 3
+      Path: Personnage\Play_Texture_Pas
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Stop_Battement_Coeur
+      guid: 6e80ed8f67707649938816ee2d9b25f0
+      id: 383440519
+      PathAndIcons:
+      - ElementName: Personnage
+        ObjectType: 12
+      - ElementName: Stop_Battement_Coeur
+        ObjectType: 3
+      Path: Personnage\Stop_Battement_Coeur
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Stop_Mort
+      guid: f857b7d3ee178347ac615af16f43697f
+      id: 2980414578
+      PathAndIcons:
+      - ElementName: Personnage
+        ObjectType: 12
+      - ElementName: Stop_Mort
+        ObjectType: 3
+      Path: Personnage\Stop_Mort
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+  - PhysicalPath: Events\Ville_Ambiance.wwu
+    ParentPath: Ville_Ambiance
+    guid: 0ea1263885d63c419e399c83424a5080
+    GuidInternal: 
+    m_lastTime: -8586094526577235308
+    List:
+    - name: Play_Pigeon
+      guid: cbaf70397070e1409a66e7bdfcc0f0a7
+      id: 2968327968
+      PathAndIcons:
+      - ElementName: Ville_Ambiance
+        ObjectType: 12
+      - ElementName: Play_Pigeon
+        ObjectType: 3
+      Path: Ville_Ambiance\Play_Pigeon
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Pigeon_Fixe
+      guid: 2bc3b30291f740498cfa7829ad7fd394
+      id: 1479939285
+      PathAndIcons:
+      - ElementName: Ville_Ambiance
+        ObjectType: 12
+      - ElementName: Play_Pigeon_Fixe
+        ObjectType: 3
+      Path: Ville_Ambiance\Play_Pigeon_Fixe
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Stop_Pigeon
+      guid: 44a87f288133cf42b3134d0ae223cf55
+      id: 2048920818
+      PathAndIcons:
+      - ElementName: Ville_Ambiance
+        ObjectType: 12
+      - ElementName: Stop_Pigeon
+        ObjectType: 3
+      Path: Ville_Ambiance\Stop_Pigeon
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Stop_Pigeon_Fixe
+      guid: 5ea36d7bad2d3a4886555188cef607dd
+      id: 2447347043
+      PathAndIcons:
+      - ElementName: Ville_Ambiance
+        ObjectType: 12
+      - ElementName: Stop_Pigeon_Fixe
+        ObjectType: 3
+      Path: Ville_Ambiance\Stop_Pigeon_Fixe
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+  - PhysicalPath: Events\Ville_Obstacles.wwu
+    ParentPath: Ville_Obstacles
+    guid: bd81743292ce45439f23c7e9f3eadd7f
+    GuidInternal: 
+    m_lastTime: -8586094526577225308
+    List:
+    - name: Play_Bus_Door_Close
+      guid: e5bc647bd332884a8255f53a2e914ed3
+      id: 3232482810
+      PathAndIcons:
+      - ElementName: Ville_Obstacles
+        ObjectType: 12
+      - ElementName: Play_Bus_Door_Close
+        ObjectType: 3
+      Path: Ville_Obstacles\Play_Bus_Door_Close
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Bus_Door_Open
+      guid: 3a7dc260f38fb845bb60c4d893c3c876
+      id: 2983975038
+      PathAndIcons:
+      - ElementName: Ville_Obstacles
+        ObjectType: 12
+      - ElementName: Play_Bus_Door_Open
+        ObjectType: 3
+      Path: Ville_Obstacles\Play_Bus_Door_Open
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Climatiseur
+      guid: c915a1b5aeb7b2418dd26974077619b8
+      id: 1692441862
+      PathAndIcons:
+      - ElementName: Ville_Obstacles
+        ObjectType: 12
+      - ElementName: Play_Climatiseur
+        ObjectType: 3
+      Path: Ville_Obstacles\Play_Climatiseur
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Ecole
+      guid: 97d0c5384498574e9495f9a4d81996da
+      id: 1753498456
+      PathAndIcons:
+      - ElementName: Ville_Obstacles
+        ObjectType: 12
+      - ElementName: Play_Ecole
+        ObjectType: 3
+      Path: Ville_Obstacles\Play_Ecole
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Egout
+      guid: 11c4efaba32aff4ca26a3c2be74c7492
+      id: 869276618
+      PathAndIcons:
+      - ElementName: Ville_Obstacles
+        ObjectType: 12
+      - ElementName: Play_Egout
+        ObjectType: 3
+      Path: Ville_Obstacles\Play_Egout
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Electrique_Buzz
+      guid: 0e02995482f00840941d06306155e01e
+      id: 2500875145
+      PathAndIcons:
+      - ElementName: Ville_Obstacles
+        ObjectType: 12
+      - ElementName: Play_Electrique_Buzz
+        ObjectType: 3
+      Path: Ville_Obstacles\Play_Electrique_Buzz
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Horloge
+      guid: 2c3818ed8eaecf43928e1814b312ae1b
+      id: 1086738306
+      PathAndIcons:
+      - ElementName: Ville_Obstacles
+        ObjectType: 12
+      - ElementName: Play_Horloge
+        ObjectType: 3
+      Path: Ville_Obstacles\Play_Horloge
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Klaxons
+      guid: 238880a8ab60ac48b14debd5b3332c0b
+      id: 2894920242
+      PathAndIcons:
+      - ElementName: Ville_Obstacles
+        ObjectType: 12
+      - ElementName: Play_Klaxons
+        ObjectType: 3
+      Path: Ville_Obstacles\Play_Klaxons
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Marteau_Piqueur
+      guid: de36c7f536cc7c45a3eb76a3a5917c6b
+      id: 3516174833
+      PathAndIcons:
+      - ElementName: Ville_Obstacles
+        ObjectType: 12
+      - ElementName: Play_Marteau_Piqueur
+        ObjectType: 3
+      Path: Ville_Obstacles\Play_Marteau_Piqueur
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Music_Appart
+      guid: 2cd06bcbdd5bc3418f911ddba4908587
+      id: 1625096966
+      PathAndIcons:
+      - ElementName: Ville_Obstacles
+        ObjectType: 12
+      - ElementName: Play_Music_Appart
+        ObjectType: 3
+      Path: Ville_Obstacles\Play_Music_Appart
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Quel_Moteur
+      guid: ccd1cd281b476c4796eb4cdadc2f903c
+      id: 3518090694
+      PathAndIcons:
+      - ElementName: Ville_Obstacles
+        ObjectType: 12
+      - ElementName: Play_Quel_Moteur
+        ObjectType: 3
+      Path: Ville_Obstacles\Play_Quel_Moteur
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Restorant
+      guid: 5467dd3087a85b4ea7a693893506322e
+      id: 3628354934
+      PathAndIcons:
+      - ElementName: Ville_Obstacles
+        ObjectType: 12
+      - ElementName: Play_Restorant
+        ObjectType: 3
+      Path: Ville_Obstacles\Play_Restorant
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Sonnette_Magasins
+      guid: 9b9115f18283214280d58493ecdedfed
+      id: 2056330270
+      PathAndIcons:
+      - ElementName: Ville_Obstacles
+        ObjectType: 12
+      - ElementName: Play_Sonnette_Magasins
+        ObjectType: 3
+      Path: Ville_Obstacles\Play_Sonnette_Magasins
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Travaux
+      guid: df6638ea8007e74f878e55e8065b90d2
+      id: 3782749553
+      PathAndIcons:
+      - ElementName: Ville_Obstacles
+        ObjectType: 12
+      - ElementName: Play_Travaux
+        ObjectType: 3
+      Path: Ville_Obstacles\Play_Travaux
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Stop_Climatiseur
+      guid: dbc325fb79dc6e4ea0f54cb06f5cba06
+      id: 1059727820
+      PathAndIcons:
+      - ElementName: Ville_Obstacles
+        ObjectType: 12
+      - ElementName: Stop_Climatiseur
+        ObjectType: 3
+      Path: Ville_Obstacles\Stop_Climatiseur
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Stop_Ecole
+      guid: 54b07ac6ac0d1d43b9bc4a4603134111
+      id: 3267333498
+      PathAndIcons:
+      - ElementName: Ville_Obstacles
+        ObjectType: 12
+      - ElementName: Stop_Ecole
+        ObjectType: 3
+      Path: Ville_Obstacles\Stop_Ecole
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Stop_Egout
+      guid: ed2a43e169271a4a91d95d95b0774bde
+      id: 623032412
+      PathAndIcons:
+      - ElementName: Ville_Obstacles
+        ObjectType: 12
+      - ElementName: Stop_Egout
+        ObjectType: 3
+      Path: Ville_Obstacles\Stop_Egout
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Stop_Electrique_Buzz
+      guid: aaf010477b993744a32c577e0c5e0ae1
+      id: 4256011363
+      PathAndIcons:
+      - ElementName: Ville_Obstacles
+        ObjectType: 12
+      - ElementName: Stop_Electrique_Buzz
+        ObjectType: 3
+      Path: Ville_Obstacles\Stop_Electrique_Buzz
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Stop_Horloge
+      guid: 13eeb62f3d3d094fa578f403686ff87b
+      id: 725970268
+      PathAndIcons:
+      - ElementName: Ville_Obstacles
+        ObjectType: 12
+      - ElementName: Stop_Horloge
+        ObjectType: 3
+      Path: Ville_Obstacles\Stop_Horloge
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Stop_Klaxons
+      guid: f1549b431d25dd4ab0850dd6c632c2d8
+      id: 882878844
+      PathAndIcons:
+      - ElementName: Ville_Obstacles
+        ObjectType: 12
+      - ElementName: Stop_Klaxons
+        ObjectType: 3
+      Path: Ville_Obstacles\Stop_Klaxons
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Stop_Marteau_Piqueur
+      guid: 48586af92e480c4fba2dd580bab8b49c
+      id: 2738893335
+      PathAndIcons:
+      - ElementName: Ville_Obstacles
+        ObjectType: 12
+      - ElementName: Stop_Marteau_Piqueur
+        ObjectType: 3
+      Path: Ville_Obstacles\Stop_Marteau_Piqueur
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Stop_Music_Appart
+      guid: 59625db375dc3445adb09a31877e8380
+      id: 3531521436
+      PathAndIcons:
+      - ElementName: Ville_Obstacles
+        ObjectType: 12
+      - ElementName: Stop_Music_Appart
+        ObjectType: 3
+      Path: Ville_Obstacles\Stop_Music_Appart
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Stop_Quel_Moteur
+      guid: eec3289a197fd64c8075647e48a4cd2a
+      id: 3507864100
+      PathAndIcons:
+      - ElementName: Ville_Obstacles
+        ObjectType: 12
+      - ElementName: Stop_Quel_Moteur
+        ObjectType: 3
+      Path: Ville_Obstacles\Stop_Quel_Moteur
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Stop_Restorant
+      guid: 409b03a4851ca647ac5eb8724a85aa56
+      id: 970688548
+      PathAndIcons:
+      - ElementName: Ville_Obstacles
+        ObjectType: 12
+      - ElementName: Stop_Restorant
+        ObjectType: 3
+      Path: Ville_Obstacles\Stop_Restorant
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Stop_Sonnette_Magasins
+      guid: 7d809e33f4884c44bac6f9328cc2f764
+      id: 3549513284
+      PathAndIcons:
+      - ElementName: Ville_Obstacles
+        ObjectType: 12
+      - ElementName: Stop_Sonnette_Magasins
+        ObjectType: 3
+      Path: Ville_Obstacles\Stop_Sonnette_Magasins
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Stop_Travaux
+      guid: 56ff50adfd2f5442a0190ea0b2441e9e
+      id: 2077251707
+      PathAndIcons:
+      - ElementName: Ville_Obstacles
+        ObjectType: 12
+      - ElementName: Stop_Travaux
+        ObjectType: 3
+      Path: Ville_Obstacles\Stop_Travaux
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+  RtpcWwu:
+  - PhysicalPath: Game Parameters\Default Work Unit.wwu
+    ParentPath: Default Work Unit
+    guid: cd050fb94f016c49b6f0c3fafbfb2412
+    GuidInternal: 
+    m_lastTime: -8586094526577215358
+    List:
+    - name: VolumeEcoutePerso
+      guid: 3d3857a490504b4e92fd35e3cde1d1a7
+      id: 133973669
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: VolumeEcoutePerso
+        ObjectType: 13
+      Path: Default Work Unit\VolumeEcoutePerso
+  - PhysicalPath: Game Parameters\Obstacles.wwu
+    ParentPath: Obstacles
+    guid: d54af4ad67d05749acbfc84aaa6a6255
+    GuidInternal: 
+    m_lastTime: -8586094526577225308
+    List:
+    - name: Quel_Moteur
+      guid: 7bfe3443dd10e44298d0492c5ee9992a
+      id: 2782977595
+      PathAndIcons:
+      - ElementName: Obstacles
+        ObjectType: 12
+      - ElementName: Quel_Moteur
+        ObjectType: 13
+      Path: Obstacles\Quel_Moteur
+    - name: Ralenti_Accelere
+      guid: 5c6ce431dc8d8145b6577283d6f89339
+      id: 731750351
+      PathAndIcons:
+      - ElementName: Obstacles
+        ObjectType: 12
+      - ElementName: Ralenti_Accelere
+        ObjectType: 13
+      Path: Obstacles\Ralenti_Accelere
+    - name: VitesseVehicule
+      guid: 3c2beaa68a7d284e9d3ed50ecd5f059c
+      id: 3154243729
+      PathAndIcons:
+      - ElementName: Obstacles
+        ObjectType: 12
+      - ElementName: VitesseVehicule
+        ObjectType: 13
+      Path: Obstacles\VitesseVehicule
+    - name: VitesseVoitureElec
+      guid: 807de75f1333b54db9e447e4371e86fa
+      id: 428373397
+      PathAndIcons:
+      - ElementName: Obstacles
+        ObjectType: 12
+      - ElementName: VitesseVoitureElec
+        ObjectType: 13
+      Path: Obstacles\VitesseVoitureElec
+  - PhysicalPath: Game Parameters\Personnage.wwu
+    ParentPath: Personnage
+    guid: 0c80f27f3a50c64dadb0dd3696c1e8c4
+    GuidInternal: 
+    m_lastTime: -8586094526577215358
+    List: []
+  StateWwu:
+  - PhysicalPath: States\Default Work Unit.wwu
+    ParentPath: Default Work Unit
+    guid: 960e072224f0c74993e7db783e71d19d
+    GuidInternal: 
+    m_lastTime: -8586094530551514260
+    List: []
+  - PhysicalPath: States\Lieux.wwu
+    ParentPath: Lieux
+    guid: 3673387fe0cf564cabe73948d432c7df
+    GuidInternal: 
+    m_lastTime: -8586094526553303093
+    List:
+    - name: Dans_Lieu_Repos
+      guid: d7ede0e6fb41c6448b078835e10ec1af
+      id: 3986250553
+      PathAndIcons:
+      - ElementName: Lieux
+        ObjectType: 12
+      - ElementName: Dans_Lieu_Repos
+        ObjectType: 9
+      Path: Lieux\Dans_Lieu_Repos
+      values:
+      - name: Non
+        guid: 0e657d7a32dd664697290c34b557b8e2
+        id: 544973834
+        PathAndIcons:
+        - ElementName: Non
+          ObjectType: 8
+      - name: None
+        guid: faf71b2d42c9ef4e84106d5876235852
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: Oui
+        guid: b5871d3b50d0b04fa1736ab9e776b5aa
+        id: 645492566
+        PathAndIcons:
+        - ElementName: Oui
+          ObjectType: 8
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+  - PhysicalPath: States\Protection.wwu
+    ParentPath: Protection
+    guid: 93f2a77a19b4744882e04eee39f58537
+    GuidInternal: 
+    m_lastTime: -8586094526553303093
+    List:
+    - name: Protection_Oui_Non
+      guid: fce2c8461edb2947a3d2b09d21025b1d
+      id: 2773598748
+      PathAndIcons:
+      - ElementName: Protection
+        ObjectType: 12
+      - ElementName: Protection_Oui_Non
+        ObjectType: 9
+      Path: Protection\Protection_Oui_Non
+      values:
+      - name: Active
+        guid: 9403b2c1ce89c14e951e92c36af5f893
+        id: 58138747
+        PathAndIcons:
+        - ElementName: Active
+          ObjectType: 8
+      - name: None
+        guid: 89bde1fee8d9d5488dc30c86a85832a7
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: Pas_Active
+        guid: 7f87835e2aa91047ad08fe400a73aafc
+        id: 2270773720
+        PathAndIcons:
+        - ElementName: Pas_Active
+          ObjectType: 8
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+  SwitchWwu:
+  - PhysicalPath: Switches\Default Work Unit.wwu
+    ParentPath: Default Work Unit
+    guid: 96030f4881df4647bac0b1129aa73690
+    GuidInternal: 
+    m_lastTime: -8586094530551504287
+    List: []
+  - PhysicalPath: Switches\NPC.wwu
+    ParentPath: NPC
+    guid: 092552805fa5cb46abb55e2770f0094a
+    GuidInternal: 
+    m_lastTime: -8586094526553293116
+    List:
+    - name: Quelle_Voix
+      guid: 597e2ad322b9a945b8964bbb6210fbaa
+      id: 907988530
+      PathAndIcons:
+      - ElementName: NPC
+        ObjectType: 12
+      - ElementName: Quelle_Voix
+        ObjectType: 11
+      Path: NPC\Quelle_Voix
+      values:
+      - name: Voix_01
+        guid: c397511bd21e024ba82150ed71a023f0
+        id: 3348087211
+        PathAndIcons:
+        - ElementName: Voix_01
+          ObjectType: 10
+      - name: Voix_02
+        guid: 79c7a38a79b5ba40b96a1a95562b7a31
+        id: 3348087208
+        PathAndIcons:
+        - ElementName: Voix_02
+          ObjectType: 10
+      - name: Voix_03
+        guid: 65980127389be84793194ec48efb419e
+        id: 3348087209
+        PathAndIcons:
+        - ElementName: Voix_03
+          ObjectType: 10
+      - name: Voix_04
+        guid: c8a2ecbaad725a498405aeac5d8627b5
+        id: 3348087214
+        PathAndIcons:
+        - ElementName: Voix_04
+          ObjectType: 10
+      - name: Voix_05
+        guid: ca83095781395c4695fae1cd42c3216d
+        id: 3348087215
+        PathAndIcons:
+        - ElementName: Voix_05
+          ObjectType: 10
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: Qui_Parle
+      guid: 5c9eb675d39d414dbdf0ebe93d193168
+      id: 3375628365
+      PathAndIcons:
+      - ElementName: NPC
+        ObjectType: 12
+      - ElementName: Qui_Parle
+        ObjectType: 11
+      Path: NPC\Qui_Parle
+      values:
+      - name: Enfant
+        guid: 532678acca54624d8f12e112e3e1a339
+        id: 2779435313
+        PathAndIcons:
+        - ElementName: Enfant
+          ObjectType: 10
+      - name: Femme
+        guid: 638a43b4dac0304f9358132f09631684
+        id: 1494689069
+        PathAndIcons:
+        - ElementName: Femme
+          ObjectType: 10
+      - name: Homme
+        guid: 9507e2f63e3f0a4fa42d7a563caf742c
+        id: 4152857849
+        PathAndIcons:
+        - ElementName: Homme
+          ObjectType: 10
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+  - PhysicalPath: Switches\Personnage.wwu
+    ParentPath: Personnage
+    guid: 2ce1960a383a3c48a2ff3b2c12ada0b0
+    GuidInternal: 
+    m_lastTime: -8586094526553293116
+    List:
+    - name: Court_Marche
+      guid: 8a5b845acc97ca4193e653692becd86f
+      id: 4156334155
+      PathAndIcons:
+      - ElementName: Personnage
+        ObjectType: 12
+      - ElementName: Court_Marche
+        ObjectType: 11
+      Path: Personnage\Court_Marche
+      values:
+      - name: Court
+        guid: 85e44d5c93acf84d8d5f40edc53d3612
+        id: 2871560606
+        PathAndIcons:
+        - ElementName: Court
+          ObjectType: 10
+      - name: Idle
+        guid: ab6a5e7390bb0d4c8f0be13ea2e2848f
+        id: 1874288895
+        PathAndIcons:
+        - ElementName: Idle
+          ObjectType: 10
+      - name: Marche
+        guid: ef0b8d04c6b5ba4d98ec2a32c4a4f875
+        id: 1630799659
+        PathAndIcons:
+        - ElementName: Marche
+          ObjectType: 10
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: Droit_Gauche
+      guid: 124983e032805f429e2e60531494fd78
+      id: 3079589013
+      PathAndIcons:
+      - ElementName: Personnage
+        ObjectType: 12
+      - ElementName: Droit_Gauche
+        ObjectType: 11
+      Path: Personnage\Droit_Gauche
+      values:
+      - name: Droit
+        guid: 6a9aa0138f3a1341bb2b8ea6983cbeac
+        id: 2723061045
+        PathAndIcons:
+        - ElementName: Droit
+          ObjectType: 10
+      - name: Gauche
+        guid: 1dde269a5c4af74691ea87fcbdfe108f
+        id: 1211705900
+        PathAndIcons:
+        - ElementName: Gauche
+          ObjectType: 10
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: Pas_Matiere
+      guid: 6178a9b5793adc499ca430bd84e287be
+      id: 3869192313
+      PathAndIcons:
+      - ElementName: Personnage
+        ObjectType: 12
+      - ElementName: Pas_Matiere
+        ObjectType: 11
+      Path: Personnage\Pas_Matiere
+      values:
+      - name: Asphalt
+        guid: 4fd9d836f70d054db8c1701179ba63ef
+        id: 4169408098
+        PathAndIcons:
+        - ElementName: Asphalt
+          ObjectType: 10
+      - name: Beton
+        guid: f539fbd64616b547af819ac121a7856e
+        id: 386080821
+        PathAndIcons:
+        - ElementName: Beton
+          ObjectType: 10
+      - name: Herbe
+        guid: 87a805fd22ba154d930c592b452c079f
+        id: 2495190089
+        PathAndIcons:
+        - ElementName: Herbe
+          ObjectType: 10
+      - name: Terre
+        guid: d6115c075deae744b01607566d3de40c
+        id: 508852877
+        PathAndIcons:
+        - ElementName: Terre
+          ObjectType: 10
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: Respiration_Ex_or_In
+      guid: 7ba97f79a7aa0044a23b9224911a1b44
+      id: 3885082437
+      PathAndIcons:
+      - ElementName: Personnage
+        ObjectType: 12
+      - ElementName: Respiration_Ex_or_In
+        ObjectType: 11
+      Path: Personnage\Respiration_Ex_or_In
+      values:
+      - name: Expire
+        guid: 80a2d3f79a1d3244998d4526dc3381ad
+        id: 3370304008
+        PathAndIcons:
+        - ElementName: Expire
+          ObjectType: 10
+      - name: Inspire
+        guid: 1b662a15bd519d4891395473ac644c77
+        id: 567704981
+        PathAndIcons:
+        - ElementName: Inspire
+          ObjectType: 10
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+  - PhysicalPath: Switches\Voiture.wwu
+    ParentPath: Voiture
+    guid: 21fb2ffe6ce99647bf5ddfd9a0776034
+    GuidInternal: 
+    m_lastTime: -8586094526553283144
+    List:
+    - name: EtatVoiture
+      guid: 7b25b08548eb324e86c9571726763156
+      id: 3645350675
+      PathAndIcons:
+      - ElementName: Voiture
+        ObjectType: 12
+      - ElementName: EtatVoiture
+        ObjectType: 11
+      Path: Voiture\EtatVoiture
+      values:
+      - name: A_Stop
+        guid: 0114e33d44794342ab4ca04ec18d2004
+        id: 129212061
+        PathAndIcons:
+        - ElementName: A_Stop
+          ObjectType: 10
+      - name: B_Demarre
+        guid: d639daeb196ad745900f698420931972
+        id: 2409485060
+        PathAndIcons:
+        - ElementName: B_Demarre
+          ObjectType: 10
+      - name: C_Idle
+        guid: 16c45a57b823f6438005669346c1342c
+        id: 1094992157
+        PathAndIcons:
+        - ElementName: C_Idle
+          ObjectType: 10
+      - name: D_Accelere
+        guid: 6b3b5b4e3552504aa89fdbe9f377803c
+        id: 4192991124
+        PathAndIcons:
+        - ElementName: D_Accelere
+          ObjectType: 10
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: Klaxons
+      guid: caefedbae8724c45910eba49eb1b92f2
+      id: 310721727
+      PathAndIcons:
+      - ElementName: Voiture
+        ObjectType: 12
+      - ElementName: Klaxons
+        ObjectType: 11
+      Path: Voiture\Klaxons
+      values:
+      - name: A
+        guid: 89afb88b19efb4459adc94e814ea87b8
+        id: 84696446
+        PathAndIcons:
+        - ElementName: A
+          ObjectType: 10
+      - name: B
+        guid: 3135dd2b1819dd448213464243cc1bb8
+        id: 84696445
+        PathAndIcons:
+        - ElementName: B
+          ObjectType: 10
+      - name: C
+        guid: 75c6327e2b75e74b8755a5d70cd92762
+        id: 84696444
+        PathAndIcons:
+        - ElementName: C
+          ObjectType: 10
+      - name: D
+        guid: 187bfdd53ade8949a8d2d45f1ae91db8
+        id: 84696443
+        PathAndIcons:
+        - ElementName: D
+          ObjectType: 10
+      - name: E
+        guid: 07719db71e7c544ebac2703ed42cdfea
+        id: 84696442
+        PathAndIcons:
+        - ElementName: E
+          ObjectType: 10
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: Quel_Moteur
+      guid: 3f615c304cad874a91cef9a9c2a0e778
+      id: 2782977595
+      PathAndIcons:
+      - ElementName: Voiture
+        ObjectType: 12
+      - ElementName: Quel_Moteur
+        ObjectType: 11
+      Path: Voiture\Quel_Moteur
+      values:
+      - name: M1
+        guid: 99e8fcfc09e50140a272b16e990db770
+        id: 1685527111
+        PathAndIcons:
+        - ElementName: M1
+          ObjectType: 10
+      - name: M2_Moto
+        guid: 8bbedfd974acf04db1f1f96c7cf1ef8d
+        id: 3872364728
+        PathAndIcons:
+        - ElementName: M2_Moto
+          ObjectType: 10
+      - name: M3
+        guid: 66163fd1640a26409c02e0b8e505efa4
+        id: 1685527109
+        PathAndIcons:
+        - ElementName: M3
+          ObjectType: 10
+      - name: M4
+        guid: ebed296fae2e8a49bef7a0318a987b0d
+        id: 1685527106
+        PathAndIcons:
+        - ElementName: M4
+          ObjectType: 10
+      - name: M5
+        guid: 2dee1c9e69d124488f1062506e9760a2
+        id: 1685527107
+        PathAndIcons:
+        - ElementName: M5
+          ObjectType: 10
+      - name: M6_Camion
+        guid: 38800d7f7e1b534191cac0534557d6b7
+        id: 1022333622
+        PathAndIcons:
+        - ElementName: M6_Camion
+          ObjectType: 10
+      - name: M7_Camion
+        guid: 2a496701bcaa2d4ea2bfa91488d1d4f8
+        id: 2804710365
+        PathAndIcons:
+        - ElementName: M7_Camion
+          ObjectType: 10
+      - name: M8
+        guid: 706e474edd45664bb879a10e60f4dc07
+        id: 1685527118
+        PathAndIcons:
+        - ElementName: M8
+          ObjectType: 10
+      - name: M9_Bus
+        guid: cee10b27e1088f409c4f5f390caffd6b
+        id: 3057612808
+        PathAndIcons:
+        - ElementName: M9_Bus
+          ObjectType: 10
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+  TriggerWwu:
+  - PhysicalPath: Triggers\Default Work Unit.wwu
+    ParentPath: Default Work Unit
+    guid: 6aa79cd013e85f478a913d3d2ad9b620
+    GuidInternal: 
+    m_lastTime: -8586094530551504287
+    List: []
+  ExpandedItems:
+  - /Sense_Of_Adventure_Wwise
+  autoPopulateEnabled: 1
+  CurrentPluginConfig: 

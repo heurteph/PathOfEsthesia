@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{0A96E12C-3A38-483C-A2FF-3B2C12ADA0B0}" SchemaVersion="97">
+	<Switches>
+		<WorkUnit Name="Personnage" ID="{0A96E12C-3A38-483C-A2FF-3B2C12ADA0B0}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="Pas_Matiere" ID="{B5A97861-3A79-49DC-9CA4-30BD84E287BE}">
+					<ChildrenList>
+						<Switch Name="Terre" ID="{075C11D6-EA5D-44E7-B016-07566D3DE40C}"/>
+						<Switch Name="Herbe" ID="{FD05A887-BA22-4D15-930C-592B452C079F}"/>
+						<Switch Name="Asphalt" ID="{36D8D94F-0DF7-4D05-B8C1-701179BA63EF}"/>
+						<Switch Name="Beton" ID="{D6FB39F5-1646-47B5-AF81-9AC121A7856E}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="Court_Marche" ID="{5A845B8A-97CC-41CA-93E6-53692BECD86F}">
+					<ChildrenList>
+						<Switch Name="Marche" ID="{048D0BEF-B5C6-4DBA-98EC-2A32C4A4F875}"/>
+						<Switch Name="Court" ID="{5C4DE485-AC93-4DF8-8D5F-40EDC53D3612}"/>
+						<Switch Name="Idle" ID="{735E6AAB-BB90-4C0D-8F0B-E13EA2E2848F}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="Droit_Gauche" ID="{E0834912-8032-425F-9E2E-60531494FD78}">
+					<ChildrenList>
+						<Switch Name="Droit" ID="{13A09A6A-3A8F-4113-BB2B-8EA6983CBEAC}"/>
+						<Switch Name="Gauche" ID="{9A26DE1D-4A5C-46F7-91EA-87FCBDFE108F}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="Respiration_Ex_or_In" ID="{797FA97B-AAA7-4400-A23B-9224911A1B44}">
+					<ChildrenList>
+						<Switch Name="Inspire" ID="{152A661B-51BD-489D-9139-5473AC644C77}"/>
+						<Switch Name="Expire" ID="{F7D3A280-1D9A-4432-998D-4526DC3381AD}"/>
+					</ChildrenList>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</Switches>
+</WwiseDocument>

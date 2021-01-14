@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{D20AD8BF-469B-4394-9523-16D0018CC167}" SchemaVersion="97">
+	<Events>
+		<WorkUnit Name="Personnage" ID="{D20AD8BF-469B-4394-9523-16D0018CC167}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_Texture_Pas" ID="{E7F51318-856C-4019-BCDB-A6820DF54260}">
+					<ChildrenList>
+						<Action Name="" ID="{62F28ACB-5F61-4C2B-B268-B632D3D12A34}" ShortID="916859914">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Texture Pas" ID="{B6E4D10B-DA50-4351-9683-784BD72B2CE6}" WorkUnitID="{1B141676-4414-425B-8493-2A57AC5365FE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Respiration_Mouvement" ID="{93D5F583-4E03-42F3-94E0-091378FDF157}">
+					<ChildrenList>
+						<Action Name="" ID="{CF699CCB-554B-438F-AE9B-7F137320171F}" ShortID="624591670">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Respiration_Mouvement" ID="{0D197C24-9DC2-45FC-A3E9-1AC4FCEF1A0A}" WorkUnitID="{1B141676-4414-425B-8493-2A57AC5365FE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Cris_Tous" ID="{7B3A9395-56BB-4D65-B7F8-4ABDCA08C855}">
+					<ChildrenList>
+						<Action Name="" ID="{A1616DC2-8B85-4AC7-B91E-73B5254B7352}" ShortID="858431164">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Cris_Tous" ID="{9E8E97AA-8709-42F8-9409-1C1763E0B9D3}" WorkUnitID="{1B141676-4414-425B-8493-2A57AC5365FE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Battement_Coeur" ID="{8FED806E-7067-4976-9388-16EE2D9B25F0}">
+					<ChildrenList>
+						<Action Name="" ID="{8D0BC151-98B8-4601-A3D7-CF6D117C7BB5}" ShortID="657565577">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Battement_Coeur" ID="{794DEC73-A1E7-4222-8C7C-98D1B3BE84F0}" WorkUnitID="{1B141676-4414-425B-8493-2A57AC5365FE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Battement_Coeur" ID="{B8860597-61B1-4186-AA12-40E010738E2F}">
+					<ChildrenList>
+						<Action Name="" ID="{656D16DE-1895-4081-91B6-DE4CD976A202}" ShortID="702099547">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Battement_Coeur" ID="{794DEC73-A1E7-4222-8C7C-98D1B3BE84F0}" WorkUnitID="{1B141676-4414-425B-8493-2A57AC5365FE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Mort" ID="{6FD74D50-112B-4149-B95B-EB6A47F3F447}">
+					<ChildrenList>
+						<Action Name="" ID="{25E83C93-633C-42DE-B086-C590BAE96F00}" ShortID="728130853">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Mort" ID="{2EDED378-4743-4AA4-A434-4E45A5DD9B6B}" WorkUnitID="{1B141676-4414-425B-8493-2A57AC5365FE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Mort" ID="{D3B757F8-17EE-4783-AC61-5AF16F43697F}">
+					<ChildrenList>
+						<Action Name="" ID="{53794653-5922-4306-BFF3-7BBE6C6693DB}" ShortID="388038934">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Mort" ID="{2EDED378-4743-4AA4-A434-4E45A5DD9B6B}" WorkUnitID="{1B141676-4414-425B-8493-2A57AC5365FE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

@@ -1,0 +1,1027 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{42260FA2-A153-4E82-AFED-FE420DEE6A3F}" SchemaVersion="97" RootDocumentID="{351F24E1-4FF7-47D0-BD07-D422771E5C68}">
+	<AudioObjects>
+		<WorkUnit Name="Ambiance_Ville" ID="{42260FA2-A153-4E82-AFED-FE420DEE6A3F}" OwnerID="{351F24E1-4FF7-47D0-BD07-D422771E5C68}" PersistMode="Nested">
+			<ChildrenList>
+				<ActorMixer Name="Nature_Ville" ID="{E24D4AA8-1B3B-4FDC-977C-9C5D68FA1E31}" ShortID="749009159">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Envi_Ville" ID="{CDCCBE95-2E90-425F-98D2-099B6FFF9C27}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+						</Reference>
+						<Reference Name="UserAuxSend0">
+							<ObjectRef Name="EQ_Protection" ID="{5A2173EA-4A77-452E-8281-C22E896215E4}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<RandomSequenceContainer Name="Pigeon" ID="{7F1C7036-725A-4DF7-A5E5-3244E290AFCB}" ShortID="49600072">
+							<PropertyList>
+								<Property Name="3DPosition" Type="int16" Value="2"/>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="3">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{C7D698E6-6957-41D5-8AAD-BE5054522E68}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="4"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-16</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<Custom>
+										<Attenuation Name="Attenuation (Custom)" ID="{5810F4A0-6E19-47BC-A929-926A8B488755}" ShortID="116739163">
+											<PropertyList>
+												<Property Name="RadiusMax" Type="Real64" Value="70"/>
+											</PropertyList>
+											<CurveUsageInfoList>
+												<VolumeDryUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+														<Curve Name="VolumeDry" ID="{F8B634FC-ED69-434F-B26D-D8602B218A02}">
+															<PropertyList>
+																<Property Name="Flags" Type="int32" Value="3"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>0</XPos>
+																	<YPos>0</YPos>
+																	<Flags>5</Flags>
+																</Point>
+																<Point>
+																	<XPos>70</XPos>
+																	<YPos>-200</YPos>
+																	<Flags>37</Flags>
+																</Point>
+															</PointList>
+														</Curve>
+													</CurveUsageInfo>
+												</VolumeDryUsage>
+												<VolumeWetGameUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+												</VolumeWetGameUsage>
+												<VolumeWetUserUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+												</VolumeWetUserUsage>
+												<LowPassFilterUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</LowPassFilterUsage>
+												<HighPassFilterUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</HighPassFilterUsage>
+												<SpreadUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</SpreadUsage>
+												<FocusUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</FocusUsage>
+											</CurveUsageInfoList>
+										</Attenuation>
+									</Custom>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Pigeon 01" ID="{BCD4F77A-09F7-423B-B545-FC727270F7D8}" ShortID="567844332">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Pigeon 01" ID="{06627A7D-A470-441B-8702-850F7EC55566}">
+											<Language>SFX</Language>
+											<AudioFile>Pigeon 01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1002150556"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Pigeon 01" ID="{06627A7D-A470-441B-8702-850F7EC55566}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Pigeon 02" ID="{9325878F-3848-4813-94AF-B3CB06CAFAFA}" ShortID="416612553">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Pigeon 02" ID="{494DBF1A-8C89-433E-807D-A58FA1DA3E06}">
+											<Language>SFX</Language>
+											<AudioFile>Pigeon 02.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="667690016"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Pigeon 02" ID="{494DBF1A-8C89-433E-807D-A58FA1DA3E06}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Pigeon 03" ID="{B218A975-8950-4EFF-A6E7-7F1E7CDAF0E6}" ShortID="769222936">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Pigeon 03" ID="{5A7ED9FA-9C1C-4B19-A66D-0A9CF383E9DC}">
+											<Language>SFX</Language>
+											<AudioFile>Pigeon 03.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="91571436"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Pigeon 03" ID="{5A7ED9FA-9C1C-4B19-A66D-0A9CF383E9DC}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Pigeon 04" ID="{6CC7052F-B00B-44BB-9574-5C254266A755}" ShortID="946089924">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Pigeon 04" ID="{28D26EB4-6F31-4AB2-9DF0-8A4B8D14DCD0}">
+											<Language>SFX</Language>
+											<AudioFile>Pigeon 04.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="69740469"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Pigeon 04" ID="{28D26EB4-6F31-4AB2-9DF0-8A4B8D14DCD0}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Pigeon 05" ID="{B51F1187-988F-44FC-A2C1-3AB519EEB754}" ShortID="522314088">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Pigeon 05" ID="{70890AE3-13B9-4FB2-BEDD-116F1B96EC9E}">
+											<Language>SFX</Language>
+											<AudioFile>Pigeon 05.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="417849634"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Pigeon 05" ID="{70890AE3-13B9-4FB2-BEDD-116F1B96EC9E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Pigeon 06" ID="{DE4FE163-D5EF-4098-A787-DCF1D377FC31}" ShortID="650594249">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Pigeon 06" ID="{A400DBCF-ADA5-4ED9-BE64-F34C9EA2BE2D}">
+											<Language>SFX</Language>
+											<AudioFile>Pigeon 06.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="656886493"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Pigeon 06" ID="{A400DBCF-ADA5-4ED9-BE64-F34C9EA2BE2D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Pigeon 07" ID="{C4A8AF32-6F44-4262-AD5F-226B6FB53BF5}" ShortID="1057062171">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Pigeon 07" ID="{4250B9E4-E345-4BFD-B78A-A2E3B48813D2}">
+											<Language>SFX</Language>
+											<AudioFile>Pigeon 07.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="965543181"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Pigeon 07" ID="{4250B9E4-E345-4BFD-B78A-A2E3B48813D2}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Pigeon 08" ID="{E77070AA-FCF9-43F4-B94D-E1103E6FD5DE}" ShortID="1003583664">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Pigeon 08" ID="{CCC105F3-794A-4231-A928-8C915CA40EED}">
+											<Language>SFX</Language>
+											<AudioFile>Pigeon 08.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="868565761"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Pigeon 08" ID="{CCC105F3-794A-4231-A928-8C915CA40EED}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Pigeon 09" ID="{0A67A8BF-2048-49CE-B658-17FCDCB9D5E3}" ShortID="636212722">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Pigeon 09" ID="{500C6777-8482-4F79-9177-CEBEC022073E}">
+											<Language>SFX</Language>
+											<AudioFile>Pigeon 09.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="17005130"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Pigeon 09" ID="{500C6777-8482-4F79-9177-CEBEC022073E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<PositioningInfo>
+								<Position Name="" ID="{DBBCAD5C-B3F3-42B4-9451-1BC61114A36A}">
+									<PropertyList>
+										<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+									</PropertyList>
+									<ChildrenList>
+										<Path2D Name="Pigeon_Path" ID="{F42BE61B-0130-4DBF-A586-16B8ECB84E17}">
+											<PropertyList>
+												<Property Name="RandomX" Type="Real64" Value="68"/>
+												<Property Name="RandomY" Type="Real64" Value="68"/>
+											</PropertyList>
+											<PointList>
+												<Point>
+													<XPos>0</XPos>
+													<YPos>0</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+									</ChildrenList>
+								</Position>
+							</PositioningInfo>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Tourterelle" ID="{28F51438-5D6E-4DAD-9382-22E7883D4642}" ShortID="403728856">
+							<PropertyList>
+								<Property Name="3DPosition" Type="int16" Value="2"/>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="4">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{CD0C07AF-9930-4184-A2B6-F6064D6431C2}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="8"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-17</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<Custom>
+										<Attenuation Name="Attenuation (Custom)" ID="{BE259D3D-793F-4DDC-8D97-8F1525B1AB36}" ShortID="315499542">
+											<PropertyList>
+												<Property Name="RadiusMax" Type="Real64" Value="70"/>
+											</PropertyList>
+											<CurveUsageInfoList>
+												<VolumeDryUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+														<Curve Name="VolumeDry" ID="{B6F11470-B7CD-443F-B4D4-5613535980D6}">
+															<PropertyList>
+																<Property Name="Flags" Type="int32" Value="3"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>0</XPos>
+																	<YPos>0</YPos>
+																	<Flags>5</Flags>
+																</Point>
+																<Point>
+																	<XPos>70</XPos>
+																	<YPos>-200</YPos>
+																	<Flags>37</Flags>
+																</Point>
+															</PointList>
+														</Curve>
+													</CurveUsageInfo>
+												</VolumeDryUsage>
+												<VolumeWetGameUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+												</VolumeWetGameUsage>
+												<VolumeWetUserUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+												</VolumeWetUserUsage>
+												<LowPassFilterUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</LowPassFilterUsage>
+												<HighPassFilterUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</HighPassFilterUsage>
+												<SpreadUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</SpreadUsage>
+												<FocusUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</FocusUsage>
+											</CurveUsageInfoList>
+										</Attenuation>
+									</Custom>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Ville_AMB_Oiseaux_Tourterelle-001" ID="{9DB218A0-81AA-458B-846E-62EE2757C9D8}" ShortID="24939111">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Ville_AMB_Oiseaux_Tourterelle-001" ID="{14E5537E-2CEE-484E-BBF1-6562FACBE2DB}">
+											<Language>SFX</Language>
+											<AudioFile>Ville_AMB_Oiseaux_Tourterelle-001.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="521302457"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Ville_AMB_Oiseaux_Tourterelle-001" ID="{14E5537E-2CEE-484E-BBF1-6562FACBE2DB}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Ville_AMB_Oiseaux_Tourterelle-002" ID="{7AED845E-F66B-4496-A923-B4D823774BD9}" ShortID="384673958">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Ville_AMB_Oiseaux_Tourterelle-002" ID="{070AFEA6-454E-4CA7-A4B9-EF4013C91971}">
+											<Language>SFX</Language>
+											<AudioFile>Ville_AMB_Oiseaux_Tourterelle-002.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="168039087"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Ville_AMB_Oiseaux_Tourterelle-002" ID="{070AFEA6-454E-4CA7-A4B9-EF4013C91971}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Ville_AMB_Oiseaux_Tourterelle-003" ID="{E4BF40BB-B7EC-4116-97CF-493A016A9D78}" ShortID="81870316">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Ville_AMB_Oiseaux_Tourterelle-003" ID="{024CF1EE-827B-4A97-8922-D4092DB1D210}">
+											<Language>SFX</Language>
+											<AudioFile>Ville_AMB_Oiseaux_Tourterelle-003.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="334860163"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Ville_AMB_Oiseaux_Tourterelle-003" ID="{024CF1EE-827B-4A97-8922-D4092DB1D210}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Ville_AMB_Oiseaux_Tourterelle-004" ID="{BC472205-B6BD-4CD8-AFCE-70AA502959B7}" ShortID="862527530">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Ville_AMB_Oiseaux_Tourterelle-004" ID="{B1418A33-D775-4DE1-A96E-66E0CED099DC}">
+											<Language>SFX</Language>
+											<AudioFile>Ville_AMB_Oiseaux_Tourterelle-004.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="792023385"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Ville_AMB_Oiseaux_Tourterelle-004" ID="{B1418A33-D775-4DE1-A96E-66E0CED099DC}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Ville_AMB_Oiseaux_Tourterelle-005" ID="{7255DB51-BF27-4D07-9845-EA8A757CDCE7}" ShortID="655112288">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Ville_AMB_Oiseaux_Tourterelle-005" ID="{A5ED54F5-4702-4B3B-BF2B-8DB88DE8D709}">
+											<Language>SFX</Language>
+											<AudioFile>Ville_AMB_Oiseaux_Tourterelle-005.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="114068472"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Ville_AMB_Oiseaux_Tourterelle-005" ID="{A5ED54F5-4702-4B3B-BF2B-8DB88DE8D709}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Ville_AMB_Oiseaux_Tourterelle-006" ID="{CECB03FA-A3D5-4144-9420-E65A999C0231}" ShortID="428880222">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Ville_AMB_Oiseaux_Tourterelle-006" ID="{F99EFE2C-68D1-415C-937E-103A5BFB5081}">
+											<Language>SFX</Language>
+											<AudioFile>Ville_AMB_Oiseaux_Tourterelle-006.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="661786282"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Ville_AMB_Oiseaux_Tourterelle-006" ID="{F99EFE2C-68D1-415C-937E-103A5BFB5081}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<PositioningInfo>
+								<Panner Name="" ID="{1C4589A9-72D8-45B2-8E0D-58799BA442D0}"/>
+								<Position Name="" ID="{73F435BB-14F1-4C99-9EC8-3D230BA79243}">
+									<ChildrenList>
+										<Path2D Name="Tourterelle_Path" ID="{B861B20D-3D07-42D3-B79C-983931B67DD3}">
+											<PropertyList>
+												<Property Name="RandomX" Type="Real64" Value="50"/>
+												<Property Name="RandomY" Type="Real64" Value="50"/>
+											</PropertyList>
+											<PointList>
+												<Point>
+													<XPos>0</XPos>
+													<YPos>0</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+									</ChildrenList>
+								</Position>
+							</PositioningInfo>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Pigeon_Fixe" ID="{A0198711-06FB-476F-8473-3C9DA774000C}" ShortID="873806528">
+							<Comment>Faire un event Pigeon Fixe</Comment>
+							<PropertyList>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="2">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{59FC5A12-FCFF-42EA-A2F9-5CE1FA01B885}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="5"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<Custom>
+										<Attenuation Name="Attenuation (Custom)" ID="{5B4A0358-5240-4D33-AC9A-53FB178B4AFF}" ShortID="148534791">
+											<PropertyList>
+												<Property Name="RadiusMax" Type="Real64" Value="70"/>
+											</PropertyList>
+											<CurveUsageInfoList>
+												<VolumeDryUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+														<Curve Name="VolumeDry" ID="{C7AC1DF3-50D9-49B0-AE38-D4104BFAD7FF}">
+															<PropertyList>
+																<Property Name="Flags" Type="int32" Value="3"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>0</XPos>
+																	<YPos>0</YPos>
+																	<Flags>5</Flags>
+																	<SegmentShape>Log1</SegmentShape>
+																</Point>
+																<Point>
+																	<XPos>70</XPos>
+																	<YPos>-200</YPos>
+																	<Flags>37</Flags>
+																</Point>
+															</PointList>
+														</Curve>
+													</CurveUsageInfo>
+												</VolumeDryUsage>
+												<VolumeWetGameUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+												</VolumeWetGameUsage>
+												<VolumeWetUserUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+												</VolumeWetUserUsage>
+												<LowPassFilterUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</LowPassFilterUsage>
+												<HighPassFilterUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</HighPassFilterUsage>
+												<SpreadUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</SpreadUsage>
+												<FocusUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</FocusUsage>
+											</CurveUsageInfoList>
+										</Attenuation>
+									</Custom>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+								</Reference>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="EQ_Protection" ID="{5A2173EA-4A77-452E-8281-C22E896215E4}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Pigeon 01" ID="{E45EB6F4-701F-4E49-955B-70C6DD834AFD}" ShortID="966098083">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Pigeon 01" ID="{0A383DF5-0108-4F8B-A985-E5DC9AC37A30}">
+											<Language>SFX</Language>
+											<AudioFile>Pigeon 01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1002150556"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Pigeon 01" ID="{0A383DF5-0108-4F8B-A985-E5DC9AC37A30}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Pigeon 02" ID="{971205C4-3582-4491-815E-9A8AA10E7B9A}" ShortID="728474521">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Pigeon 02" ID="{D542DEDF-BE3B-4587-8638-231711FD5930}">
+											<Language>SFX</Language>
+											<AudioFile>Pigeon 02.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="667690016"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Pigeon 02" ID="{D542DEDF-BE3B-4587-8638-231711FD5930}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Pigeon 03" ID="{60DD6DA3-9AA9-47CF-902B-46BB602099F8}" ShortID="235137408">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Pigeon 03" ID="{C5CCC157-669D-49F8-924B-DC3005D35159}">
+											<Language>SFX</Language>
+											<AudioFile>Pigeon 03.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="91571436"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Pigeon 03" ID="{C5CCC157-669D-49F8-924B-DC3005D35159}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Pigeon 04" ID="{58F0E91D-916D-4DCD-AFAD-9DE17CEB4453}" ShortID="984155791">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Pigeon 04" ID="{400AB3EB-64D6-4AD2-A684-D10CEF43E1B1}">
+											<Language>SFX</Language>
+											<AudioFile>Pigeon 04.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="69740469"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Pigeon 04" ID="{400AB3EB-64D6-4AD2-A684-D10CEF43E1B1}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Pigeon 05" ID="{D3201C35-2751-42E3-A5FC-541FAC3523F0}" ShortID="280178768">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Pigeon 05" ID="{8133408C-355F-4D28-ADB2-1A81E2A1E41B}">
+											<Language>SFX</Language>
+											<AudioFile>Pigeon 05.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="417849634"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Pigeon 05" ID="{8133408C-355F-4D28-ADB2-1A81E2A1E41B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Pigeon 06" ID="{46CE5A15-92EB-4A5C-8251-9EBC14EB8A2C}" ShortID="488914442">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Pigeon 06" ID="{80FC7AED-443C-4C9F-9577-619A49645A2B}">
+											<Language>SFX</Language>
+											<AudioFile>Pigeon 06.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="656886493"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Pigeon 06" ID="{80FC7AED-443C-4C9F-9577-619A49645A2B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Pigeon 07" ID="{C53CF174-3041-416E-A82D-FEBBB3B00410}" ShortID="86948997">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Pigeon 07" ID="{4F44FDF1-D4B4-47E9-91CA-E74AB6733CF3}">
+											<Language>SFX</Language>
+											<AudioFile>Pigeon 07.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="965543181"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Pigeon 07" ID="{4F44FDF1-D4B4-47E9-91CA-E74AB6733CF3}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Pigeon 08" ID="{E9F52269-5734-49EE-B91D-261A91E621F8}" ShortID="816435025">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Pigeon 08" ID="{60553037-8875-4902-9C8A-A2869987F1A9}">
+											<Language>SFX</Language>
+											<AudioFile>Pigeon 08.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="868565761"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Pigeon 08" ID="{60553037-8875-4902-9C8A-A2869987F1A9}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Pigeon 09" ID="{F6FDA30D-F77A-4033-85C8-A28AEFD72F3A}" ShortID="786041318">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Pigeon 09" ID="{95B73808-B9C4-4767-866E-2DC5CF9CBEEB}">
+											<Language>SFX</Language>
+											<AudioFile>Pigeon 09.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="17005130"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Pigeon 09" ID="{95B73808-B9C4-4767-866E-2DC5CF9CBEEB}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<PositioningInfo>
+								<Position Name="" ID="{84F9983E-F282-41D3-94BC-9966F4399A2B}">
+									<PropertyList>
+										<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+									</PropertyList>
+									<ChildrenList>
+										<Path2D Name="Pigeon_Path" ID="{FFE2169D-3D4A-45E0-AF4D-53263139111E}">
+											<PropertyList>
+												<Property Name="RandomX" Type="Real64" Value="68"/>
+												<Property Name="RandomY" Type="Real64" Value="68"/>
+											</PropertyList>
+											<PointList>
+												<Point>
+													<XPos>0</XPos>
+													<YPos>0</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+									</ChildrenList>
+								</Position>
+							</PositioningInfo>
+						</RandomSequenceContainer>
+					</ChildrenList>
+					<StateInfo>
+						<StatePropertyList>
+							<Property Name="OutputBusVolume"/>
+							<Property Name="UserAuxSendVolume0"/>
+						</StatePropertyList>
+						<StateGroupList>
+							<StateGroupInfo>
+								<StateGroupRef Name="Protection_Oui_Non" ID="{46C8E2FC-DB1E-4729-A3D2-B09D21025B1D}"/>
+							</StateGroupInfo>
+						</StateGroupList>
+						<CustomStateList>
+							<CustomState>
+								<StateRef Name="Pas_Active" ID="{5E83877F-A92A-4710-AD08-FE400A73AAFC}"/>
+								<CustomState Name="" ID="{43E7435A-B9D0-4E39-957E-05C52FC4C017}" ShortID="796436245">
+									<PropertyList>
+										<Property Name="UserAuxSendVolume0" Type="Real64" Value="-108"/>
+									</PropertyList>
+								</CustomState>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Active" ID="{C1B20394-89CE-4EC1-951E-92C36AF5F893}"/>
+								<CustomState Name="" ID="{FE2872C1-EC27-4463-9A29-C556D3489B47}" ShortID="1072271">
+									<PropertyList>
+										<Property Name="OutputBusVolume" Type="Real64" Value="-108"/>
+									</PropertyList>
+								</CustomState>
+							</CustomState>
+						</CustomStateList>
+					</StateInfo>
+				</ActorMixer>
+				<ActorMixer Name="Humain_Ville" ID="{A48AEB9F-7827-4271-86B5-BCAD133539BE}" ShortID="201187308">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-24</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Envi_Ville" ID="{CDCCBE95-2E90-425F-98D2-099B6FFF9C27}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+						</Reference>
+						<Reference Name="UserAuxSend0">
+							<ObjectRef Name="Reverb_Tunnel" ID="{57CD835A-A554-449D-97EB-70476E2A5092}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+						</Reference>
+						<Reference Name="UserAuxSend1">
+							<ObjectRef Name="EQ_Protection" ID="{5A2173EA-4A77-452E-8281-C22E896215E4}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<BlendContainer Name="Ville_Generale" ID="{1AC4F10E-FF18-4BC2-8163-6E65F7168AF1}" ShortID="34865999">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Ville_Ambiance_AmbianceGlobale_01" ID="{A65C531D-E9EF-4D04-89C6-CABF6F692FDE}" ShortID="974011317">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Ville_Ambiance_AmbianceGlobale_01" ID="{0EC58E79-75AD-4D6F-AB81-91C782A5B448}">
+											<PropertyList>
+												<Property Name="CrossfadeDuration" Type="Real64" Value="3537.954"/>
+												<Property Name="LoopBegin" Type="Real64" Value="9.89632031421666"/>
+												<Property Name="LoopEnd" Type="Real64" Value="53.691230361459"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Ville_Ambiance_AmbianceGlobale_01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="160227125"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Ville_Ambiance_AmbianceGlobale_01" ID="{0EC58E79-75AD-4D6F-AB81-91C782A5B448}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</BlendContainer>
+					</ChildrenList>
+					<StateInfo>
+						<StatePropertyList>
+							<Property Name="OutputBusVolume"/>
+							<Property Name="UserAuxSendVolume0"/>
+							<Property Name="UserAuxSendVolume1"/>
+						</StatePropertyList>
+						<StateGroupList>
+							<StateGroupInfo>
+								<StateGroupRef Name="Dans_Tunnel" ID="{55EA1CF5-2247-466A-B986-4FD3086549E0}"/>
+							</StateGroupInfo>
+							<StateGroupInfo>
+								<StateGroupRef Name="Protection_Oui_Non" ID="{46C8E2FC-DB1E-4729-A3D2-B09D21025B1D}"/>
+							</StateGroupInfo>
+						</StateGroupList>
+						<CustomStateList>
+							<CustomState>
+								<StateRef Name="Oui" ID="{726521A7-0407-41D7-89AC-04C1D191C10D}"/>
+								<CustomState Name="" ID="{AB56D00C-44D4-4F58-8072-A001A2000249}" ShortID="924967130">
+									<PropertyList>
+										<Property Name="OutputBusVolume" Type="Real64" Value="-108"/>
+									</PropertyList>
+								</CustomState>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Pas_Active" ID="{5E83877F-A92A-4710-AD08-FE400A73AAFC}"/>
+								<CustomState Name="" ID="{4EE1ACE1-EC33-405D-ABC4-54992FE6FAC6}" ShortID="138619542">
+									<PropertyList>
+										<Property Name="UserAuxSendVolume0" Type="Real64" Value="-108"/>
+									</PropertyList>
+								</CustomState>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Non" ID="{09CD2543-B398-4A17-9D7A-A8CE1268FD23}"/>
+								<CustomState Name="" ID="{51B012ED-EED1-4713-BBF4-1D22CED04139}" ShortID="228207854">
+									<PropertyList>
+										<Property Name="UserAuxSendVolume0" Type="Real64" Value="-108"/>
+									</PropertyList>
+								</CustomState>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Active" ID="{C1B20394-89CE-4EC1-951E-92C36AF5F893}"/>
+								<CustomState Name="" ID="{280AD0BC-8AB8-470B-A335-883AE60F5998}" ShortID="543767495">
+									<PropertyList>
+										<Property Name="OutputBusVolume" Type="Real64" Value="-108"/>
+									</PropertyList>
+								</CustomState>
+							</CustomState>
+						</CustomStateList>
+					</StateInfo>
+				</ActorMixer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

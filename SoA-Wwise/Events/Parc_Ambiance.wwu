@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{5A4A86E1-4D16-40AE-B859-75B7F157855B}" SchemaVersion="97">
+	<Events>
+		<WorkUnit Name="Parc_Ambiance" ID="{5A4A86E1-4D16-40AE-B859-75B7F157855B}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_Parc_Oiseaux2" ID="{67E33752-FEA7-41C4-9D7B-DFAC17D87F2D}">
+					<ChildrenList>
+						<Action Name="" ID="{072E9410-8157-4C01-91A6-48A9F9758ADC}" ShortID="517051262">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Parc_Oiseaux2" ID="{9885EDB3-662D-4C23-8544-8407A936FAC0}" WorkUnitID="{22C479D9-C11C-40A9-93A1-EBB328A91A1A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{3DD75785-56DE-4266-B52E-ECDCEB02CBF4}" ShortID="530814122">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Parc_Oiseaux1" ID="{F5E77440-D485-43CD-8CA1-5F9EE4872930}" WorkUnitID="{22C479D9-C11C-40A9-93A1-EBB328A91A1A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{D814B1EE-0C64-4303-A0C4-5E1DFF16BF93}" ShortID="804944209">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Parc_Oiseaux3" ID="{E6EBF856-29C2-4753-92EF-92D1EB6F4680}" WorkUnitID="{22C479D9-C11C-40A9-93A1-EBB328A91A1A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Parc_Vent" ID="{8878F673-1F21-4A4C-BB93-2860EDB44A08}">
+					<ChildrenList>
+						<Action Name="" ID="{29D2FC58-6A81-40F8-A8B5-2622B897111E}" ShortID="304481046">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Parc_Vent" ID="{AF53DAD7-15E5-4DA3-A016-9FE6C2618527}" WorkUnitID="{22C479D9-C11C-40A9-93A1-EBB328A91A1A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Parc_Oiseaux1" ID="{8E0DC551-5AC3-4E65-97E0-6FBFA6636F5D}">
+					<ChildrenList>
+						<Action Name="" ID="{1F88DF40-0C6C-4E3A-BFB8-E7E291B26CB2}" ShortID="532627725">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Parc_Oiseaux1" ID="{F5E77440-D485-43CD-8CA1-5F9EE4872930}" WorkUnitID="{22C479D9-C11C-40A9-93A1-EBB328A91A1A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{44F3A52A-3E2E-4C36-9D61-CBC9CA74D20E}" ShortID="541996828">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Parc_Oiseaux2" ID="{9885EDB3-662D-4C23-8544-8407A936FAC0}" WorkUnitID="{22C479D9-C11C-40A9-93A1-EBB328A91A1A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{A515213D-F662-4BF4-BA1F-8CDA74021BD4}" ShortID="521297463">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Parc_Oiseaux3" ID="{E6EBF856-29C2-4753-92EF-92D1EB6F4680}" WorkUnitID="{22C479D9-C11C-40A9-93A1-EBB328A91A1A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Parc_Oiseaux2" ID="{DD2C23EE-23DF-40CE-95A3-F93D0ACE5DAB}">
+					<ChildrenList>
+						<Action Name="" ID="{831AA569-17D4-48D7-896A-AF76CC537B5D}" ShortID="396528096">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="4"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Parc_Oiseaux2" ID="{9885EDB3-662D-4C23-8544-8407A936FAC0}" WorkUnitID="{22C479D9-C11C-40A9-93A1-EBB328A91A1A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Parc_Eau_Lac" ID="{F90281C9-4866-4212-BCCD-0BDB9DB6DC35}">
+					<ChildrenList>
+						<Action Name="" ID="{1363F16C-F31F-42B1-A341-9CD5695E18C2}" ShortID="528352070">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Parc_Eau_Lac" ID="{233E3AF5-A09D-4877-B3A1-148FDD443D47}" WorkUnitID="{22C479D9-C11C-40A9-93A1-EBB328A91A1A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Parc_Oiseaux1" ID="{2EC30BB7-A1D3-4C14-8697-896E57F3A5CE}">
+					<ChildrenList>
+						<Action Name="" ID="{CAF2FBA9-BFB9-4242-9B82-3026A6362D5E}" ShortID="66556936">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="4"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Parc_Oiseaux1" ID="{F5E77440-D485-43CD-8CA1-5F9EE4872930}" WorkUnitID="{22C479D9-C11C-40A9-93A1-EBB328A91A1A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Parc_Eau_Lac" ID="{28DECDDB-8CF6-469E-A30A-4B5D52D851BC}">
+					<ChildrenList>
+						<Action Name="" ID="{26D08728-4FFE-44F3-94FF-727BB7379739}" ShortID="516627012">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Parc_Eau_Lac" ID="{233E3AF5-A09D-4877-B3A1-148FDD443D47}" WorkUnitID="{22C479D9-C11C-40A9-93A1-EBB328A91A1A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Parc_Oiseaux3" ID="{2FE37D3F-37F6-4301-B0A8-235E75135CA8}">
+					<ChildrenList>
+						<Action Name="" ID="{2E122585-3D72-493A-82E3-9073099E0133}" ShortID="586665924">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Parc_Oiseaux3" ID="{E6EBF856-29C2-4753-92EF-92D1EB6F4680}" WorkUnitID="{22C479D9-C11C-40A9-93A1-EBB328A91A1A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{C37FD02B-0399-46DA-9667-0F82BF1D425F}" ShortID="89929763">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Parc_Oiseaux1" ID="{F5E77440-D485-43CD-8CA1-5F9EE4872930}" WorkUnitID="{22C479D9-C11C-40A9-93A1-EBB328A91A1A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{4E7D5389-A64F-477E-9047-0220118B79DD}" ShortID="1021659573">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Parc_Oiseaux2" ID="{9885EDB3-662D-4C23-8544-8407A936FAC0}" WorkUnitID="{22C479D9-C11C-40A9-93A1-EBB328A91A1A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Parc_Oiseaux3" ID="{641E0DDB-02A3-42B2-982F-1EC8CFBD6DE9}">
+					<ChildrenList>
+						<Action Name="" ID="{D41944D1-768C-4C31-9122-411EED8AC741}" ShortID="441924025">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="4"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Parc_Oiseaux3" ID="{E6EBF856-29C2-4753-92EF-92D1EB6F4680}" WorkUnitID="{22C479D9-C11C-40A9-93A1-EBB328A91A1A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{ED7DE836-2A7F-4B23-BB24-247E1A53DD23}" ShortID="676546013">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="4"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Parc_Oiseaux2" ID="{9885EDB3-662D-4C23-8544-8407A936FAC0}" WorkUnitID="{22C479D9-C11C-40A9-93A1-EBB328A91A1A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{E60176A3-A144-49B7-B21F-CCFAA00AA957}" ShortID="754070974">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="4"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Parc_Oiseaux3" ID="{E6EBF856-29C2-4753-92EF-92D1EB6F4680}" WorkUnitID="{22C479D9-C11C-40A9-93A1-EBB328A91A1A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Parc_Vent" ID="{966B6118-9510-49EE-B4FD-F08C15C3EE98}">
+					<ChildrenList>
+						<Action Name="" ID="{379842B3-0BC9-4C4F-8A8C-A021953715B9}" ShortID="992202594">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Parc_Vent" ID="{AF53DAD7-15E5-4DA3-A016-9FE6C2618527}" WorkUnitID="{22C479D9-C11C-40A9-93A1-EBB328A91A1A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Parc_Jardinier" ID="{9933264F-4439-4076-8E14-4B6AC5BDEBBA}">
+					<ChildrenList>
+						<Action Name="" ID="{6C69D2A6-CACA-4A00-A993-9851524E972C}" ShortID="903551635">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Parc_Jardinier" ID="{98E7C882-CEF8-4E9D-BE3F-CF5CF0599BCF}" WorkUnitID="{22C479D9-C11C-40A9-93A1-EBB328A91A1A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Parc_Jardinier" ID="{056C1AB3-1055-4CA2-A40E-C91CFF458856}">
+					<ChildrenList>
+						<Action Name="" ID="{F3180CE7-E11F-441A-A4EC-1F8C7F6BCD1F}" ShortID="793055400">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Parc_Jardinier" ID="{98E7C882-CEF8-4E9D-BE3F-CF5CF0599BCF}" WorkUnitID="{22C479D9-C11C-40A9-93A1-EBB328A91A1A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

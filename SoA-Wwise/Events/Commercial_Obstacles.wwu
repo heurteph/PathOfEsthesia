@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{56B5A11B-E0A2-4A1F-B982-5B1D1A9AEC2C}" SchemaVersion="97">
+	<Events>
+		<WorkUnit Name="Commercial_Obstacles" ID="{56B5A11B-E0A2-4A1F-B982-5B1D1A9AEC2C}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Stop_Portes_Grande" ID="{8FD115BF-F64A-4E1B-8796-1AC287ADA3B6}">
+					<ChildrenList>
+						<Action Name="" ID="{AD844AD3-8344-48B5-8E97-60CCCEC50E8D}" ShortID="563571293">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Portes_Grande" ID="{1FA3B7D7-8F1A-4027-BBB2-DA6DAB856838}" WorkUnitID="{4480BAB3-A2C3-4EF4-9FD8-F856D83D0BA9}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Portes_Close" ID="{C17AFC8D-7167-4C6B-8E73-FCA26733A8C6}">
+					<ChildrenList>
+						<Action Name="" ID="{2571BAFA-A62F-46B6-8731-9E02E7EEDD7E}" ShortID="837690451">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Portes_Close" ID="{276438F8-3EC1-4C69-BC07-B42E44E27BF9}" WorkUnitID="{4480BAB3-A2C3-4EF4-9FD8-F856D83D0BA9}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Portes_Open" ID="{10C9DA37-CD9E-436B-81FB-2A8AEF9288FA}">
+					<ChildrenList>
+						<Action Name="" ID="{0C4324B6-6D01-48E1-B867-CFD22F6A8749}" ShortID="773946970">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Portes_Open" ID="{0E5C22A7-7DBA-40BD-9348-0A6C5289C9E0}" WorkUnitID="{4480BAB3-A2C3-4EF4-9FD8-F856D83D0BA9}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Portes_Close" ID="{7EE6097A-FEBC-481F-949B-3E6D3EDCCE8F}">
+					<ChildrenList>
+						<Action Name="" ID="{02FFCEAF-ACAD-4447-BE64-C3E96864F36E}" ShortID="1019718615">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Portes_Close" ID="{276438F8-3EC1-4C69-BC07-B42E44E27BF9}" WorkUnitID="{4480BAB3-A2C3-4EF4-9FD8-F856D83D0BA9}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Portes_Grande" ID="{6F7DFBC0-A0A9-4B3A-8728-3A16BC76AE00}">
+					<ChildrenList>
+						<Action Name="" ID="{32B3BFBD-F219-4EA6-95D6-0BD20CA4D52B}" ShortID="856856856">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Portes_Grande" ID="{1FA3B7D7-8F1A-4027-BBB2-DA6DAB856838}" WorkUnitID="{4480BAB3-A2C3-4EF4-9FD8-F856D83D0BA9}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Portes_Open" ID="{6F8DBF36-CDC9-49B5-926F-27DAF62D41CF}">
+					<ChildrenList>
+						<Action Name="" ID="{9C82E68C-3D1A-4A7E-88E1-D1281682EB8B}" ShortID="487547813">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Portes_Open" ID="{0E5C22A7-7DBA-40BD-9348-0A6C5289C9E0}" WorkUnitID="{4480BAB3-A2C3-4EF4-9FD8-F856D83D0BA9}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

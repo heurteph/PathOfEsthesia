@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{F5D7A31C-1E55-44D8-A95D-3440786D8B76}" SchemaVersion="97">
+	<Events>
+		<WorkUnit Name="Shelter_Portes" ID="{F5D7A31C-1E55-44D8-A95D-3440786D8B76}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_Shelter_House_Door_Close" ID="{52596A6F-71D9-4FAA-9572-37990FC08B45}">
+					<ChildrenList>
+						<Action Name="" ID="{3366DF88-8F6E-4EE6-A420-E98E5ECA54B7}" ShortID="931194212">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Shelter_House_Door_Close" ID="{79003CE4-4139-4F38-9426-09AF4C8B8CA2}" WorkUnitID="{E370F9D8-2A6E-422A-9832-02629F7BFAE2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Shelter_House_Door_Open" ID="{C66E21CC-F5C2-43A5-BE1F-E93094745B65}">
+					<ChildrenList>
+						<Action Name="" ID="{F8DC4651-C5AA-4E72-AF2A-DC678F3A6246}" ShortID="911736893">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Shelter_House_Door_Open" ID="{38AF4F8A-D121-456C-8992-122BD7A9B91B}" WorkUnitID="{E370F9D8-2A6E-422A-9832-02629F7BFAE2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Shelter_Parc_Door_Open" ID="{A6ACDB3F-F114-4C50-AC04-B3C77807A992}">
+					<ChildrenList>
+						<Action Name="" ID="{0BCC92BE-58D3-496F-A1D4-5B2F61D92934}" ShortID="739949043">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Shelter_Parc_Door_Open" ID="{218BCC77-385B-4E34-BF23-2D6A02C5BF04}" WorkUnitID="{E370F9D8-2A6E-422A-9832-02629F7BFAE2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Shelter_Parc_Door_Close" ID="{12EA3F30-C7F6-4157-9AAD-56B4878E7B75}">
+					<ChildrenList>
+						<Action Name="" ID="{B2EFB8F3-476E-415C-B122-7F5B219F8307}" ShortID="434423519">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Shelter_Parc_Door_Close" ID="{E2A2DF45-A701-4DD6-85B6-5417C7D74872}" WorkUnitID="{E370F9D8-2A6E-422A-9832-02629F7BFAE2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Shelter_Bar_Door_Open" ID="{CFA4DB11-1392-479F-8382-CB7EE4BC64B4}">
+					<ChildrenList>
+						<Action Name="" ID="{3070FF97-8383-4E00-B73B-C5BEC6ACC3B2}" ShortID="936550890">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Shelter_Bar_Door_Open" ID="{49C3643B-A6B9-413B-B72F-410A14C92E2E}" WorkUnitID="{E370F9D8-2A6E-422A-9832-02629F7BFAE2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Shelter_Bar_Door_Close" ID="{9E10B5F8-00EC-4D72-B7DB-461F0C7E3D90}">
+					<ChildrenList>
+						<Action Name="" ID="{1BA94B83-07DC-42A5-8055-939A223AC6A5}" ShortID="1046449327">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Shelter_Bar_Door_Close" ID="{4353FE4C-0706-462F-B60A-C7624EE3AB58}" WorkUnitID="{E370F9D8-2A6E-422A-9832-02629F7BFAE2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Shelter_Parc_Door_Open" ID="{97FC63A7-2D2B-4B7E-A7B8-2EA81250A11A}">
+					<ChildrenList>
+						<Action Name="" ID="{92771FBE-E808-42AD-ADA7-29CFAA54AA77}" ShortID="813471353">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Shelter_Parc_Door_Open" ID="{218BCC77-385B-4E34-BF23-2D6A02C5BF04}" WorkUnitID="{E370F9D8-2A6E-422A-9832-02629F7BFAE2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Shelter_Parc_Door_Close" ID="{6A710B33-532D-4433-88D7-BA27D9DBBA35}">
+					<ChildrenList>
+						<Action Name="" ID="{15E09BD9-E871-4CE8-B941-7BFBB9280704}" ShortID="610555082">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Shelter_Parc_Door_Close" ID="{E2A2DF45-A701-4DD6-85B6-5417C7D74872}" WorkUnitID="{E370F9D8-2A6E-422A-9832-02629F7BFAE2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Shelter_Bar_Door_Open" ID="{15D4FA31-662E-4936-9829-2827D30C645B}">
+					<ChildrenList>
+						<Action Name="" ID="{2D5CEE7E-62E8-48E7-882F-177A6D4B9D93}" ShortID="1021686494">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Shelter_Bar_Door_Open" ID="{49C3643B-A6B9-413B-B72F-410A14C92E2E}" WorkUnitID="{E370F9D8-2A6E-422A-9832-02629F7BFAE2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Shelter_Bar_Door_Close" ID="{878FB2CE-9677-4547-B8ED-C473B5C743CA}">
+					<ChildrenList>
+						<Action Name="" ID="{04F3A3BE-27BC-4A8C-90B7-77C28D15C68E}" ShortID="549078960">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Shelter_Bar_Door_Close" ID="{4353FE4C-0706-462F-B60A-C7624EE3AB58}" WorkUnitID="{E370F9D8-2A6E-422A-9832-02629F7BFAE2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Shelter_House_Door_Open" ID="{9F4B86B3-424F-452C-8B21-E526772F0E3B}">
+					<ChildrenList>
+						<Action Name="" ID="{3D878B9D-5738-4C80-9642-51A11F80AD94}" ShortID="561477129">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Shelter_House_Door_Open" ID="{38AF4F8A-D121-456C-8992-122BD7A9B91B}" WorkUnitID="{E370F9D8-2A6E-422A-9832-02629F7BFAE2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Shelter_House_Door_Close" ID="{D8CE6BAA-1EDA-4FB6-B697-E95D7D39F696}">
+					<ChildrenList>
+						<Action Name="" ID="{280BDAA1-57A9-49E0-97A6-2D0BA0FEE730}" ShortID="56057389">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Shelter_House_Door_Close" ID="{79003CE4-4139-4F38-9426-09AF4C8B8CA2}" WorkUnitID="{E370F9D8-2A6E-422A-9832-02629F7BFAE2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

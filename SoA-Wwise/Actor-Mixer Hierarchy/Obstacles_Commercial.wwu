@@ -1,0 +1,667 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{4480BAB3-A2C3-4EF4-9FD8-F856D83D0BA9}" SchemaVersion="97" RootDocumentID="{23AB8791-B98A-46BD-8F95-CD1C4D38BE77}">
+	<AudioObjects>
+		<WorkUnit Name="Obstacles_Commercial" ID="{4480BAB3-A2C3-4EF4-9FD8-F856D83D0BA9}" OwnerID="{23AB8791-B98A-46BD-8F95-CD1C4D38BE77}" PersistMode="Nested">
+			<ChildrenList>
+				<ActorMixer Name="Radio" ID="{EFC1051D-E233-4058-A2CE-42A6AD083397}" ShortID="188454862">
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<Custom>
+								<Attenuation Name="Attenuation (Custom)" ID="{1C13CAE6-D903-4EE3-AD70-FD778E8216A6}" ShortID="449034634">
+									<PropertyList>
+										<Property Name="RadiusMax" Type="Real64" Value="40"/>
+									</PropertyList>
+									<CurveUsageInfoList>
+										<VolumeDryUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+												<Curve Name="VolumeDry" ID="{EC87E975-6949-4EF6-9886-2C314E2AEDBE}">
+													<PropertyList>
+														<Property Name="Flags" Type="int32" Value="3"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>0</YPos>
+															<Flags>5</Flags>
+														</Point>
+														<Point>
+															<XPos>40</XPos>
+															<YPos>-200</YPos>
+															<Flags>37</Flags>
+														</Point>
+													</PointList>
+												</Curve>
+											</CurveUsageInfo>
+										</VolumeDryUsage>
+										<VolumeWetGameUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+										</VolumeWetGameUsage>
+										<VolumeWetUserUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+										</VolumeWetUserUsage>
+										<LowPassFilterUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</LowPassFilterUsage>
+										<HighPassFilterUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</HighPassFilterUsage>
+										<SpreadUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</SpreadUsage>
+										<FocusUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</FocusUsage>
+									</CurveUsageInfoList>
+								</Attenuation>
+							</Custom>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Envi_Commerce" ID="{7BDD60B2-BB5E-48BE-B7F0-F70158B733D4}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+						</Reference>
+						<Reference Name="UserAuxSend1">
+							<ObjectRef Name="EQ_Protection" ID="{5A2173EA-4A77-452E-8281-C22E896215E4}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<RandomSequenceContainer Name="Messages_Radio" ID="{331E6EDC-7E04-4C43-815E-B41FD607BCEE}" ShortID="103912277">
+							<PropertyList>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="5">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{074668FE-7924-4B20-A714-0D9E61B29942}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="2"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Commerce_Obstacle_Message_Complet_1" ID="{8044717B-45D5-4BE0-857F-3AF8F4279B70}" ShortID="673407256">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Commerce_Obstacle_Message_Complet_1" ID="{19E532A0-384B-400F-9A32-C1C26E603F86}">
+											<Language>SFX</Language>
+											<AudioFile>Commerce_Obstacle_Message_Complet_1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1066670797"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Commerce_Obstacle_Message_Complet_1" ID="{19E532A0-384B-400F-9A32-C1C26E603F86}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Commerce_Obstacle_Message_Complet_2" ID="{5FD4B75F-C5D9-4127-AA5D-47143C40A0D8}" ShortID="848487900">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Commerce_Obstacle_Message_Complet_2" ID="{B9062732-33BD-47CF-BFB2-AE4CA477C702}">
+											<Language>SFX</Language>
+											<AudioFile>Commerce_Obstacle_Message_Complet_2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="527209315"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Commerce_Obstacle_Message_Complet_2" ID="{B9062732-33BD-47CF-BFB2-AE4CA477C702}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Commerce_Obstacle_Message_Complet_3" ID="{2D5C69A1-C629-49C6-BA86-D9C9C34BD435}" ShortID="225534041">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Commerce_Obstacle_Message_Complet_3" ID="{65993A71-1666-42E4-A091-2F30AF7A0840}">
+											<Language>SFX</Language>
+											<AudioFile>Commerce_Obstacle_Message_Complet_3.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="206231957"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Commerce_Obstacle_Message_Complet_3" ID="{65993A71-1666-42E4-A091-2F30AF7A0840}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Commerce_Obstacle_Message_Complet_4" ID="{05A5769A-7545-466A-84B4-379CBCD00A1B}" ShortID="228324809">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Commerce_Obstacle_Message_Complet_4" ID="{F8CED2A6-FA06-4F5A-9392-A216ADBCE491}">
+											<Language>SFX</Language>
+											<AudioFile>Commerce_Obstacle_Message_Complet_4.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="46142111"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Commerce_Obstacle_Message_Complet_4" ID="{F8CED2A6-FA06-4F5A-9392-A216ADBCE491}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Commerce_Obstacle_Message_Complet_5" ID="{4ECE1CF4-A766-4B7F-A563-A05A8684417D}" ShortID="238625182">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Commerce_Obstacle_Message_Complet_5" ID="{436BEF7E-7F78-4EA9-A1A3-472FDF3247BF}">
+											<Language>SFX</Language>
+											<AudioFile>Commerce_Obstacle_Message_Complet_5.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="133179338"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Commerce_Obstacle_Message_Complet_5" ID="{436BEF7E-7F78-4EA9-A1A3-472FDF3247BF}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+					</ChildrenList>
+					<StateInfo>
+						<StatePropertyList>
+							<Property Name="OutputBusVolume"/>
+							<Property Name="UserAuxSendVolume1"/>
+						</StatePropertyList>
+						<StateGroupList>
+							<StateGroupInfo>
+								<StateGroupRef Name="Protection_Oui_Non" ID="{46C8E2FC-DB1E-4729-A3D2-B09D21025B1D}"/>
+							</StateGroupInfo>
+						</StateGroupList>
+						<CustomStateList>
+							<CustomState>
+								<StateRef Name="Pas_Active" ID="{5E83877F-A92A-4710-AD08-FE400A73AAFC}"/>
+								<CustomState Name="" ID="{1E57A734-2601-49B9-8E5D-1711AFD38C4F}" ShortID="908679948">
+									<PropertyList>
+										<Property Name="UserAuxSendVolume1" Type="Real64" Value="-108"/>
+									</PropertyList>
+								</CustomState>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Active" ID="{C1B20394-89CE-4EC1-951E-92C36AF5F893}"/>
+								<CustomState Name="" ID="{7D3BD7A6-1EE8-4D22-9F29-46857AE67FE7}" ShortID="581795300">
+									<PropertyList>
+										<Property Name="OutputBusVolume" Type="Real64" Value="-108"/>
+									</PropertyList>
+								</CustomState>
+							</CustomState>
+						</CustomStateList>
+					</StateInfo>
+				</ActorMixer>
+				<ActorMixer Name="Portes" ID="{84474B96-8FA6-4B7A-A05D-66300DB1DF61}" ShortID="18066525">
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<Custom>
+								<Attenuation Name="Attenuation (Custom)" ID="{F0F0752C-1626-4BF4-801B-EC8071B91B13}" ShortID="369135245">
+									<PropertyList>
+										<Property Name="RadiusMax" Type="Real64" Value="40"/>
+									</PropertyList>
+									<CurveUsageInfoList>
+										<VolumeDryUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+												<Curve Name="VolumeDry" ID="{DCD7240E-FFB6-410C-9D65-66C79DF4C6EE}">
+													<PropertyList>
+														<Property Name="Flags" Type="int32" Value="3"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>0</YPos>
+															<Flags>5</Flags>
+														</Point>
+														<Point>
+															<XPos>40</XPos>
+															<YPos>-200</YPos>
+															<Flags>37</Flags>
+														</Point>
+													</PointList>
+												</Curve>
+											</CurveUsageInfo>
+										</VolumeDryUsage>
+										<VolumeWetGameUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+										</VolumeWetGameUsage>
+										<VolumeWetUserUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+										</VolumeWetUserUsage>
+										<LowPassFilterUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</LowPassFilterUsage>
+										<HighPassFilterUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</HighPassFilterUsage>
+										<SpreadUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</SpreadUsage>
+										<FocusUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</FocusUsage>
+									</CurveUsageInfoList>
+								</Attenuation>
+							</Custom>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Obstacles_Commerce" ID="{40C37BCA-526E-4995-B59E-1F10C406ED4D}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+						</Reference>
+						<Reference Name="UserAuxSend0">
+							<ObjectRef Name="MixEcoutePerso" ID="{97430BC9-EEDC-4BAA-90C1-49425009782D}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+						</Reference>
+						<Reference Name="UserAuxSend1">
+							<ObjectRef Name="EQ_Protection" ID="{5A2173EA-4A77-452E-8281-C22E896215E4}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<RandomSequenceContainer Name="Portes_Open" ID="{0E5C22A7-7DBA-40BD-9348-0A6C5289C9E0}" ShortID="155022657">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{F9AE4148-44EC-4B9B-9EA8-396BA45E69F8}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="50"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Commerce_Obstacle_Portes_Coulissantes_Open_01" ID="{988D5574-3DA7-4F8E-8D5A-B5E858EE900A}" ShortID="545021687">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Commerce_Obstacle_Portes_Coulissantes_Open_01" ID="{B13B9204-A77F-4030-8761-5E3433C23140}">
+											<Language>SFX</Language>
+											<AudioFile>Commerce_Obstacle_Portes_Coulissantes_Open_01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="397042027"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Commerce_Obstacle_Portes_Coulissantes_Open_01" ID="{B13B9204-A77F-4030-8761-5E3433C23140}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Commerce_Obstacle_Portes_Coulissantes_Open_02" ID="{E9015424-A590-426B-A50B-08590ABF553C}" ShortID="731319325">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Commerce_Obstacle_Portes_Coulissantes_Open_02" ID="{76346348-C90E-4E00-AF2C-0538FCB62B15}">
+											<Language>SFX</Language>
+											<AudioFile>Commerce_Obstacle_Portes_Coulissantes_Open_02.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="523114705"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Commerce_Obstacle_Portes_Coulissantes_Open_02" ID="{76346348-C90E-4E00-AF2C-0538FCB62B15}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Commerce_Obstacle_Portes_Coulissantes_Open_03" ID="{B940632C-71D5-48D3-8F06-2D38CC3EFF1E}" ShortID="544018749">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Commerce_Obstacle_Portes_Coulissantes_Open_03" ID="{6CC52E1B-89AE-4CCE-A672-FB4952E89CEB}">
+											<Language>SFX</Language>
+											<AudioFile>Commerce_Obstacle_Portes_Coulissantes_Open_03.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="406559118"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Commerce_Obstacle_Portes_Coulissantes_Open_03" ID="{6CC52E1B-89AE-4CCE-A672-FB4952E89CEB}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Commerce_Obstacle_Portes_Coulissantes_Open_04" ID="{3181785F-6B9C-4445-8F55-71115E8886C3}" ShortID="567142899">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Commerce_Obstacle_Portes_Coulissantes_Open_04" ID="{AF313EEF-A144-44DE-A838-06758EEC0D77}">
+											<Language>SFX</Language>
+											<AudioFile>Commerce_Obstacle_Portes_Coulissantes_Open_04.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="159794191"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Commerce_Obstacle_Portes_Coulissantes_Open_04" ID="{AF313EEF-A144-44DE-A838-06758EEC0D77}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Commerce_Obstacle_Portes_Coulissantes_Open_05" ID="{EBF05AD1-1B6D-41BF-9ADD-6533FAFE518F}" ShortID="549320442">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Commerce_Obstacle_Portes_Coulissantes_Open_05" ID="{04AF9654-9724-4204-A1D1-AC6A17B7F2CA}">
+											<Language>SFX</Language>
+											<AudioFile>Commerce_Obstacle_Portes_Coulissantes_Open_05.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="100197332"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Commerce_Obstacle_Portes_Coulissantes_Open_05" ID="{04AF9654-9724-4204-A1D1-AC6A17B7F2CA}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Portes_Close" ID="{276438F8-3EC1-4C69-BC07-B42E44E27BF9}" ShortID="250692922">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{0B92F565-F4D6-4B60-8141-2117C6734BBF}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="50"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>4</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Commerce_Obstacle_Portes_Coulissantes_Close_01" ID="{8B4B99C6-B6C0-480B-A0E7-68AE142D87F5}" ShortID="284780128">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Commerce_Obstacle_Portes_Coulissantes_Close_01" ID="{5A650CB4-0D0E-4A6A-A1C9-6986F9550BBF}">
+											<Language>SFX</Language>
+											<AudioFile>Commerce_Obstacle_Portes_Coulissantes_Close_01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="679251941"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Commerce_Obstacle_Portes_Coulissantes_Close_01" ID="{5A650CB4-0D0E-4A6A-A1C9-6986F9550BBF}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Commerce_Obstacle_Portes_Coulissantes_Close_02" ID="{45781067-F5D8-4E38-94AF-AB40F4AA686F}" ShortID="545308772">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Commerce_Obstacle_Portes_Coulissantes_Close_02" ID="{B5636D11-9AA6-4768-AC05-103010F68EE8}">
+											<Language>SFX</Language>
+											<AudioFile>Commerce_Obstacle_Portes_Coulissantes_Close_02.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="459228429"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Commerce_Obstacle_Portes_Coulissantes_Close_02" ID="{B5636D11-9AA6-4768-AC05-103010F68EE8}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Commerce_Obstacle_Portes_Coulissantes_Close_03" ID="{DC29BB74-6C15-4C8D-99CD-ADD8E77662FC}" ShortID="825427193">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Commerce_Obstacle_Portes_Coulissantes_Close_03" ID="{DE51F755-9335-4D21-B84A-6D6FA917CBC4}">
+											<Language>SFX</Language>
+											<AudioFile>Commerce_Obstacle_Portes_Coulissantes_Close_03.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="547415648"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Commerce_Obstacle_Portes_Coulissantes_Close_03" ID="{DE51F755-9335-4D21-B84A-6D6FA917CBC4}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Commerce_Obstacle_Portes_Coulissantes_Close_04" ID="{FA8E9CA7-7AD1-4C14-9491-901650118E96}" ShortID="309018028">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Commerce_Obstacle_Portes_Coulissantes_Close_04" ID="{287B47D2-4FC1-43A5-84D9-3E2573E98EE9}">
+											<Language>SFX</Language>
+											<AudioFile>Commerce_Obstacle_Portes_Coulissantes_Close_04.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="445723425"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Commerce_Obstacle_Portes_Coulissantes_Close_04" ID="{287B47D2-4FC1-43A5-84D9-3E2573E98EE9}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Commerce_Obstacle_Portes_Coulissantes_Close_05" ID="{2902B0E3-EFE3-4D6E-97FC-2CE5581EA91D}" ShortID="19038924">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Commerce_Obstacle_Portes_Coulissantes_Close_05" ID="{97A14C67-E53C-49E5-9CDC-2B80009454AD}">
+											<Language>SFX</Language>
+											<AudioFile>Commerce_Obstacle_Portes_Coulissantes_Close_05.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="399885347"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Commerce_Obstacle_Portes_Coulissantes_Close_05" ID="{97A14C67-E53C-49E5-9CDC-2B80009454AD}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<BlendContainer Name="Portes_Grande" ID="{1FA3B7D7-8F1A-4027-BBB2-DA6DAB856838}" ShortID="10884378">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{F0991D4B-33B5-4BA0-AEF7-188AC8BF1F36}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="500"/>
+													<Property Name="Min" Type="Real64" Value="-120"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Commerce_Obstacle_Portes_Coulissantes_Close_Seul" ID="{3A6917FF-0C86-4711-B1C5-42F309FB6575}" ShortID="797678095">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Commerce_Obstacle_Portes_Coulissantes_Close_Seul" ID="{0B83CAC2-E62B-4050-BC5E-D9E68FB7C7A4}">
+											<Language>SFX</Language>
+											<AudioFile>Commerce_Obstacle_Portes_Coulissantes_Close_Seul.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="560835008"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Commerce_Obstacle_Portes_Coulissantes_Close_Seul" ID="{0B83CAC2-E62B-4050-BC5E-D9E68FB7C7A4}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</BlendContainer>
+					</ChildrenList>
+					<StateInfo>
+						<StatePropertyList>
+							<Property Name="OutputBusVolume"/>
+							<Property Name="UserAuxSendVolume1"/>
+						</StatePropertyList>
+						<StateGroupList>
+							<StateGroupInfo>
+								<StateGroupRef Name="Protection_Oui_Non" ID="{46C8E2FC-DB1E-4729-A3D2-B09D21025B1D}"/>
+							</StateGroupInfo>
+						</StateGroupList>
+						<CustomStateList>
+							<CustomState>
+								<StateRef Name="Pas_Active" ID="{5E83877F-A92A-4710-AD08-FE400A73AAFC}"/>
+								<CustomState Name="" ID="{E829BD5B-01CF-48B4-8BD3-FE43504DAC2A}" ShortID="937555460">
+									<PropertyList>
+										<Property Name="UserAuxSendVolume1" Type="Real64" Value="-108"/>
+									</PropertyList>
+								</CustomState>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Active" ID="{C1B20394-89CE-4EC1-951E-92C36AF5F893}"/>
+								<CustomState Name="" ID="{1AB290CE-C83B-4318-ADAE-0803E61B3C88}" ShortID="661240425">
+									<PropertyList>
+										<Property Name="OutputBusVolume" Type="Real64" Value="-108"/>
+									</PropertyList>
+								</CustomState>
+							</CustomState>
+						</CustomStateList>
+					</StateInfo>
+				</ActorMixer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

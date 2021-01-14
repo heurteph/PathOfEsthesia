@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{E370F9D8-2A6E-422A-9832-02629F7BFAE2}" SchemaVersion="97">
+	<AudioObjects>
+		<WorkUnit Name="Default Work Unit" ID="{E370F9D8-2A6E-422A-9832-02629F7BFAE2}" PersistMode="Standalone">
+			<ChildrenList>
+				<Sound Name="test" ID="{E9060CD6-51AE-4471-A943-7D23D10B2AAA}" ShortID="842119030">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="NiveauEcoutePerso" ID="{A4D9FDFA-2BDE-4429-BF04-2EA53793E583}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+						</Reference>
+						<Reference Name="UserAuxSend0">
+							<ObjectRef Name="MixEcoutePerso" ID="{97430BC9-EEDC-4BAA-90C1-49425009782D}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<SourcePlugin Name="Wwise Sine" ID="{CA057317-64FB-4BEE-965B-D4C07D343D65}" ShortID="978210516" PluginName="Wwise Sine" CompanyID="0" PluginID="100">
+							<PropertyList>
+								<Property Name="SineDuration" Type="Real32" Value="50"/>
+							</PropertyList>
+							<Language>SFX</Language>
+						</SourcePlugin>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Wwise Sine" ID="{CA057317-64FB-4BEE-965B-D4C07D343D65}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<ActorMixer Name="Shelter_Doors" ID="{0CE465FC-1E67-4AB1-9C3A-15A737890070}" ShortID="411999638">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="16"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Environnement_Master" ID="{315C115F-0EDE-4532-BB77-1F0F824A8AC9}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<BlendContainer Name="Shelter_Parc_Doors" ID="{038C3540-2CE0-4371-B8EB-BBAAA35C27EF}" ShortID="262116493">
+							<PropertyList>
+								<Property Name="Highpass" Type="int16">
+									<ValueList>
+										<Value>30</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>330</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>3</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Environnement_Master" ID="{315C115F-0EDE-4532-BB77-1F0F824A8AC9}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="Shelter_Parc_Door_Open" ID="{218BCC77-385B-4E34-BF23-2D6A02C5BF04}" ShortID="1005834625">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Environnement_Master" ID="{315C115F-0EDE-4532-BB77-1F0F824A8AC9}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Shelter_Porte_Open_Type1" ID="{C90E9DB5-82D3-4305-AFB9-DB1D6497B907}" ShortID="96329788">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Shelter_Porte_Open_Type1" ID="{36A5C7B8-F415-4DE1-9004-18850C66D9C5}">
+													<Language>SFX</Language>
+													<AudioFile>Shelter_Porte_Open_Type1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="606153935"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Shelter_Porte_Open_Type1" ID="{36A5C7B8-F415-4DE1-9004-18850C66D9C5}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Shelter_Parc_Door_Close" ID="{E2A2DF45-A701-4DD6-85B6-5417C7D74872}" ShortID="791928949">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Environnement_Master" ID="{315C115F-0EDE-4532-BB77-1F0F824A8AC9}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Shelter_Porte_Close_Type1-001" ID="{ED588513-F73F-4C7E-85C1-2FF7C8AA0D1A}" ShortID="698001704">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Shelter_Porte_Close_Type1-001" ID="{F051FBC0-522F-4CA6-8236-45262CF8699E}">
+													<Language>SFX</Language>
+													<AudioFile>Shelter_Porte_Close_Type1-001.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="229250747"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Shelter_Porte_Close_Type1-001" ID="{F051FBC0-522F-4CA6-8236-45262CF8699E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Shelter_Porte_Close_Type1-002" ID="{DEB1090D-814D-4A51-B511-AFB27E7D660A}" ShortID="602360450">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Shelter_Porte_Close_Type1-002" ID="{B54BAEEA-D1C0-4014-9262-FA81EBF0B2BF}">
+													<Language>SFX</Language>
+													<AudioFile>Shelter_Porte_Close_Type1-002.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="112964218"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Shelter_Porte_Close_Type1-002" ID="{B54BAEEA-D1C0-4014-9262-FA81EBF0B2BF}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+						</BlendContainer>
+						<BlendContainer Name="Shelter_House_Door" ID="{2691807E-CC28-4E6C-80CF-8ED719D981E4}" ShortID="878793262">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>3</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="Shelter_House_Door_Open" ID="{38AF4F8A-D121-456C-8992-122BD7A9B91B}" ShortID="1069427210">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Environnement_Master" ID="{315C115F-0EDE-4532-BB77-1F0F824A8AC9}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Shelter_Porte_Open_Type2" ID="{0428524F-0C41-4861-87E6-181001CE1739}" ShortID="872162673">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Shelter_Porte_Open_Type2" ID="{36251CAF-DEF9-4306-9721-0317D8E4A299}">
+													<Language>SFX</Language>
+													<AudioFile>Shelter_Porte_Open_Type2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="90888304"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Shelter_Porte_Open_Type2" ID="{36251CAF-DEF9-4306-9721-0317D8E4A299}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Shelter_House_Door_Close" ID="{79003CE4-4139-4F38-9426-09AF4C8B8CA2}" ShortID="37872399">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Environnement_Master" ID="{315C115F-0EDE-4532-BB77-1F0F824A8AC9}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Shelter_Porte_Close_Type2-001" ID="{4D5303C3-3E9E-48A2-9E43-F887614750C4}" ShortID="779382886">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Shelter_Porte_Close_Type2-001" ID="{C8B5BF32-65B3-47B5-B1DD-AED747165155}">
+													<Language>SFX</Language>
+													<AudioFile>Shelter_Porte_Close_Type2-001.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="586746517"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Shelter_Porte_Close_Type2-001" ID="{C8B5BF32-65B3-47B5-B1DD-AED747165155}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Shelter_Porte_Close_Type2-002" ID="{7C33C026-F7A7-451C-9CB4-7E64207AAC62}" ShortID="50461112">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Shelter_Porte_Close_Type2-002" ID="{F5A40058-2082-4324-8FC1-F515F92A6B03}">
+													<Language>SFX</Language>
+													<AudioFile>Shelter_Porte_Close_Type2-002.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1044608650"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Shelter_Porte_Close_Type2-002" ID="{F5A40058-2082-4324-8FC1-F515F92A6B03}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+						</BlendContainer>
+						<BlendContainer Name="Shelter_Bar_Door" ID="{2B46A9E2-451F-41AE-BD62-E4118B8EA5F2}" ShortID="742240509">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>3</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Environnement_Master" ID="{315C115F-0EDE-4532-BB77-1F0F824A8AC9}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="Shelter_Bar_Door_Open" ID="{49C3643B-A6B9-413B-B72F-410A14C92E2E}" ShortID="599317546">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Environnement_Master" ID="{315C115F-0EDE-4532-BB77-1F0F824A8AC9}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Shelter_Porte_Open_Type1" ID="{51F1B842-926F-4897-B972-600F8ECB4BEA}" ShortID="420101106">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Shelter_Porte_Open_Type1" ID="{2B6F59A0-11B4-4167-BA9A-7C312740ABA2}">
+													<Language>SFX</Language>
+													<AudioFile>Shelter_Porte_Open_Type1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="606153935"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Shelter_Porte_Open_Type1" ID="{2B6F59A0-11B4-4167-BA9A-7C312740ABA2}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Shelter_Bar_Door_Close" ID="{4353FE4C-0706-462F-B60A-C7624EE3AB58}" ShortID="591098261">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Environnement_Master" ID="{315C115F-0EDE-4532-BB77-1F0F824A8AC9}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Shelter_Porte_Close_Type1-001" ID="{60C900AD-B67A-41B8-844B-8FAB078E9506}" ShortID="701398654">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Shelter_Porte_Close_Type1-001" ID="{75879985-F921-4B18-B906-B4675744C579}">
+													<Language>SFX</Language>
+													<AudioFile>Shelter_Porte_Close_Type1-001.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="229250747"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Shelter_Porte_Close_Type1-001" ID="{75879985-F921-4B18-B906-B4675744C579}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Shelter_Porte_Close_Type1-002" ID="{7020F217-EDF4-4358-8C6C-0A477693CC80}" ShortID="346411497">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9D631623-F9EF-4B2C-849B-180559E402BF}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6389C055-F4EB-4EED-AF54-0E8933E2460A}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Shelter_Porte_Close_Type1-002" ID="{3FA2863D-9B6D-4389-8CAD-10D199765E5C}">
+													<Language>SFX</Language>
+													<AudioFile>Shelter_Porte_Close_Type1-002.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="112964218"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Shelter_Porte_Close_Type1-002" ID="{3FA2863D-9B6D-4389-8CAD-10D199765E5C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+						</BlendContainer>
+					</ChildrenList>
+				</ActorMixer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>
